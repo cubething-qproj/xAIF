@@ -1,0 +1,4110 @@
+{
+  "AIF": {
+    "nodes": [
+      {
+        "nodeID": 1,
+        "type": "L",
+        "text": "Thomas Aquinas: Christian theology does not look like science"
+      },
+      {
+        "nodeID": 2,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 3,
+        "type": "I",
+        "text": "Christian theology does not look like science",
+        "pta": {
+          "subject": "Christian theology",
+          "predicate": "does not look like science",
+          "kind": "V",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 48,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 6,
+        "type": "L",
+        "text": "Thomas Aquinas: every science advances from self-evident principles"
+      },
+      {
+        "nodeID": 7,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 8,
+        "type": "I",
+        "text": "every science advances from self-evident principles",
+        "pta": {
+          "subject": "Every science",
+          "predicate": "advances from self-evident principles",
+          "kind": "V",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 47,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 103,
+        "type": "RA",
+        "text": "α VV Dis",
+        "pta": {
+          "lever": "DISQUALIFIER",
+          "concepts": [
+            "theology",
+            "theology/christian",
+            "science",
+            "self-evidence"
+          ]
+        }
+      },
+      {
+        "nodeID": 110,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 11,
+        "type": "L",
+        "text": "Thomas Aquinas: Christian theology advances from the articles of faith"
+      },
+      {
+        "nodeID": 12,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 13,
+        "type": "I",
+        "text": "Christian theology advances from the articles of faith",
+        "pta": {
+          "subject": "Christian theology",
+          "predicate": "advances from the articles of faith",
+          "kind": "F",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 96,
+        "type": "I",
+        "text": "Christian theology does not advance from self-evident principles",
+        "pta": {
+          "subject": "Christian theology",
+          "predicate": "does not advance from self-evident principles",
+          "kind": "V",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 46,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 97,
+        "type": "RA",
+        "text": "α VF Su",
+        "pta": {
+          "lever": "SUBSUMED",
+          "concepts": [
+            "faith",
+            "science",
+            "self-evidence",
+            "theology",
+            "theology/christian"
+          ]
+        }
+      },
+      {
+        "nodeID": 107,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 16,
+        "type": "L",
+        "text": "Thomas Aquinas: these are not self-evident"
+      },
+      {
+        "nodeID": 17,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora"
+          ]
+        }
+      },
+      {
+        "nodeID": 18,
+        "type": "I",
+        "text": "The articles of faith are not self-evident",
+        "pta": {
+          "subject": "the articles of faith",
+          "predicate": "are not self-evident",
+          "kind": "V",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 45,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 89,
+        "type": "RA",
+        "text": "α VF Cr",
+        "pta": {
+          "lever": "CRITERION",
+          "concepts": [
+            "faith",
+            "self-evidence"
+          ]
+        }
+      },
+      {
+        "nodeID": 92,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 21,
+        "type": "L",
+        "text": "Thomas Aquinas: not everybody grants them"
+      },
+      {
+        "nodeID": 23,
+        "type": "I",
+        "text": "Some people do not grant the articles of faith",
+        "pta": {
+          "subject": "some people",
+          "predicate": "do not grant the articles of faith",
+          "kind": "F",
+          "scope": "p"
+        }
+      },
+      {
+        "nodeID": 124,
+        "type": "I",
+        "text": "The articles of faith are not granted by all",
+        "pta": {
+          "subject": "the articles of faith",
+          "predicate": "are not granted by all",
+          "kind": "F",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 74,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 78,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 80,
+        "type": "RA",
+        "text": "α FF Cau",
+        "pta": {
+          "lever": "CAUSE",
+          "concepts": [
+            "faith"
+          ]
+        }
+      },
+      {
+        "nodeID": 26,
+        "type": "L",
+        "text": "Thessalonians: not all have faith"
+      },
+      {
+        "nodeID": 27,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "explication"
+          ]
+        }
+      },
+      {
+        "nodeID": 28,
+        "type": "I",
+        "text": "Some people do not have faith",
+        "pta": {
+          "subject": "some people",
+          "predicate": "do not have faith",
+          "kind": "F",
+          "scope": "p"
+        }
+      },
+      {
+        "nodeID": 42,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 65,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 68,
+        "type": "RA",
+        "text": "δ III Exp",
+        "pta": {
+          "lever": "EPISTEMICALLY AUTHORITATIVE",
+          "concepts": [
+            "faith",
+            "theology/christian",
+            "theology"
+          ]
+        }
+      },
+      {
+        "nodeID": 31,
+        "type": "L",
+        "text": "Thomas Aquinas: says the second epistle to the Thessalonians"
+      },
+      {
+        "nodeID": 32,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 33,
+        "type": "I",
+        "text": "⟨Some people do not have faith⟩ is said by the second epistle to the Thessalonians",
+        "pta": {
+          "subjectNode": "28",
+          "predicate": "is said by the second epistle to the Thessalonians",
+          "kind": "F",
+          "scope": "s",
+          "perspective": "III"
+        }
+      },
+      {
+        "nodeID": 121,
+        "type": "MA",
+        "text": "Default Rephrase"
+      },
+      {
+        "nodeID": 49,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 117,
+        "type": "YA",
+        "text": "Restating"
+      },
+      {
+        "nodeID": 36,
+        "type": "L",
+        "text": "Thomas Aquinas: it is not a science"
+      },
+      {
+        "nodeID": 37,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora"
+          ]
+        }
+      },
+      {
+        "nodeID": 38,
+        "type": "I",
+        "text": "Christian theology is not a science",
+        "pta": {
+          "subject": "Christian theology",
+          "predicate": "is not a science",
+          "kind": "V",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 129,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora",
+            "passivization"
+          ]
+        }
+      },
+      {
+        "nodeID": 130,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora",
+            "explication"
+          ]
+        }
+      },
+      {
+        "nodeID": 135,
+        "type": "L",
+        "text": "Thomas Aquinas: a science is not concerned with individual cases"
+      },
+      {
+        "nodeID": 136,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "explication"
+          ]
+        }
+      },
+      {
+        "nodeID": 137,
+        "type": "I",
+        "text": "Every science is not concerned with individual cases",
+        "pta": {
+          "subject": "every science",
+          "predicate": "is not concerned with individual cases",
+          "kind": "V",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 140,
+        "type": "L",
+        "text": "Thomas Aquinas: Sacred doctrine, however, deals with individual events and people"
+      },
+      {
+        "nodeID": 141,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "same term"
+          ]
+        }
+      },
+      {
+        "nodeID": 142,
+        "type": "I",
+        "text": "Christian theology is concerned with individual cases",
+        "pta": {
+          "subject": "Christian theology",
+          "predicate": "is concerned with individual cases",
+          "kind": "F",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 145,
+        "type": "L",
+        "text": "Thomas Aquinas: for instance the doings of Abraham, Isaac, Jacob and the like"
+      },
+      {
+        "nodeID": 146,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "explication",
+            "passivization"
+          ]
+        }
+      },
+      {
+        "nodeID": 147,
+        "type": "I",
+        "text": "The doings of Abraham, Isaac, Jacob and the like are dealt with by Christian theology",
+        "pta": {
+          "subject": "the doings of Abraham, Isaac, Jacob and the like",
+          "predicate": "are dealt with by Christian theology",
+          "kind": "F",
+          "scope": "p"
+        }
+      },
+      {
+        "nodeID": 150,
+        "type": "L",
+        "text": "Thomas Aquinas: sacred doctrine is not a science"
+      },
+      {
+        "nodeID": 151,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "same term"
+          ]
+        }
+      },
+      {
+        "nodeID": 156,
+        "type": "RA",
+        "text": "β up Exa",
+        "pta": {
+          "lever": "EXAMPLE",
+          "concepts": [
+            "theology/christian",
+            "theology"
+          ]
+        }
+      },
+      {
+        "nodeID": 157,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 158,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 159,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 167,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 194,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 197,
+        "type": "L",
+        "text": "Augustine: this science alone is credited with begetting, nourishing, protecting, and making robust the healthiest faith"
+      },
+      {
+        "nodeID": 198,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora",
+            "explication"
+          ]
+        }
+      },
+      {
+        "nodeID": 199,
+        "type": "I",
+        "text": "One science alone begets, nourishes, protects and makes robust the healthiest faith",
+        "pta": {
+          "subject": "one science",
+          "predicate": "alone begets, nourishes, protects and makes robust the healthiest faith",
+          "kind": "F",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 202,
+        "type": "L",
+        "text": "Thomas Aquinas: Augustine says that"
+      },
+      {
+        "nodeID": 203,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 208,
+        "type": "L",
+        "text": "Thomas Aquinas: These functions belong to no science other than holy teaching"
+      },
+      {
+        "nodeID": 209,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora",
+            "same term"
+          ]
+        }
+      },
+      {
+        "nodeID": 210,
+        "type": "I",
+        "text": "Christian theology alone begets, nourishes, protects and makes robust the healthiest faith",
+        "pta": {
+          "subject": "Christian theology",
+          "predicate": "alone begets, nourishes, protects and makes robust the healthiest faith",
+          "kind": "F",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 213,
+        "type": "L",
+        "text": "Thomas Aquinas: Therefore it is a science"
+      },
+      {
+        "nodeID": 214,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora",
+            "same term"
+          ]
+        }
+      },
+      {
+        "nodeID": 215,
+        "type": "I",
+        "text": "Christian theology is a science",
+        "pta": {
+          "subject": "Christian theology",
+          "predicate": "is a science",
+          "kind": "V",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 219,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 220,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 227,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 230,
+        "type": "RA",
+        "text": "δ III Exp",
+        "pta": {
+          "lever": "EPISTEMICALLY AUTHORITATIVE",
+          "concepts": [
+            "science",
+            "theology",
+            "theology/christian"
+          ]
+        }
+      },
+      {
+        "nodeID": 233,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 237,
+        "type": "I",
+        "text": "⟨One science alone begets, nourishes, protects and makes robust the healthiest faith⟩ is said by Augustine",
+        "pta": {
+          "subjectNode": "199",
+          "predicate": "is said by Augustine",
+          "kind": "F",
+          "scope": "s",
+          "perspective": "III"
+        }
+      },
+      {
+        "nodeID": 242,
+        "type": "RA",
+        "text": "α VF Cr",
+        "pta": {
+          "lever": "CRITERION",
+          "concepts": [
+            "theology/christian",
+            "theology",
+            "science",
+            "faith"
+          ],
+          "note": "Lever (I 199): what alone begets the healthiest faith is a science, on Augustine's word"
+        }
+      },
+      {
+        "nodeID": 246,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 249,
+        "type": "L",
+        "text": "Thomas Aquinas: Christian theology should be pronounced to be a science"
+      },
+      {
+        "nodeID": 257,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 300,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "explication"
+          ]
+        }
+      },
+      {
+        "nodeID": 301,
+        "type": "I",
+        "text": "Individual events and people are dealt with by Christian theology",
+        "pta": {
+          "subject": "individual events and people",
+          "predicate": "are dealt with by Christian theology",
+          "kind": "F",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 302,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "same term",
+            "passivization"
+          ]
+        }
+      },
+      {
+        "nodeID": 303,
+        "type": "RA",
+        "text": "α VF Cr",
+        "pta": {
+          "lever": "CRITERION",
+          "concepts": [
+            "science",
+            "theology",
+            "theology/christian"
+          ]
+        }
+      },
+      {
+        "nodeID": 304,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 305,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "explication"
+          ]
+        }
+      },
+      {
+        "nodeID": 306,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 307,
+        "type": "CA",
+        "text": "Default Conflict"
+      },
+      {
+        "nodeID": 308,
+        "type": "YA",
+        "text": "Disagreeing"
+      },
+      {
+        "nodeID": 309,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 310,
+        "type": "L",
+        "text": "Thomas Aquinas: some work from premises recognized in the innate light of intelligence"
+      },
+      {
+        "nodeID": 311,
+        "type": "L",
+        "text": "Thomas Aquinas: for instance arithmetic, geometry, and sciences of the same sort"
+      },
+      {
+        "nodeID": 312,
+        "type": "L",
+        "text": "Thomas Aquinas: others work from premises recognized in the light of a higher science"
+      },
+      {
+        "nodeID": 313,
+        "type": "L",
+        "text": "Thomas Aquinas: for instance optics starts out from principles marked out by geometry and harmony from principles indicated by arithmetic"
+      },
+      {
+        "nodeID": 314,
+        "type": "L",
+        "text": "Thomas Aquinas: In this second manner is Christian theology a science"
+      },
+      {
+        "nodeID": 315,
+        "type": "L",
+        "text": "Thomas Aquinas: it flows from founts recognized in the light of a higher science, namely God's very own which he shares with the blessed"
+      },
+      {
+        "nodeID": 316,
+        "type": "L",
+        "text": "Thomas Aquinas: as harmony credits its principles which are taken from arithmetic so Christian theology takes on faith its principles revealed by God"
+      },
+      {
+        "nodeID": 317,
+        "type": "I",
+        "text": "Sciences of the first kind advance from self-evident principles",
+        "pta": {
+          "subject": "sciences of the first kind",
+          "predicate": "advance from self-evident principles",
+          "kind": "F",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 318,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "explication",
+            "same term"
+          ]
+        }
+      },
+      {
+        "nodeID": 319,
+        "type": "I",
+        "text": "Arithmetic, geometry and sciences of the same sort advance from self-evident principles",
+        "pta": {
+          "subject": "arithmetic, geometry and sciences of the same sort",
+          "predicate": "advance from self-evident principles",
+          "kind": "F",
+          "scope": "p"
+        }
+      },
+      {
+        "nodeID": 320,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "explication",
+            "same term"
+          ]
+        }
+      },
+      {
+        "nodeID": 321,
+        "type": "I",
+        "text": "Sciences of the second kind advance from principles recognized in the light of a higher science",
+        "pta": {
+          "subject": "sciences of the second kind",
+          "predicate": "advance from principles recognized in the light of a higher science",
+          "kind": "F",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 322,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "explication",
+            "same term"
+          ]
+        }
+      },
+      {
+        "nodeID": 323,
+        "type": "I",
+        "text": "Optics and harmony advance from principles recognized in the light of a higher science",
+        "pta": {
+          "subject": "optics and harmony",
+          "predicate": "advance from principles recognized in the light of a higher science",
+          "kind": "F",
+          "scope": "p",
+          "note": "geometry and arithmetic are the higher sciences"
+        }
+      },
+      {
+        "nodeID": 324,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "explication",
+            "same term"
+          ]
+        }
+      },
+      {
+        "nodeID": 325,
+        "type": "I",
+        "text": "Christian theology is a science of the second kind",
+        "pta": {
+          "subject": "Christian theology",
+          "predicate": "is a science of the second kind",
+          "kind": "V",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 326,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "explication"
+          ]
+        }
+      },
+      {
+        "nodeID": 327,
+        "type": "I",
+        "text": "Christian theology advances from principles recognized in the light of a higher science",
+        "pta": {
+          "subject": "Christian theology",
+          "predicate": "advances from principles recognized in the light of a higher science",
+          "kind": "F",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 328,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora",
+            "same term"
+          ]
+        }
+      },
+      {
+        "nodeID": 329,
+        "type": "I",
+        "text": "Harmony advances from principles recognized in the light of a higher science",
+        "pta": {
+          "subject": "harmony",
+          "predicate": "advances from principles recognized in the light of a higher science",
+          "kind": "F",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 331,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "same term"
+          ]
+        }
+      },
+      {
+        "nodeID": 333,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 334,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 335,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 336,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 337,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 338,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 339,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 340,
+        "type": "RA",
+        "text": "β up Exa",
+        "pta": {
+          "lever": "EXAMPLE",
+          "concepts": [
+            "science",
+            "self-evidence"
+          ]
+        }
+      },
+      {
+        "nodeID": 341,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 342,
+        "type": "RA",
+        "text": "β up Exa",
+        "pta": {
+          "lever": "EXAMPLE",
+          "concepts": [
+            "science"
+          ]
+        }
+      },
+      {
+        "nodeID": 343,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 344,
+        "type": "CA",
+        "text": "Default Conflict"
+      },
+      {
+        "nodeID": 345,
+        "type": "YA",
+        "text": "Disagreeing"
+      },
+      {
+        "nodeID": 346,
+        "type": "RA",
+        "text": "α VF Def",
+        "pta": {
+          "lever": "DEFINITION",
+          "concepts": [
+            "science",
+            "theology/christian",
+            "theology"
+          ]
+        }
+      },
+      {
+        "nodeID": 347,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 348,
+        "type": "RA",
+        "text": "α VV Ins",
+        "pta": {
+          "lever": "INSTANTIATION",
+          "concepts": [
+            "science",
+            "theology/christian",
+            "theology"
+          ]
+        }
+      },
+      {
+        "nodeID": 349,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 350,
+        "type": "RA",
+        "text": "β ss A",
+        "pta": {
+          "lever": "ANALOGOUS",
+          "concepts": [
+            "faith",
+            "science",
+            "theology/christian",
+            "theology"
+          ]
+        }
+      },
+      {
+        "nodeID": 351,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 1180,
+        "type": "L",
+        "text": "Thomas Aquinas: sciences are of two kinds"
+      },
+      {
+        "nodeID": 1181,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 1182,
+        "type": "I",
+        "text": "sciences are of two kinds",
+        "pta": {
+          "subject": "sciences",
+          "predicate": "are of two kinds",
+          "kind": "F",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 1185,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 1190,
+        "type": "I",
+        "text": "Sciences may advance from self-evident principles or take their principles on trust from a higher science",
+        "pta": {
+          "subject": "sciences",
+          "predicate": "may advance from self-evident principles or take their principles on trust from a higher science",
+          "kind": "F",
+          "scope": "u",
+          "note": "implicit: not said, but shown by the two kinds and their examples"
+        }
+      },
+      {
+        "nodeID": 1191,
+        "type": "RA",
+        "text": "α FF Sig",
+        "pta": {
+          "lever": "SIGN",
+          "concepts": [
+            "science"
+          ],
+          "note": "alt. α VF Cr, with \"are of two kinds\" as V"
+        }
+      },
+      {
+        "nodeID": 1192,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 1197,
+        "type": "I",
+        "text": "God's own science is a science higher than Christian theology",
+        "pta": {
+          "subject": "God's own science",
+          "predicate": "is a science higher than Christian theology",
+          "kind": "F",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 1198,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "explication"
+          ]
+        }
+      },
+      {
+        "nodeID": 1199,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "same term"
+          ]
+        }
+      }
+    ],
+    "edges": [
+      {
+        "edgeID": 1000,
+        "fromID": 1,
+        "toID": 2
+      },
+      {
+        "edgeID": 1001,
+        "fromID": 2,
+        "toID": 3
+      },
+      {
+        "edgeID": 1002,
+        "fromID": 6,
+        "toID": 7
+      },
+      {
+        "edgeID": 1003,
+        "fromID": 7,
+        "toID": 8
+      },
+      {
+        "edgeID": 1004,
+        "fromID": 11,
+        "toID": 12
+      },
+      {
+        "edgeID": 1005,
+        "fromID": 12,
+        "toID": 13
+      },
+      {
+        "edgeID": 1006,
+        "fromID": 16,
+        "toID": 17
+      },
+      {
+        "edgeID": 1007,
+        "fromID": 17,
+        "toID": 18
+      },
+      {
+        "edgeID": 1008,
+        "fromID": 26,
+        "toID": 27
+      },
+      {
+        "edgeID": 1009,
+        "fromID": 27,
+        "toID": 28
+      },
+      {
+        "edgeID": 1010,
+        "fromID": 31,
+        "toID": 32
+      },
+      {
+        "edgeID": 1011,
+        "fromID": 36,
+        "toID": 37
+      },
+      {
+        "edgeID": 1012,
+        "fromID": 37,
+        "toID": 38
+      },
+      {
+        "edgeID": 1013,
+        "fromID": 32,
+        "toID": 26
+      },
+      {
+        "edgeID": 1014,
+        "fromID": 1,
+        "toID": 48
+      },
+      {
+        "edgeID": 1015,
+        "fromID": 48,
+        "toID": 6
+      },
+      {
+        "edgeID": 1016,
+        "fromID": 6,
+        "toID": 47
+      },
+      {
+        "edgeID": 1017,
+        "fromID": 47,
+        "toID": 11
+      },
+      {
+        "edgeID": 1018,
+        "fromID": 11,
+        "toID": 46
+      },
+      {
+        "edgeID": 1019,
+        "fromID": 46,
+        "toID": 16
+      },
+      {
+        "edgeID": 1020,
+        "fromID": 16,
+        "toID": 45
+      },
+      {
+        "edgeID": 1021,
+        "fromID": 45,
+        "toID": 21
+      },
+      {
+        "edgeID": 1022,
+        "fromID": 42,
+        "toID": 31
+      },
+      {
+        "edgeID": 1023,
+        "fromID": 31,
+        "toID": 49
+      },
+      {
+        "edgeID": 1024,
+        "fromID": 49,
+        "toID": 36
+      },
+      {
+        "edgeID": 1025,
+        "fromID": 42,
+        "toID": 65
+      },
+      {
+        "edgeID": 1026,
+        "fromID": 68,
+        "toID": 28
+      },
+      {
+        "edgeID": 1027,
+        "fromID": 33,
+        "toID": 68
+      },
+      {
+        "edgeID": 1028,
+        "fromID": 65,
+        "toID": 68
+      },
+      {
+        "edgeID": 1029,
+        "fromID": 21,
+        "toID": 74
+      },
+      {
+        "edgeID": 1030,
+        "fromID": 74,
+        "toID": 26
+      },
+      {
+        "edgeID": 1031,
+        "fromID": 26,
+        "toID": 42
+      },
+      {
+        "edgeID": 1032,
+        "fromID": 74,
+        "toID": 78
+      },
+      {
+        "edgeID": 1033,
+        "fromID": 78,
+        "toID": 80
+      },
+      {
+        "edgeID": 1034,
+        "fromID": 80,
+        "toID": 23
+      },
+      {
+        "edgeID": 1035,
+        "fromID": 28,
+        "toID": 80
+      },
+      {
+        "edgeID": 1036,
+        "fromID": 45,
+        "toID": 92
+      },
+      {
+        "edgeID": 1037,
+        "fromID": 92,
+        "toID": 89
+      },
+      {
+        "edgeID": 1038,
+        "fromID": 97,
+        "toID": 96
+      },
+      {
+        "edgeID": 1039,
+        "fromID": 13,
+        "toID": 97
+      },
+      {
+        "edgeID": 1040,
+        "fromID": 96,
+        "toID": 103
+      },
+      {
+        "edgeID": 1041,
+        "fromID": 8,
+        "toID": 103,
+        "role": "lever"
+      },
+      {
+        "edgeID": 1042,
+        "fromID": 46,
+        "toID": 107
+      },
+      {
+        "edgeID": 1043,
+        "fromID": 107,
+        "toID": 97
+      },
+      {
+        "edgeID": 1044,
+        "fromID": 47,
+        "toID": 110
+      },
+      {
+        "edgeID": 1045,
+        "fromID": 110,
+        "toID": 103
+      },
+      {
+        "edgeID": 1046,
+        "fromID": 103,
+        "toID": 3
+      },
+      {
+        "edgeID": 1047,
+        "fromID": 49,
+        "toID": 117
+      },
+      {
+        "edgeID": 1048,
+        "fromID": 18,
+        "toID": 97,
+        "role": "lever"
+      },
+      {
+        "edgeID": 1049,
+        "fromID": 121,
+        "toID": 38
+      },
+      {
+        "edgeID": 1050,
+        "fromID": 3,
+        "toID": 121
+      },
+      {
+        "edgeID": 1051,
+        "fromID": 89,
+        "toID": 18
+      },
+      {
+        "edgeID": 1052,
+        "fromID": 124,
+        "toID": 89
+      },
+      {
+        "edgeID": 1053,
+        "fromID": 117,
+        "toID": 121
+      },
+      {
+        "edgeID": 1054,
+        "fromID": 130,
+        "toID": 23
+      },
+      {
+        "edgeID": 1055,
+        "fromID": 129,
+        "toID": 124
+      },
+      {
+        "edgeID": 1056,
+        "fromID": 21,
+        "toID": 130
+      },
+      {
+        "edgeID": 1057,
+        "fromID": 21,
+        "toID": 129
+      },
+      {
+        "edgeID": 1058,
+        "fromID": 135,
+        "toID": 136
+      },
+      {
+        "edgeID": 1059,
+        "fromID": 136,
+        "toID": 137
+      },
+      {
+        "edgeID": 1060,
+        "fromID": 140,
+        "toID": 141
+      },
+      {
+        "edgeID": 1061,
+        "fromID": 141,
+        "toID": 142
+      },
+      {
+        "edgeID": 1062,
+        "fromID": 145,
+        "toID": 146
+      },
+      {
+        "edgeID": 1063,
+        "fromID": 146,
+        "toID": 147
+      },
+      {
+        "edgeID": 1064,
+        "fromID": 150,
+        "toID": 151
+      },
+      {
+        "edgeID": 1065,
+        "fromID": 159,
+        "toID": 140
+      },
+      {
+        "edgeID": 1066,
+        "fromID": 140,
+        "toID": 158
+      },
+      {
+        "edgeID": 1067,
+        "fromID": 158,
+        "toID": 145
+      },
+      {
+        "edgeID": 1068,
+        "fromID": 145,
+        "toID": 157
+      },
+      {
+        "edgeID": 1069,
+        "fromID": 157,
+        "toID": 150
+      },
+      {
+        "edgeID": 1070,
+        "fromID": 135,
+        "toID": 159
+      },
+      {
+        "edgeID": 1071,
+        "fromID": 158,
+        "toID": 167
+      },
+      {
+        "edgeID": 1072,
+        "fromID": 167,
+        "toID": 156
+      },
+      {
+        "edgeID": 1073,
+        "fromID": 36,
+        "toID": 194
+      },
+      {
+        "edgeID": 1074,
+        "fromID": 194,
+        "toID": 135
+      },
+      {
+        "edgeID": 1075,
+        "fromID": 197,
+        "toID": 198
+      },
+      {
+        "edgeID": 1076,
+        "fromID": 198,
+        "toID": 199
+      },
+      {
+        "edgeID": 1077,
+        "fromID": 202,
+        "toID": 203
+      },
+      {
+        "edgeID": 1078,
+        "fromID": 203,
+        "toID": 197
+      },
+      {
+        "edgeID": 1079,
+        "fromID": 208,
+        "toID": 209
+      },
+      {
+        "edgeID": 1080,
+        "fromID": 209,
+        "toID": 210
+      },
+      {
+        "edgeID": 1081,
+        "fromID": 213,
+        "toID": 214
+      },
+      {
+        "edgeID": 1082,
+        "fromID": 214,
+        "toID": 215
+      },
+      {
+        "edgeID": 1083,
+        "fromID": 202,
+        "toID": 219
+      },
+      {
+        "edgeID": 1084,
+        "fromID": 219,
+        "toID": 197
+      },
+      {
+        "edgeID": 1085,
+        "fromID": 197,
+        "toID": 220
+      },
+      {
+        "edgeID": 1086,
+        "fromID": 220,
+        "toID": 208
+      },
+      {
+        "edgeID": 1087,
+        "fromID": 208,
+        "toID": 227
+      },
+      {
+        "edgeID": 1088,
+        "fromID": 227,
+        "toID": 213
+      },
+      {
+        "edgeID": 1089,
+        "fromID": 230,
+        "toID": 199
+      },
+      {
+        "edgeID": 1090,
+        "fromID": 219,
+        "toID": 233
+      },
+      {
+        "edgeID": 1091,
+        "fromID": 233,
+        "toID": 230
+      },
+      {
+        "edgeID": 1092,
+        "fromID": 237,
+        "toID": 230
+      },
+      {
+        "edgeID": 1093,
+        "fromID": 210,
+        "toID": 242
+      },
+      {
+        "edgeID": 1094,
+        "fromID": 242,
+        "toID": 215
+      },
+      {
+        "edgeID": 1095,
+        "fromID": 199,
+        "toID": 242,
+        "role": "lever"
+      },
+      {
+        "edgeID": 1096,
+        "fromID": 227,
+        "toID": 246
+      },
+      {
+        "edgeID": 1097,
+        "fromID": 246,
+        "toID": 242
+      },
+      {
+        "edgeID": 1098,
+        "fromID": 213,
+        "toID": 257
+      },
+      {
+        "edgeID": 1099,
+        "fromID": 257,
+        "toID": 249
+      },
+      {
+        "edgeID": 1100,
+        "fromID": 31,
+        "toID": 300
+      },
+      {
+        "edgeID": 1101,
+        "fromID": 300,
+        "toID": 33
+      },
+      {
+        "edgeID": 1102,
+        "fromID": 140,
+        "toID": 302
+      },
+      {
+        "edgeID": 1103,
+        "fromID": 302,
+        "toID": 301
+      },
+      {
+        "edgeID": 1104,
+        "fromID": 147,
+        "toID": 156
+      },
+      {
+        "edgeID": 1105,
+        "fromID": 156,
+        "toID": 301
+      },
+      {
+        "edgeID": 1106,
+        "fromID": 151,
+        "toID": 38
+      },
+      {
+        "edgeID": 1107,
+        "fromID": 142,
+        "toID": 303
+      },
+      {
+        "edgeID": 1108,
+        "fromID": 303,
+        "toID": 38
+      },
+      {
+        "edgeID": 1109,
+        "fromID": 157,
+        "toID": 304
+      },
+      {
+        "edgeID": 1110,
+        "fromID": 304,
+        "toID": 303
+      },
+      {
+        "edgeID": 1111,
+        "fromID": 137,
+        "toID": 303,
+        "role": "lever"
+      },
+      {
+        "edgeID": 1112,
+        "fromID": 202,
+        "toID": 305
+      },
+      {
+        "edgeID": 1113,
+        "fromID": 305,
+        "toID": 237
+      },
+      {
+        "edgeID": 1114,
+        "fromID": 150,
+        "toID": 306
+      },
+      {
+        "edgeID": 1115,
+        "fromID": 306,
+        "toID": 202
+      },
+      {
+        "edgeID": 1116,
+        "fromID": 150,
+        "toID": 227
+      },
+      {
+        "edgeID": 1117,
+        "fromID": 215,
+        "toID": 307
+      },
+      {
+        "edgeID": 1118,
+        "fromID": 307,
+        "toID": 38
+      },
+      {
+        "edgeID": 1119,
+        "fromID": 227,
+        "toID": 308
+      },
+      {
+        "edgeID": 1120,
+        "fromID": 308,
+        "toID": 307
+      },
+      {
+        "edgeID": 1121,
+        "fromID": 249,
+        "toID": 309
+      },
+      {
+        "edgeID": 1122,
+        "fromID": 309,
+        "toID": 215
+      },
+      {
+        "edgeID": 1123,
+        "fromID": 310,
+        "toID": 318
+      },
+      {
+        "edgeID": 1124,
+        "fromID": 318,
+        "toID": 317
+      },
+      {
+        "edgeID": 1125,
+        "fromID": 311,
+        "toID": 320
+      },
+      {
+        "edgeID": 1126,
+        "fromID": 320,
+        "toID": 319
+      },
+      {
+        "edgeID": 1127,
+        "fromID": 312,
+        "toID": 322
+      },
+      {
+        "edgeID": 1128,
+        "fromID": 322,
+        "toID": 321
+      },
+      {
+        "edgeID": 1129,
+        "fromID": 313,
+        "toID": 324
+      },
+      {
+        "edgeID": 1130,
+        "fromID": 324,
+        "toID": 323
+      },
+      {
+        "edgeID": 1131,
+        "fromID": 314,
+        "toID": 326
+      },
+      {
+        "edgeID": 1132,
+        "fromID": 326,
+        "toID": 325
+      },
+      {
+        "edgeID": 1133,
+        "fromID": 315,
+        "toID": 328
+      },
+      {
+        "edgeID": 1134,
+        "fromID": 328,
+        "toID": 327
+      },
+      {
+        "edgeID": 1135,
+        "fromID": 316,
+        "toID": 331
+      },
+      {
+        "edgeID": 1136,
+        "fromID": 331,
+        "toID": 329
+      },
+      {
+        "edgeID": 1140,
+        "fromID": 333,
+        "toID": 310
+      },
+      {
+        "edgeID": 1141,
+        "fromID": 310,
+        "toID": 334
+      },
+      {
+        "edgeID": 1142,
+        "fromID": 334,
+        "toID": 311
+      },
+      {
+        "edgeID": 1143,
+        "fromID": 311,
+        "toID": 335
+      },
+      {
+        "edgeID": 1144,
+        "fromID": 6,
+        "toID": 335
+      },
+      {
+        "edgeID": 1145,
+        "fromID": 335,
+        "toID": 312
+      },
+      {
+        "edgeID": 1146,
+        "fromID": 312,
+        "toID": 336
+      },
+      {
+        "edgeID": 1147,
+        "fromID": 336,
+        "toID": 313
+      },
+      {
+        "edgeID": 1148,
+        "fromID": 313,
+        "toID": 337
+      },
+      {
+        "edgeID": 1149,
+        "fromID": 249,
+        "toID": 337
+      },
+      {
+        "edgeID": 1150,
+        "fromID": 337,
+        "toID": 314
+      },
+      {
+        "edgeID": 1151,
+        "fromID": 314,
+        "toID": 338
+      },
+      {
+        "edgeID": 1152,
+        "fromID": 338,
+        "toID": 315
+      },
+      {
+        "edgeID": 1153,
+        "fromID": 315,
+        "toID": 339
+      },
+      {
+        "edgeID": 1154,
+        "fromID": 339,
+        "toID": 316
+      },
+      {
+        "edgeID": 1155,
+        "fromID": 319,
+        "toID": 340
+      },
+      {
+        "edgeID": 1156,
+        "fromID": 340,
+        "toID": 317
+      },
+      {
+        "edgeID": 1157,
+        "fromID": 334,
+        "toID": 341
+      },
+      {
+        "edgeID": 1158,
+        "fromID": 341,
+        "toID": 340
+      },
+      {
+        "edgeID": 1159,
+        "fromID": 323,
+        "toID": 342
+      },
+      {
+        "edgeID": 1160,
+        "fromID": 342,
+        "toID": 321
+      },
+      {
+        "edgeID": 1161,
+        "fromID": 336,
+        "toID": 343
+      },
+      {
+        "edgeID": 1162,
+        "fromID": 343,
+        "toID": 342
+      },
+      {
+        "edgeID": 1163,
+        "fromID": 321,
+        "toID": 344
+      },
+      {
+        "edgeID": 1164,
+        "fromID": 344,
+        "toID": 8
+      },
+      {
+        "edgeID": 1165,
+        "fromID": 335,
+        "toID": 345
+      },
+      {
+        "edgeID": 1166,
+        "fromID": 345,
+        "toID": 344
+      },
+      {
+        "edgeID": 1167,
+        "fromID": 327,
+        "toID": 346
+      },
+      {
+        "edgeID": 1168,
+        "fromID": 346,
+        "toID": 325
+      },
+      {
+        "edgeID": 1169,
+        "fromID": 338,
+        "toID": 347
+      },
+      {
+        "edgeID": 1170,
+        "fromID": 347,
+        "toID": 346
+      },
+      {
+        "edgeID": 1171,
+        "fromID": 321,
+        "toID": 346,
+        "role": "lever"
+      },
+      {
+        "edgeID": 1172,
+        "fromID": 325,
+        "toID": 348
+      },
+      {
+        "edgeID": 1173,
+        "fromID": 348,
+        "toID": 215
+      },
+      {
+        "edgeID": 1174,
+        "fromID": 337,
+        "toID": 349
+      },
+      {
+        "edgeID": 1175,
+        "fromID": 349,
+        "toID": 348
+      },
+      {
+        "edgeID": 1176,
+        "fromID": 329,
+        "toID": 350
+      },
+      {
+        "edgeID": 1178,
+        "fromID": 316,
+        "toID": 351
+      },
+      {
+        "edgeID": 1179,
+        "fromID": 351,
+        "toID": 350
+      },
+      {
+        "edgeID": 1183,
+        "fromID": 1180,
+        "toID": 1181
+      },
+      {
+        "edgeID": 1184,
+        "fromID": 1181,
+        "toID": 1182
+      },
+      {
+        "edgeID": 1186,
+        "fromID": 1180,
+        "toID": 333
+      },
+      {
+        "edgeID": 1187,
+        "fromID": 1185,
+        "toID": 1180
+      },
+      {
+        "edgeID": 1188,
+        "fromID": 249,
+        "toID": 1185
+      },
+      {
+        "edgeID": 1189,
+        "fromID": 1190,
+        "toID": 1191
+      },
+      {
+        "edgeID": 1190,
+        "fromID": 1191,
+        "toID": 1182
+      },
+      {
+        "edgeID": 1191,
+        "fromID": 333,
+        "toID": 1192
+      },
+      {
+        "edgeID": 1192,
+        "fromID": 1192,
+        "toID": 1191
+      },
+      {
+        "edgeID": 1199,
+        "fromID": 315,
+        "toID": 1198
+      },
+      {
+        "edgeID": 1200,
+        "fromID": 1198,
+        "toID": 1197
+      },
+      {
+        "edgeID": 1201,
+        "fromID": 316,
+        "toID": 1199
+      },
+      {
+        "edgeID": 1202,
+        "fromID": 1199,
+        "toID": 327
+      },
+      {
+        "edgeID": 1203,
+        "fromID": 350,
+        "toID": 327
+      },
+      {
+        "edgeID": 1204,
+        "fromID": 1197,
+        "toID": 350,
+        "role": "lever"
+      }
+    ],
+    "schemefulfillments": [],
+    "locutions": [
+      {
+        "nodeID": 1,
+        "personID": 1,
+        "start": 3,
+        "end": 48
+      },
+      {
+        "nodeID": 6,
+        "personID": 1,
+        "start": 54,
+        "end": 105
+      },
+      {
+        "nodeID": 11,
+        "personID": 1,
+        "start": 111,
+        "end": 165
+      },
+      {
+        "nodeID": 16,
+        "personID": 1,
+        "start": 170,
+        "end": 196
+      },
+      {
+        "nodeID": 21,
+        "personID": 1,
+        "start": 204,
+        "end": 229
+      },
+      {
+        "nodeID": 26,
+        "personID": 2,
+        "start": 235,
+        "end": 253
+      },
+      {
+        "nodeID": 31,
+        "personID": 1,
+        "start": 255,
+        "end": 299
+      },
+      {
+        "nodeID": 36,
+        "personID": 1,
+        "start": 314,
+        "end": 333
+      },
+      {
+        "nodeID": 135,
+        "personID": 1,
+        "start": 347,
+        "end": 395
+      },
+      {
+        "nodeID": 140,
+        "personID": 1,
+        "start": 397,
+        "end": 462
+      },
+      {
+        "nodeID": 145,
+        "personID": 1,
+        "start": 464,
+        "end": 525
+      },
+      {
+        "nodeID": 150,
+        "personID": 1,
+        "start": 537,
+        "end": 569
+      },
+      {
+        "nodeID": 197,
+        "personID": 3,
+        "start": 610,
+        "end": 719
+      },
+      {
+        "nodeID": 202,
+        "personID": 1,
+        "start": 590,
+        "end": 609
+      },
+      {
+        "nodeID": 208,
+        "personID": 1,
+        "start": 721,
+        "end": 782
+      },
+      {
+        "nodeID": 213,
+        "personID": 1,
+        "start": 784,
+        "end": 809
+      },
+      {
+        "nodeID": 249,
+        "personID": 1,
+        "start": 818,
+        "end": 873
+      },
+      {
+        "nodeID": 310,
+        "personID": 1,
+        "start": 924,
+        "end": 994
+      },
+      {
+        "nodeID": 311,
+        "personID": 1,
+        "start": 996,
+        "end": 1060
+      },
+      {
+        "nodeID": 312,
+        "personID": 1,
+        "start": 1068,
+        "end": 1137
+      },
+      {
+        "nodeID": 313,
+        "personID": 1,
+        "start": 1139,
+        "end": 1260
+      },
+      {
+        "nodeID": 314,
+        "personID": 1,
+        "start": 1262,
+        "end": 1315
+      },
+      {
+        "nodeID": 315,
+        "personID": 1,
+        "start": 1321,
+        "end": 1441
+      },
+      {
+        "nodeID": 316,
+        "personID": 1,
+        "start": 1449,
+        "end": 1582
+      },
+      {
+        "nodeID": 1180,
+        "personID": 1,
+        "start": 897,
+        "end": 922
+      }
+    ],
+    "participants": [
+      {
+        "participantID": 1,
+        "firstname": "Thomas",
+        "surname": "Aquinas"
+      },
+      {
+        "participantID": 2,
+        "firstname": "Thessalonians",
+        "surname": ""
+      },
+      {
+        "participantID": 3,
+        "firstname": "Augustine",
+        "surname": ""
+      }
+    ]
+  },
+  "text": "1. Christian theology does not look like science. For every science advances from self-evident principles. Yet Christian theology advances from the articles of faith and these are not self-evident, since not everybody grants them; for not all have faith, says the second epistle to the Thessalonians. Consequently it is not a science. 2. Besides, a science is not concerned with individual cases. Sacred doctrine, however, deals with individual events and people, for instance the doings of Abraham, Isaac, Jacob and the like. Therefore sacred doctrine is not a science. ON THE OTHER HAND. Augustine says that this science alone is credited with begetting, nourishing, protecting, and making robust the healthiest faith. These functions belong to no science other than holy teaching. Therefore it is a science. REPLY: Christian theology should be pronounced to be a science. Yet bear in mind that sciences are of two kinds: some work from premises recognized in the innate light of intelligence, for instance arithmetic, geometry, and sciences of the same sort; while others work from premises recognized in the light of a higher science, for instance optics starts out from principles marked out by geometry and harmony from principles indicated by arithmetic. In this second manner is Christian theology a science, for it flows from founts recognized in the light of a higher science, namely God's very own which he shares with the blessed. Hence as harmony credits its principles which are taken from arithmetic so Christian theology takes on faith its principles revealed by God.\n",
+  "OVA": {
+    "firstname": "",
+    "surname": "",
+    "url": "",
+    "nodes": [
+      {
+        "nodeID": 1,
+        "visible": true,
+        "x": 569,
+        "y": 23
+      },
+      {
+        "nodeID": 2,
+        "visible": true,
+        "x": 346,
+        "y": 26
+      },
+      {
+        "nodeID": 3,
+        "visible": true,
+        "x": -11,
+        "y": 0
+      },
+      {
+        "nodeID": 48,
+        "visible": true,
+        "x": 636,
+        "y": 128
+      },
+      {
+        "nodeID": 6,
+        "visible": true,
+        "x": 569,
+        "y": 201
+      },
+      {
+        "nodeID": 7,
+        "visible": true,
+        "x": 346,
+        "y": 213
+      },
+      {
+        "nodeID": 8,
+        "visible": true,
+        "x": -11,
+        "y": 187
+      },
+      {
+        "nodeID": 47,
+        "visible": true,
+        "x": 636,
+        "y": 328
+      },
+      {
+        "nodeID": 103,
+        "visible": true,
+        "x": 47,
+        "y": 315
+      },
+      {
+        "nodeID": 110,
+        "visible": true,
+        "x": 346,
+        "y": 319
+      },
+      {
+        "nodeID": 11,
+        "visible": true,
+        "x": 569,
+        "y": 497
+      },
+      {
+        "nodeID": 12,
+        "visible": true,
+        "x": 346,
+        "y": 509
+      },
+      {
+        "nodeID": 13,
+        "visible": true,
+        "x": -11,
+        "y": 399
+      },
+      {
+        "nodeID": 96,
+        "visible": true,
+        "x": -11,
+        "y": 517
+      },
+      {
+        "nodeID": 46,
+        "visible": true,
+        "x": 636,
+        "y": 708
+      },
+      {
+        "nodeID": 97,
+        "visible": true,
+        "x": 47,
+        "y": 695
+      },
+      {
+        "nodeID": 107,
+        "visible": true,
+        "x": 346,
+        "y": 699
+      },
+      {
+        "nodeID": 16,
+        "visible": true,
+        "x": 569,
+        "y": 802
+      },
+      {
+        "nodeID": 17,
+        "visible": true,
+        "x": 346,
+        "y": 798
+      },
+      {
+        "nodeID": 18,
+        "visible": true,
+        "x": -11,
+        "y": 779
+      },
+      {
+        "nodeID": 45,
+        "visible": true,
+        "x": 636,
+        "y": 920
+      },
+      {
+        "nodeID": 89,
+        "visible": true,
+        "x": 47,
+        "y": 907
+      },
+      {
+        "nodeID": 92,
+        "visible": true,
+        "x": 346,
+        "y": 911
+      },
+      {
+        "nodeID": 21,
+        "visible": true,
+        "x": 569,
+        "y": 1073
+      },
+      {
+        "nodeID": 23,
+        "visible": true,
+        "x": -11,
+        "y": 1109
+      },
+      {
+        "nodeID": 124,
+        "visible": true,
+        "x": -11,
+        "y": 991
+      },
+      {
+        "nodeID": 74,
+        "visible": true,
+        "x": 636,
+        "y": 1250
+      },
+      {
+        "nodeID": 78,
+        "visible": true,
+        "x": 346,
+        "y": 1241
+      },
+      {
+        "nodeID": 80,
+        "visible": true,
+        "x": 48,
+        "y": 1237
+      },
+      {
+        "nodeID": 26,
+        "visible": true,
+        "x": 569,
+        "y": 1334
+      },
+      {
+        "nodeID": 27,
+        "visible": true,
+        "x": 346,
+        "y": 1322
+      },
+      {
+        "nodeID": 28,
+        "visible": true,
+        "x": -11,
+        "y": 1321
+      },
+      {
+        "nodeID": 42,
+        "visible": true,
+        "x": 636,
+        "y": 1426
+      },
+      {
+        "nodeID": 65,
+        "visible": true,
+        "x": 346,
+        "y": 1417
+      },
+      {
+        "nodeID": 68,
+        "visible": true,
+        "x": 48,
+        "y": 1413
+      },
+      {
+        "nodeID": 31,
+        "visible": true,
+        "x": 569,
+        "y": 1545
+      },
+      {
+        "nodeID": 32,
+        "visible": true,
+        "x": 346,
+        "y": 1508
+      },
+      {
+        "nodeID": 33,
+        "visible": true,
+        "x": -11,
+        "y": 1497
+      },
+      {
+        "nodeID": 121,
+        "visible": true,
+        "x": 56,
+        "y": 1684
+      },
+      {
+        "nodeID": 49,
+        "visible": true,
+        "x": 636,
+        "y": 1684
+      },
+      {
+        "nodeID": 117,
+        "visible": true,
+        "x": 346,
+        "y": 1675
+      },
+      {
+        "nodeID": 36,
+        "visible": true,
+        "x": 569,
+        "y": 1765
+      },
+      {
+        "nodeID": 37,
+        "visible": true,
+        "x": 346,
+        "y": 1761
+      },
+      {
+        "nodeID": 38,
+        "visible": true,
+        "x": -11,
+        "y": 1751
+      },
+      {
+        "nodeID": 129,
+        "visible": true,
+        "x": 338,
+        "y": 1029
+      },
+      {
+        "nodeID": 130,
+        "visible": true,
+        "x": 343,
+        "y": 1109
+      },
+      {
+        "nodeID": 135,
+        "visible": true,
+        "x": 569,
+        "y": 1952
+      },
+      {
+        "nodeID": 136,
+        "visible": true,
+        "x": 346,
+        "y": 1948
+      },
+      {
+        "nodeID": 137,
+        "visible": true,
+        "x": -11,
+        "y": 1920
+      },
+      {
+        "nodeID": 140,
+        "visible": true,
+        "x": 569,
+        "y": 2198
+      },
+      {
+        "nodeID": 141,
+        "visible": true,
+        "x": 346,
+        "y": 2163
+      },
+      {
+        "nodeID": 142,
+        "visible": true,
+        "x": -11,
+        "y": 2125
+      },
+      {
+        "nodeID": 145,
+        "visible": true,
+        "x": 569,
+        "y": 2485
+      },
+      {
+        "nodeID": 146,
+        "visible": true,
+        "x": 336,
+        "y": 2490
+      },
+      {
+        "nodeID": 147,
+        "visible": true,
+        "x": -11,
+        "y": 2455
+      },
+      {
+        "nodeID": 150,
+        "visible": true,
+        "x": 569,
+        "y": 2703
+      },
+      {
+        "nodeID": 151,
+        "visible": true,
+        "x": 346,
+        "y": 2699
+      },
+      {
+        "nodeID": 156,
+        "visible": true,
+        "x": 47,
+        "y": 2371
+      },
+      {
+        "nodeID": 157,
+        "visible": true,
+        "x": 636,
+        "y": 2628
+      },
+      {
+        "nodeID": 158,
+        "visible": true,
+        "x": 636,
+        "y": 2384
+      },
+      {
+        "nodeID": 159,
+        "visible": true,
+        "x": 636,
+        "y": 2066
+      },
+      {
+        "nodeID": 167,
+        "visible": true,
+        "x": 346,
+        "y": 2375
+      },
+      {
+        "nodeID": 194,
+        "visible": true,
+        "x": 636,
+        "y": 1861
+      },
+      {
+        "nodeID": 197,
+        "visible": true,
+        "x": 569,
+        "y": 3140
+      },
+      {
+        "nodeID": 198,
+        "visible": true,
+        "x": 343,
+        "y": 3154
+      },
+      {
+        "nodeID": 199,
+        "visible": true,
+        "x": -11,
+        "y": 3110
+      },
+      {
+        "nodeID": 202,
+        "visible": true,
+        "x": 569,
+        "y": 2896
+      },
+      {
+        "nodeID": 203,
+        "visible": true,
+        "x": 346,
+        "y": 2859
+      },
+      {
+        "nodeID": 208,
+        "visible": true,
+        "x": 569,
+        "y": 3386
+      },
+      {
+        "nodeID": 209,
+        "visible": true,
+        "x": 343,
+        "y": 3391
+      },
+      {
+        "nodeID": 210,
+        "visible": true,
+        "x": -11,
+        "y": 3347
+      },
+      {
+        "nodeID": 213,
+        "visible": true,
+        "x": 569,
+        "y": 3672
+      },
+      {
+        "nodeID": 214,
+        "visible": true,
+        "x": 343,
+        "y": 3668
+      },
+      {
+        "nodeID": 215,
+        "visible": true,
+        "x": -11,
+        "y": 3667
+      },
+      {
+        "nodeID": 219,
+        "visible": true,
+        "x": 636,
+        "y": 3039
+      },
+      {
+        "nodeID": 220,
+        "visible": true,
+        "x": 636,
+        "y": 3288
+      },
+      {
+        "nodeID": 227,
+        "visible": true,
+        "x": 636,
+        "y": 3567
+      },
+      {
+        "nodeID": 230,
+        "visible": true,
+        "x": 48,
+        "y": 3026
+      },
+      {
+        "nodeID": 233,
+        "visible": true,
+        "x": 346,
+        "y": 3030
+      },
+      {
+        "nodeID": 237,
+        "visible": true,
+        "x": -11,
+        "y": 2848
+      },
+      {
+        "nodeID": 242,
+        "visible": true,
+        "x": 47,
+        "y": 3530
+      },
+      {
+        "nodeID": 246,
+        "visible": true,
+        "x": 346,
+        "y": 3525
+      },
+      {
+        "nodeID": 249,
+        "visible": true,
+        "x": 569,
+        "y": 3818
+      },
+      {
+        "nodeID": 257,
+        "visible": true,
+        "x": 636,
+        "y": 3759
+      },
+      {
+        "nodeID": 300,
+        "visible": true,
+        "x": 346,
+        "y": 1574
+      },
+      {
+        "nodeID": 301,
+        "visible": true,
+        "x": -11,
+        "y": 2243
+      },
+      {
+        "nodeID": 302,
+        "visible": true,
+        "x": 336,
+        "y": 2243
+      },
+      {
+        "nodeID": 303,
+        "visible": true,
+        "x": 47,
+        "y": 2615
+      },
+      {
+        "nodeID": 304,
+        "visible": true,
+        "x": 346,
+        "y": 2619
+      },
+      {
+        "nodeID": 305,
+        "visible": true,
+        "x": 346,
+        "y": 2925
+      },
+      {
+        "nodeID": 306,
+        "visible": true,
+        "x": 636,
+        "y": 2789
+      },
+      {
+        "nodeID": 307,
+        "visible": true,
+        "x": 56,
+        "y": 3604
+      },
+      {
+        "nodeID": 308,
+        "visible": true,
+        "x": 346,
+        "y": 3591
+      },
+      {
+        "nodeID": 309,
+        "visible": true,
+        "x": 346,
+        "y": 3831
+      },
+      {
+        "nodeID": 310,
+        "visible": true,
+        "x": 569,
+        "y": 4143
+      },
+      {
+        "nodeID": 311,
+        "visible": true,
+        "x": 569,
+        "y": 4371
+      },
+      {
+        "nodeID": 312,
+        "visible": true,
+        "x": 569,
+        "y": 4616
+      },
+      {
+        "nodeID": 313,
+        "visible": true,
+        "x": 569,
+        "y": 4860
+      },
+      {
+        "nodeID": 314,
+        "visible": true,
+        "x": 569,
+        "y": 5115
+      },
+      {
+        "nodeID": 315,
+        "visible": true,
+        "x": 569,
+        "y": 5334
+      },
+      {
+        "nodeID": 316,
+        "visible": true,
+        "x": 569,
+        "y": 5684
+      },
+      {
+        "nodeID": 317,
+        "visible": true,
+        "x": -11,
+        "y": 4129
+      },
+      {
+        "nodeID": 318,
+        "visible": true,
+        "x": 341,
+        "y": 4148
+      },
+      {
+        "nodeID": 319,
+        "visible": true,
+        "x": -11,
+        "y": 4341
+      },
+      {
+        "nodeID": 320,
+        "visible": true,
+        "x": 341,
+        "y": 4376
+      },
+      {
+        "nodeID": 321,
+        "visible": true,
+        "x": -11,
+        "y": 4577
+      },
+      {
+        "nodeID": 322,
+        "visible": true,
+        "x": 341,
+        "y": 4621
+      },
+      {
+        "nodeID": 323,
+        "visible": true,
+        "x": -11,
+        "y": 4839
+      },
+      {
+        "nodeID": 324,
+        "visible": true,
+        "x": 341,
+        "y": 4883
+      },
+      {
+        "nodeID": 325,
+        "visible": true,
+        "x": -11,
+        "y": 5101
+      },
+      {
+        "nodeID": 326,
+        "visible": true,
+        "x": 346,
+        "y": 5120
+      },
+      {
+        "nodeID": 327,
+        "visible": true,
+        "x": -11,
+        "y": 5313
+      },
+      {
+        "nodeID": 328,
+        "visible": true,
+        "x": 343,
+        "y": 5357
+      },
+      {
+        "nodeID": 329,
+        "visible": true,
+        "x": -11,
+        "y": 5550
+      },
+      {
+        "nodeID": 331,
+        "visible": true,
+        "x": 346,
+        "y": 5634
+      },
+      {
+        "nodeID": 333,
+        "visible": true,
+        "x": 636,
+        "y": 4070
+      },
+      {
+        "nodeID": 334,
+        "visible": true,
+        "x": 636,
+        "y": 4270
+      },
+      {
+        "nodeID": 335,
+        "visible": true,
+        "x": 636,
+        "y": 4510
+      },
+      {
+        "nodeID": 336,
+        "visible": true,
+        "x": 636,
+        "y": 4768
+      },
+      {
+        "nodeID": 337,
+        "visible": true,
+        "x": 636,
+        "y": 5030
+      },
+      {
+        "nodeID": 338,
+        "visible": true,
+        "x": 636,
+        "y": 5242
+      },
+      {
+        "nodeID": 339,
+        "visible": true,
+        "x": 636,
+        "y": 5491
+      },
+      {
+        "nodeID": 340,
+        "visible": true,
+        "x": 48,
+        "y": 4257
+      },
+      {
+        "nodeID": 341,
+        "visible": true,
+        "x": 346,
+        "y": 4261
+      },
+      {
+        "nodeID": 342,
+        "visible": true,
+        "x": 48,
+        "y": 4755
+      },
+      {
+        "nodeID": 343,
+        "visible": true,
+        "x": 346,
+        "y": 4759
+      },
+      {
+        "nodeID": 344,
+        "visible": true,
+        "x": 56,
+        "y": 4510
+      },
+      {
+        "nodeID": 345,
+        "visible": true,
+        "x": 346,
+        "y": 4501
+      },
+      {
+        "nodeID": 346,
+        "visible": true,
+        "x": 47,
+        "y": 5229
+      },
+      {
+        "nodeID": 347,
+        "visible": true,
+        "x": 346,
+        "y": 5233
+      },
+      {
+        "nodeID": 348,
+        "visible": true,
+        "x": 47,
+        "y": 5017
+      },
+      {
+        "nodeID": 349,
+        "visible": true,
+        "x": 346,
+        "y": 5021
+      },
+      {
+        "nodeID": 350,
+        "visible": true,
+        "x": 49,
+        "y": 5701
+      },
+      {
+        "nodeID": 351,
+        "visible": true,
+        "x": 346,
+        "y": 5794
+      },
+      {
+        "nodeID": 1180,
+        "visible": true,
+        "x": 569,
+        "y": 3983
+      },
+      {
+        "nodeID": 1181,
+        "visible": true,
+        "x": 346,
+        "y": 3986
+      },
+      {
+        "nodeID": 1182,
+        "visible": true,
+        "x": -11,
+        "y": 3978
+      },
+      {
+        "nodeID": 1185,
+        "visible": true,
+        "x": 636,
+        "y": 3919
+      },
+      {
+        "nodeID": 1190,
+        "visible": true,
+        "x": -340,
+        "y": 3978
+      },
+      {
+        "nodeID": 1191,
+        "visible": true,
+        "x": -250,
+        "y": 4070
+      },
+      {
+        "nodeID": 1192,
+        "visible": true,
+        "x": 346,
+        "y": 4070
+      },
+      {
+        "nodeID": 1197,
+        "visible": true,
+        "x": -11,
+        "y": 5433
+      },
+      {
+        "nodeID": 1198,
+        "visible": true,
+        "x": 343,
+        "y": 5477
+      },
+      {
+        "nodeID": 1199,
+        "visible": true,
+        "x": 346,
+        "y": 5714
+      }
+    ],
+    "edges": [
+      {
+        "fromID": 1,
+        "toID": 2,
+        "visible": true
+      },
+      {
+        "fromID": 2,
+        "toID": 3,
+        "visible": true
+      },
+      {
+        "fromID": 6,
+        "toID": 7,
+        "visible": true
+      },
+      {
+        "fromID": 7,
+        "toID": 8,
+        "visible": true
+      },
+      {
+        "fromID": 11,
+        "toID": 12,
+        "visible": true
+      },
+      {
+        "fromID": 12,
+        "toID": 13,
+        "visible": true
+      },
+      {
+        "fromID": 16,
+        "toID": 17,
+        "visible": true
+      },
+      {
+        "fromID": 17,
+        "toID": 18,
+        "visible": true
+      },
+      {
+        "fromID": 26,
+        "toID": 27,
+        "visible": true
+      },
+      {
+        "fromID": 27,
+        "toID": 28,
+        "visible": true
+      },
+      {
+        "fromID": 31,
+        "toID": 32,
+        "visible": true
+      },
+      {
+        "fromID": 36,
+        "toID": 37,
+        "visible": true
+      },
+      {
+        "fromID": 37,
+        "toID": 38,
+        "visible": true
+      },
+      {
+        "fromID": 32,
+        "toID": 26,
+        "visible": true
+      },
+      {
+        "fromID": 1,
+        "toID": 48,
+        "visible": true
+      },
+      {
+        "fromID": 48,
+        "toID": 6,
+        "visible": true
+      },
+      {
+        "fromID": 6,
+        "toID": 47,
+        "visible": true
+      },
+      {
+        "fromID": 47,
+        "toID": 11,
+        "visible": true
+      },
+      {
+        "fromID": 11,
+        "toID": 46,
+        "visible": true
+      },
+      {
+        "fromID": 46,
+        "toID": 16,
+        "visible": true
+      },
+      {
+        "fromID": 16,
+        "toID": 45,
+        "visible": true
+      },
+      {
+        "fromID": 45,
+        "toID": 21,
+        "visible": true
+      },
+      {
+        "fromID": 42,
+        "toID": 31,
+        "visible": true
+      },
+      {
+        "fromID": 31,
+        "toID": 49,
+        "visible": true
+      },
+      {
+        "fromID": 49,
+        "toID": 36,
+        "visible": true
+      },
+      {
+        "fromID": 42,
+        "toID": 65,
+        "visible": true
+      },
+      {
+        "fromID": 68,
+        "toID": 28,
+        "visible": true
+      },
+      {
+        "fromID": 33,
+        "toID": 68,
+        "visible": true
+      },
+      {
+        "fromID": 65,
+        "toID": 68,
+        "visible": true
+      },
+      {
+        "fromID": 21,
+        "toID": 74,
+        "visible": true
+      },
+      {
+        "fromID": 74,
+        "toID": 26,
+        "visible": true
+      },
+      {
+        "fromID": 26,
+        "toID": 42,
+        "visible": true
+      },
+      {
+        "fromID": 74,
+        "toID": 78,
+        "visible": true
+      },
+      {
+        "fromID": 78,
+        "toID": 80,
+        "visible": true
+      },
+      {
+        "fromID": 80,
+        "toID": 23,
+        "visible": true
+      },
+      {
+        "fromID": 28,
+        "toID": 80,
+        "visible": true
+      },
+      {
+        "fromID": 45,
+        "toID": 92,
+        "visible": true
+      },
+      {
+        "fromID": 92,
+        "toID": 89,
+        "visible": true
+      },
+      {
+        "fromID": 97,
+        "toID": 96,
+        "visible": true
+      },
+      {
+        "fromID": 13,
+        "toID": 97,
+        "visible": true
+      },
+      {
+        "fromID": 96,
+        "toID": 103,
+        "visible": true
+      },
+      {
+        "fromID": 8,
+        "toID": 103,
+        "visible": true
+      },
+      {
+        "fromID": 46,
+        "toID": 107,
+        "visible": true
+      },
+      {
+        "fromID": 107,
+        "toID": 97,
+        "visible": true
+      },
+      {
+        "fromID": 47,
+        "toID": 110,
+        "visible": true
+      },
+      {
+        "fromID": 110,
+        "toID": 103,
+        "visible": true
+      },
+      {
+        "fromID": 103,
+        "toID": 3,
+        "visible": true
+      },
+      {
+        "fromID": 49,
+        "toID": 117,
+        "visible": true
+      },
+      {
+        "fromID": 18,
+        "toID": 97,
+        "visible": true
+      },
+      {
+        "fromID": 121,
+        "toID": 38,
+        "visible": true
+      },
+      {
+        "fromID": 3,
+        "toID": 121,
+        "visible": true
+      },
+      {
+        "fromID": 89,
+        "toID": 18,
+        "visible": true
+      },
+      {
+        "fromID": 124,
+        "toID": 89,
+        "visible": true
+      },
+      {
+        "fromID": 117,
+        "toID": 121,
+        "visible": true
+      },
+      {
+        "fromID": 130,
+        "toID": 23,
+        "visible": true
+      },
+      {
+        "fromID": 129,
+        "toID": 124,
+        "visible": true
+      },
+      {
+        "fromID": 21,
+        "toID": 130,
+        "visible": true
+      },
+      {
+        "fromID": 21,
+        "toID": 129,
+        "visible": true
+      },
+      {
+        "fromID": 135,
+        "toID": 136,
+        "visible": true
+      },
+      {
+        "fromID": 136,
+        "toID": 137,
+        "visible": true
+      },
+      {
+        "fromID": 140,
+        "toID": 141,
+        "visible": true
+      },
+      {
+        "fromID": 141,
+        "toID": 142,
+        "visible": true
+      },
+      {
+        "fromID": 145,
+        "toID": 146,
+        "visible": true
+      },
+      {
+        "fromID": 146,
+        "toID": 147,
+        "visible": true
+      },
+      {
+        "fromID": 150,
+        "toID": 151,
+        "visible": true
+      },
+      {
+        "fromID": 159,
+        "toID": 140,
+        "visible": true
+      },
+      {
+        "fromID": 140,
+        "toID": 158,
+        "visible": true
+      },
+      {
+        "fromID": 158,
+        "toID": 145,
+        "visible": true
+      },
+      {
+        "fromID": 145,
+        "toID": 157,
+        "visible": true
+      },
+      {
+        "fromID": 157,
+        "toID": 150,
+        "visible": true
+      },
+      {
+        "fromID": 135,
+        "toID": 159,
+        "visible": true
+      },
+      {
+        "fromID": 158,
+        "toID": 167,
+        "visible": true
+      },
+      {
+        "fromID": 167,
+        "toID": 156,
+        "visible": true
+      },
+      {
+        "fromID": 36,
+        "toID": 194,
+        "visible": true
+      },
+      {
+        "fromID": 194,
+        "toID": 135,
+        "visible": true
+      },
+      {
+        "fromID": 197,
+        "toID": 198,
+        "visible": true
+      },
+      {
+        "fromID": 198,
+        "toID": 199,
+        "visible": true
+      },
+      {
+        "fromID": 202,
+        "toID": 203,
+        "visible": true
+      },
+      {
+        "fromID": 203,
+        "toID": 197,
+        "visible": true
+      },
+      {
+        "fromID": 208,
+        "toID": 209,
+        "visible": true
+      },
+      {
+        "fromID": 209,
+        "toID": 210,
+        "visible": true
+      },
+      {
+        "fromID": 213,
+        "toID": 214,
+        "visible": true
+      },
+      {
+        "fromID": 214,
+        "toID": 215,
+        "visible": true
+      },
+      {
+        "fromID": 202,
+        "toID": 219,
+        "visible": true
+      },
+      {
+        "fromID": 219,
+        "toID": 197,
+        "visible": true
+      },
+      {
+        "fromID": 197,
+        "toID": 220,
+        "visible": true
+      },
+      {
+        "fromID": 220,
+        "toID": 208,
+        "visible": true
+      },
+      {
+        "fromID": 208,
+        "toID": 227,
+        "visible": true
+      },
+      {
+        "fromID": 227,
+        "toID": 213,
+        "visible": true
+      },
+      {
+        "fromID": 230,
+        "toID": 199,
+        "visible": true
+      },
+      {
+        "fromID": 219,
+        "toID": 233,
+        "visible": true
+      },
+      {
+        "fromID": 233,
+        "toID": 230,
+        "visible": true
+      },
+      {
+        "fromID": 237,
+        "toID": 230,
+        "visible": true
+      },
+      {
+        "fromID": 210,
+        "toID": 242,
+        "visible": true
+      },
+      {
+        "fromID": 242,
+        "toID": 215,
+        "visible": true
+      },
+      {
+        "fromID": 199,
+        "toID": 242,
+        "visible": true
+      },
+      {
+        "fromID": 227,
+        "toID": 246,
+        "visible": true
+      },
+      {
+        "fromID": 246,
+        "toID": 242,
+        "visible": true
+      },
+      {
+        "fromID": 213,
+        "toID": 257,
+        "visible": true
+      },
+      {
+        "fromID": 257,
+        "toID": 249,
+        "visible": true
+      },
+      {
+        "fromID": 31,
+        "toID": 300,
+        "visible": true
+      },
+      {
+        "fromID": 300,
+        "toID": 33,
+        "visible": true
+      },
+      {
+        "fromID": 140,
+        "toID": 302,
+        "visible": true
+      },
+      {
+        "fromID": 302,
+        "toID": 301,
+        "visible": true
+      },
+      {
+        "fromID": 147,
+        "toID": 156,
+        "visible": true
+      },
+      {
+        "fromID": 156,
+        "toID": 301,
+        "visible": true
+      },
+      {
+        "fromID": 151,
+        "toID": 38,
+        "visible": true
+      },
+      {
+        "fromID": 142,
+        "toID": 303,
+        "visible": true
+      },
+      {
+        "fromID": 303,
+        "toID": 38,
+        "visible": true
+      },
+      {
+        "fromID": 157,
+        "toID": 304,
+        "visible": true
+      },
+      {
+        "fromID": 304,
+        "toID": 303,
+        "visible": true
+      },
+      {
+        "fromID": 137,
+        "toID": 303,
+        "visible": true
+      },
+      {
+        "fromID": 202,
+        "toID": 305,
+        "visible": true
+      },
+      {
+        "fromID": 305,
+        "toID": 237,
+        "visible": true
+      },
+      {
+        "fromID": 150,
+        "toID": 306,
+        "visible": true
+      },
+      {
+        "fromID": 306,
+        "toID": 202,
+        "visible": true
+      },
+      {
+        "fromID": 150,
+        "toID": 227,
+        "visible": true
+      },
+      {
+        "fromID": 215,
+        "toID": 307,
+        "visible": true
+      },
+      {
+        "fromID": 307,
+        "toID": 38,
+        "visible": true
+      },
+      {
+        "fromID": 227,
+        "toID": 308,
+        "visible": true
+      },
+      {
+        "fromID": 308,
+        "toID": 307,
+        "visible": true
+      },
+      {
+        "fromID": 249,
+        "toID": 309,
+        "visible": true
+      },
+      {
+        "fromID": 309,
+        "toID": 215,
+        "visible": true
+      },
+      {
+        "fromID": 310,
+        "toID": 318,
+        "visible": true
+      },
+      {
+        "fromID": 318,
+        "toID": 317,
+        "visible": true
+      },
+      {
+        "fromID": 311,
+        "toID": 320,
+        "visible": true
+      },
+      {
+        "fromID": 320,
+        "toID": 319,
+        "visible": true
+      },
+      {
+        "fromID": 312,
+        "toID": 322,
+        "visible": true
+      },
+      {
+        "fromID": 322,
+        "toID": 321,
+        "visible": true
+      },
+      {
+        "fromID": 313,
+        "toID": 324,
+        "visible": true
+      },
+      {
+        "fromID": 324,
+        "toID": 323,
+        "visible": true
+      },
+      {
+        "fromID": 314,
+        "toID": 326,
+        "visible": true
+      },
+      {
+        "fromID": 326,
+        "toID": 325,
+        "visible": true
+      },
+      {
+        "fromID": 315,
+        "toID": 328,
+        "visible": true
+      },
+      {
+        "fromID": 328,
+        "toID": 327,
+        "visible": true
+      },
+      {
+        "fromID": 316,
+        "toID": 331,
+        "visible": true
+      },
+      {
+        "fromID": 331,
+        "toID": 329,
+        "visible": true
+      },
+      {
+        "fromID": 333,
+        "toID": 310,
+        "visible": true
+      },
+      {
+        "fromID": 310,
+        "toID": 334,
+        "visible": true
+      },
+      {
+        "fromID": 334,
+        "toID": 311,
+        "visible": true
+      },
+      {
+        "fromID": 311,
+        "toID": 335,
+        "visible": true
+      },
+      {
+        "fromID": 6,
+        "toID": 335,
+        "visible": true
+      },
+      {
+        "fromID": 335,
+        "toID": 312,
+        "visible": true
+      },
+      {
+        "fromID": 312,
+        "toID": 336,
+        "visible": true
+      },
+      {
+        "fromID": 336,
+        "toID": 313,
+        "visible": true
+      },
+      {
+        "fromID": 313,
+        "toID": 337,
+        "visible": true
+      },
+      {
+        "fromID": 249,
+        "toID": 337,
+        "visible": true
+      },
+      {
+        "fromID": 337,
+        "toID": 314,
+        "visible": true
+      },
+      {
+        "fromID": 314,
+        "toID": 338,
+        "visible": true
+      },
+      {
+        "fromID": 338,
+        "toID": 315,
+        "visible": true
+      },
+      {
+        "fromID": 315,
+        "toID": 339,
+        "visible": true
+      },
+      {
+        "fromID": 339,
+        "toID": 316,
+        "visible": true
+      },
+      {
+        "fromID": 319,
+        "toID": 340,
+        "visible": true
+      },
+      {
+        "fromID": 340,
+        "toID": 317,
+        "visible": true
+      },
+      {
+        "fromID": 334,
+        "toID": 341,
+        "visible": true
+      },
+      {
+        "fromID": 341,
+        "toID": 340,
+        "visible": true
+      },
+      {
+        "fromID": 323,
+        "toID": 342,
+        "visible": true
+      },
+      {
+        "fromID": 342,
+        "toID": 321,
+        "visible": true
+      },
+      {
+        "fromID": 336,
+        "toID": 343,
+        "visible": true
+      },
+      {
+        "fromID": 343,
+        "toID": 342,
+        "visible": true
+      },
+      {
+        "fromID": 321,
+        "toID": 344,
+        "visible": true
+      },
+      {
+        "fromID": 344,
+        "toID": 8,
+        "visible": true
+      },
+      {
+        "fromID": 335,
+        "toID": 345,
+        "visible": true
+      },
+      {
+        "fromID": 345,
+        "toID": 344,
+        "visible": true
+      },
+      {
+        "fromID": 327,
+        "toID": 346,
+        "visible": true
+      },
+      {
+        "fromID": 346,
+        "toID": 325,
+        "visible": true
+      },
+      {
+        "fromID": 338,
+        "toID": 347,
+        "visible": true
+      },
+      {
+        "fromID": 347,
+        "toID": 346,
+        "visible": true
+      },
+      {
+        "fromID": 321,
+        "toID": 346,
+        "visible": true
+      },
+      {
+        "fromID": 325,
+        "toID": 348,
+        "visible": true
+      },
+      {
+        "fromID": 348,
+        "toID": 215,
+        "visible": true
+      },
+      {
+        "fromID": 337,
+        "toID": 349,
+        "visible": true
+      },
+      {
+        "fromID": 349,
+        "toID": 348,
+        "visible": true
+      },
+      {
+        "fromID": 329,
+        "toID": 350,
+        "visible": true
+      },
+      {
+        "fromID": 316,
+        "toID": 351,
+        "visible": true
+      },
+      {
+        "fromID": 351,
+        "toID": 350,
+        "visible": true
+      },
+      {
+        "fromID": 1180,
+        "toID": 1181,
+        "visible": true
+      },
+      {
+        "fromID": 1181,
+        "toID": 1182,
+        "visible": true
+      },
+      {
+        "fromID": 1180,
+        "toID": 333,
+        "visible": true
+      },
+      {
+        "fromID": 1185,
+        "toID": 1180,
+        "visible": true
+      },
+      {
+        "fromID": 249,
+        "toID": 1185,
+        "visible": true
+      },
+      {
+        "fromID": 1190,
+        "toID": 1191,
+        "visible": true
+      },
+      {
+        "fromID": 1191,
+        "toID": 1182,
+        "visible": true
+      },
+      {
+        "fromID": 333,
+        "toID": 1192,
+        "visible": true
+      },
+      {
+        "fromID": 1192,
+        "toID": 1191,
+        "visible": true
+      },
+      {
+        "fromID": 315,
+        "toID": 1198,
+        "visible": true
+      },
+      {
+        "fromID": 1198,
+        "toID": 1197,
+        "visible": true
+      },
+      {
+        "fromID": 316,
+        "toID": 1199,
+        "visible": true
+      },
+      {
+        "fromID": 1199,
+        "toID": 327,
+        "visible": true
+      },
+      {
+        "fromID": 350,
+        "toID": 327,
+        "visible": true
+      },
+      {
+        "fromID": 1197,
+        "toID": 350,
+        "visible": true
+      }
+    ]
+  }
+}

@@ -23,6 +23,11 @@
         }
       },
       {
+        "nodeID": 48,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
         "nodeID": 6,
         "type": "L",
         "text": "Thomas Aquinas: every science advances from self-evident principles"
@@ -42,6 +47,30 @@
           "kind": "V",
           "scope": "u"
         }
+      },
+      {
+        "nodeID": 47,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 103,
+        "type": "RA",
+        "text": "α VV Dis",
+        "pta": {
+          "lever": "DISQUALIFIER",
+          "concepts": [
+            "theology",
+            "theology/christian",
+            "science",
+            "self-evidence"
+          ]
+        }
+      },
+      {
+        "nodeID": 110,
+        "type": "YA",
+        "text": "Arguing"
       },
       {
         "nodeID": 11,
@@ -65,6 +94,42 @@
         }
       },
       {
+        "nodeID": 96,
+        "type": "I",
+        "text": "Christian theology does not advance from self-evident principles",
+        "pta": {
+          "subject": "Christian theology",
+          "predicate": "does not advance from self-evident principles",
+          "kind": "V",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 46,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 97,
+        "type": "RA",
+        "text": "α VV Dis",
+        "pta": {
+          "lever": "DISQUALIFIER",
+          "concepts": [
+            "faith",
+            "science",
+            "self-evidence",
+            "theology",
+            "theology/christian"
+          ]
+        }
+      },
+      {
+        "nodeID": 107,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
         "nodeID": 16,
         "type": "L",
         "text": "Thomas Aquinas: these are not self-evident"
@@ -72,7 +137,12 @@
       {
         "nodeID": 17,
         "type": "YA",
-        "text": "Asserting"
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora"
+          ]
+        }
       },
       {
         "nodeID": 18,
@@ -86,24 +156,73 @@
         }
       },
       {
+        "nodeID": 45,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 89,
+        "type": "RA",
+        "text": "α VF Cr",
+        "pta": {
+          "lever": "CRITERION",
+          "concepts": [
+            "faith",
+            "self-evidence"
+          ]
+        }
+      },
+      {
+        "nodeID": 92,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
         "nodeID": 21,
         "type": "L",
         "text": "Thomas Aquinas: not everybody grants them"
       },
       {
-        "nodeID": 22,
-        "type": "YA",
-        "text": "Asserting"
-      },
-      {
         "nodeID": 23,
         "type": "I",
-        "text": "everybody does not grants them",
+        "text": "some people do not grant the articles of faith",
         "pta": {
-          "subject": "everybody",
-          "predicate": "does not grants them",
+          "subject": "some people",
+          "predicate": "do not grant the articles of faith",
           "kind": "F",
-          "scope": "u"
+          "scope": "p"
+        }
+      },
+      {
+        "nodeID": 124,
+        "type": "I",
+        "text": "The articles of faith are not granted by all",
+        "pta": {
+          "subject": "the articles of faith",
+          "predicate": "are not granted by all",
+          "kind": "F",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 74,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 78,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 80,
+        "type": "RA",
+        "text": "α FF Cau",
+        "pta": {
+          "lever": "CAUSE",
+          "concepts": [
+            "faith"
+          ]
         }
       },
       {
@@ -114,18 +233,45 @@
       {
         "nodeID": 27,
         "type": "YA",
-        "text": "Asserting"
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "activization"
+          ]
+        }
       },
       {
         "nodeID": 28,
         "type": "I",
-        "text": "all people do not have faith",
+        "text": "some people do not have faith",
         "pta": {
-          "subject": "all people",
+          "subject": "some people",
           "predicate": "do not have faith",
           "kind": "F",
-          "scope": "u",
-          "note": "should this be a contradicted statement? i.e. \"all people have faith\" with the thessalonians CA'ing it?\nThe way this is worded it sounds like \"nobody has faith,\" when what I mean is \"it is not the case that everybody has faith\""
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 42,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 65,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 68,
+        "type": "RA",
+        "text": "δ III Exp",
+        "pta": {
+          "lever": "EPISTEMICALLY AUTHORITATIVE",
+          "concepts": [
+            "faith",
+            "theology/christian",
+            "theology"
+          ]
         }
       },
       {
@@ -141,13 +287,27 @@
       {
         "nodeID": 33,
         "type": "I",
-        "text": "\"all people do not have faith\" is said by the second epistle to the Thessalonians",
+        "text": "\"some people do not have faith\" is said by the second epistle to the Thessalonians",
         "pta": {
           "subjectNode": "28",
           "predicate": "is said by the second epistle to the Thessalonians",
-          "perspective": "III",
-          "acceptability": "A"
+          "perspective": "III"
         }
+      },
+      {
+        "nodeID": 121,
+        "type": "MA",
+        "text": "Default Rephrase"
+      },
+      {
+        "nodeID": 49,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 117,
+        "type": "YA",
+        "text": "Restating"
       },
       {
         "nodeID": 36,
@@ -157,7 +317,12 @@
       {
         "nodeID": 37,
         "type": "YA",
-        "text": "Asserting"
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora"
+          ]
+        }
       },
       {
         "nodeID": 38,
@@ -169,6 +334,381 @@
           "kind": "V",
           "scope": "s"
         }
+      },
+      {
+        "nodeID": 129,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora",
+            "activization"
+          ]
+        }
+      },
+      {
+        "nodeID": 130,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora",
+            "activization"
+          ]
+        }
+      },
+      {
+        "nodeID": 135,
+        "type": "L",
+        "text": "Thomas Aquinas: a science is not concerned with individual cases"
+      },
+      {
+        "nodeID": 136,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "activization"
+          ]
+        }
+      },
+      {
+        "nodeID": 137,
+        "type": "I",
+        "text": "no science is concerned with individual cases",
+        "pta": {
+          "subject": "no science",
+          "predicate": "is concerned with individual cases",
+          "kind": "F",
+          "scope": "p"
+        }
+      },
+      {
+        "nodeID": 140,
+        "type": "L",
+        "text": "Thomas Aquinas: Sacred doctrine, however, deals with individual events and people"
+      },
+      {
+        "nodeID": 141,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "same term"
+          ]
+        }
+      },
+      {
+        "nodeID": 142,
+        "type": "I",
+        "text": "Sacred doctrine is concerned with individual cases",
+        "pta": {
+          "subject": "sacred doctrine",
+          "predicate": "is concerned with individual cases",
+          "kind": "F",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 145,
+        "type": "L",
+        "text": "Thomas Aquinas: for instance the doings of Abraham, Isaac, Jacob and the like"
+      },
+      {
+        "nodeID": 146,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "explication"
+          ]
+        }
+      },
+      {
+        "nodeID": 147,
+        "type": "I",
+        "text": "the doings of Abraham, Isaac, Jacob and the like is concerned with individual cases",
+        "pta": {
+          "subject": "the doings of Abraham, Isaac, Jacob and the like ",
+          "predicate": "is concerned with individual cases",
+          "kind": "F",
+          "scope": "p"
+        }
+      },
+      {
+        "nodeID": 150,
+        "type": "L",
+        "text": "Thomas Aquinas: sacred doctrine is not a science"
+      },
+      {
+        "nodeID": 151,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "activization"
+          ]
+        }
+      },
+      {
+        "nodeID": 152,
+        "type": "I",
+        "text": "no science is sacred doctrine",
+        "pta": {
+          "subject": "no science",
+          "predicate": "is sacred doctrine",
+          "kind": "V",
+          "scope": "p"
+        }
+      },
+      {
+        "nodeID": 156,
+        "type": "RA",
+        "text": "β up Exa",
+        "pta": {
+          "lever": "EXAMPLE"
+        }
+      },
+      {
+        "nodeID": 157,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 158,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 159,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 166,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 167,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 174,
+        "type": "RA",
+        "text": "α VF Cr",
+        "pta": {
+          "lever": "CRITERION"
+        }
+      },
+      {
+        "nodeID": 180,
+        "type": "L",
+        "text": "Thomas Aquinas: ON THE OTHER HAND"
+      },
+      {
+        "nodeID": 181,
+        "type": "YA",
+        "text": "Challenging"
+      },
+      {
+        "nodeID": 184,
+        "type": "CA",
+        "text": "Default Conflict"
+      },
+      {
+        "nodeID": 188,
+        "type": "CA",
+        "text": "Default Conflict"
+      },
+      {
+        "nodeID": 191,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 194,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 197,
+        "type": "L",
+        "text": "Augustine: this science alone is credited with begetting, nourishing, protecting, and making robust the healthiest faith"
+      },
+      {
+        "nodeID": 198,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "activization"
+          ]
+        }
+      },
+      {
+        "nodeID": 199,
+        "type": "I",
+        "text": "some science owns begetting, nourishing, protecting, and making robust the healthiest faith",
+        "pta": {
+          "subject": "some science ",
+          "predicate": "owns begetting, nourishing, protecting, and making robust the healthiest faith",
+          "kind": "F",
+          "scope": "p"
+        }
+      },
+      {
+        "nodeID": 202,
+        "type": "L",
+        "text": "Thomas Aquinas: Augustine says that"
+      },
+      {
+        "nodeID": 203,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 208,
+        "type": "L",
+        "text": "Thomas Aquinas: These functions belong to no science other than holy teaching"
+      },
+      {
+        "nodeID": 209,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora",
+            "same term"
+          ]
+        }
+      },
+      {
+        "nodeID": 210,
+        "type": "I",
+        "text": "christian theology owns begetting, nourishing, protecting, and making robust the healthiest faith ",
+        "pta": {
+          "subject": "christian theology",
+          "predicate": "owns begetting, nourishing, protecting, and making robust the healthiest faith ",
+          "kind": "F",
+          "scope": "p"
+        }
+      },
+      {
+        "nodeID": 213,
+        "type": "L",
+        "text": "Thomas Aquinas: Therefore it is a science"
+      },
+      {
+        "nodeID": 214,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora",
+            "same term"
+          ]
+        }
+      },
+      {
+        "nodeID": 215,
+        "type": "I",
+        "text": "Christian theology is a science",
+        "pta": {
+          "subject": "Christian theology",
+          "predicate": "is a science",
+          "kind": "V",
+          "scope": "p"
+        }
+      },
+      {
+        "nodeID": 218,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 219,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 220,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 227,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 230,
+        "type": "RA",
+        "text": "δ III Exp",
+        "pta": {
+          "lever": "EPISTEMICALLY AUTHORITATIVE"
+        }
+      },
+      {
+        "nodeID": 233,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 237,
+        "type": "I",
+        "text": "\"some science is credited with begetting, nourishing, protecting, and making robust the healthiest faith\" is said by Augustine",
+        "pta": {
+          "subjectNode": "199",
+          "predicate": "is said by Augustine",
+          "perspective": "III",
+          "acceptability": "A"
+        }
+      },
+      {
+        "nodeID": 242,
+        "type": "RA",
+        "text": "α VF Su",
+        "pta": {
+          "lever": "SUBSUMED"
+        }
+      },
+      {
+        "nodeID": 246,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 249,
+        "type": "L",
+        "text": "Thomas Aquinas: Christian theology should be pronounced to be a science"
+      },
+      {
+        "nodeID": 250,
+        "type": "MA",
+        "text": "Default Rephrase"
+      },
+      {
+        "nodeID": 251,
+        "type": "YA",
+        "text": "Restating"
+      },
+      {
+        "nodeID": 254,
+        "type": "I",
+        "text": "Christian theology should be pronounced to be a science.",
+        "pta": {
+          "subject": "Christian theology",
+          "predicate": "should be pronounced to be a science",
+          "kind": "P",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 257,
+        "type": "TA",
+        "text": "Default Transition"
       }
     ],
     "edges": [
@@ -213,16 +753,6 @@
         "toID": 18
       },
       {
-        "edgeID": 24,
-        "fromID": 21,
-        "toID": 22
-      },
-      {
-        "edgeID": 25,
-        "fromID": 22,
-        "toID": 23
-      },
-      {
         "edgeID": 29,
         "fromID": 26,
         "toID": 27
@@ -251,6 +781,559 @@
         "edgeID": 40,
         "fromID": 37,
         "toID": 38
+      },
+      {
+        "edgeID": 41,
+        "fromID": 32,
+        "toID": 26
+      },
+      {
+        "edgeID": 50,
+        "fromID": 1,
+        "toID": 48
+      },
+      {
+        "edgeID": 51,
+        "fromID": 48,
+        "toID": 6
+      },
+      {
+        "edgeID": 52,
+        "fromID": 6,
+        "toID": 47
+      },
+      {
+        "edgeID": 53,
+        "fromID": 47,
+        "toID": 11
+      },
+      {
+        "edgeID": 54,
+        "fromID": 11,
+        "toID": 46
+      },
+      {
+        "edgeID": 55,
+        "fromID": 46,
+        "toID": 16
+      },
+      {
+        "edgeID": 56,
+        "fromID": 16,
+        "toID": 45
+      },
+      {
+        "edgeID": 57,
+        "fromID": 45,
+        "toID": 21
+      },
+      {
+        "edgeID": 58,
+        "fromID": 42,
+        "toID": 31
+      },
+      {
+        "edgeID": 59,
+        "fromID": 31,
+        "toID": 49
+      },
+      {
+        "edgeID": 60,
+        "fromID": 49,
+        "toID": 36
+      },
+      {
+        "edgeID": 66,
+        "fromID": 42,
+        "toID": 65
+      },
+      {
+        "edgeID": 71,
+        "fromID": 68,
+        "toID": 28
+      },
+      {
+        "edgeID": 72,
+        "fromID": 33,
+        "toID": 68
+      },
+      {
+        "edgeID": 73,
+        "fromID": 65,
+        "toID": 68
+      },
+      {
+        "edgeID": 75,
+        "fromID": 21,
+        "toID": 74
+      },
+      {
+        "edgeID": 76,
+        "fromID": 74,
+        "toID": 26
+      },
+      {
+        "edgeID": 77,
+        "fromID": 26,
+        "toID": 42
+      },
+      {
+        "edgeID": 79,
+        "fromID": 74,
+        "toID": 78
+      },
+      {
+        "edgeID": 81,
+        "fromID": 78,
+        "toID": 80
+      },
+      {
+        "edgeID": 82,
+        "fromID": 80,
+        "toID": 23
+      },
+      {
+        "edgeID": 83,
+        "fromID": 28,
+        "toID": 80
+      },
+      {
+        "edgeID": 93,
+        "fromID": 45,
+        "toID": 92
+      },
+      {
+        "edgeID": 94,
+        "fromID": 92,
+        "toID": 89
+      },
+      {
+        "edgeID": 99,
+        "fromID": 97,
+        "toID": 96
+      },
+      {
+        "edgeID": 100,
+        "fromID": 13,
+        "toID": 97
+      },
+      {
+        "edgeID": 104,
+        "fromID": 96,
+        "toID": 103
+      },
+      {
+        "edgeID": 106,
+        "fromID": 8,
+        "toID": 103,
+        "role": "lever"
+      },
+      {
+        "edgeID": 108,
+        "fromID": 46,
+        "toID": 107
+      },
+      {
+        "edgeID": 109,
+        "fromID": 107,
+        "toID": 97
+      },
+      {
+        "edgeID": 111,
+        "fromID": 47,
+        "toID": 110
+      },
+      {
+        "edgeID": 112,
+        "fromID": 110,
+        "toID": 103
+      },
+      {
+        "edgeID": 113,
+        "fromID": 103,
+        "toID": 3
+      },
+      {
+        "edgeID": 118,
+        "fromID": 49,
+        "toID": 117
+      },
+      {
+        "edgeID": 120,
+        "fromID": 18,
+        "toID": 97,
+        "role": "lever"
+      },
+      {
+        "edgeID": 122,
+        "fromID": 121,
+        "toID": 38
+      },
+      {
+        "edgeID": 123,
+        "fromID": 3,
+        "toID": 121
+      },
+      {
+        "edgeID": 126,
+        "fromID": 89,
+        "toID": 18
+      },
+      {
+        "edgeID": 127,
+        "fromID": 124,
+        "toID": 89
+      },
+      {
+        "edgeID": 128,
+        "fromID": 117,
+        "toID": 121
+      },
+      {
+        "edgeID": 131,
+        "fromID": 130,
+        "toID": 23
+      },
+      {
+        "edgeID": 132,
+        "fromID": 129,
+        "toID": 124
+      },
+      {
+        "edgeID": 133,
+        "fromID": 21,
+        "toID": 130
+      },
+      {
+        "edgeID": 134,
+        "fromID": 21,
+        "toID": 129
+      },
+      {
+        "edgeID": 138,
+        "fromID": 135,
+        "toID": 136
+      },
+      {
+        "edgeID": 139,
+        "fromID": 136,
+        "toID": 137
+      },
+      {
+        "edgeID": 143,
+        "fromID": 140,
+        "toID": 141
+      },
+      {
+        "edgeID": 144,
+        "fromID": 141,
+        "toID": 142
+      },
+      {
+        "edgeID": 148,
+        "fromID": 145,
+        "toID": 146
+      },
+      {
+        "edgeID": 149,
+        "fromID": 146,
+        "toID": 147
+      },
+      {
+        "edgeID": 153,
+        "fromID": 150,
+        "toID": 151
+      },
+      {
+        "edgeID": 154,
+        "fromID": 151,
+        "toID": 152
+      },
+      {
+        "edgeID": 160,
+        "fromID": 159,
+        "toID": 140
+      },
+      {
+        "edgeID": 161,
+        "fromID": 140,
+        "toID": 158
+      },
+      {
+        "edgeID": 162,
+        "fromID": 158,
+        "toID": 145
+      },
+      {
+        "edgeID": 163,
+        "fromID": 145,
+        "toID": 157
+      },
+      {
+        "edgeID": 164,
+        "fromID": 157,
+        "toID": 150
+      },
+      {
+        "edgeID": 165,
+        "fromID": 135,
+        "toID": 159
+      },
+      {
+        "edgeID": 171,
+        "fromID": 158,
+        "toID": 167
+      },
+      {
+        "edgeID": 172,
+        "fromID": 167,
+        "toID": 156
+      },
+      {
+        "edgeID": 173,
+        "fromID": 157,
+        "toID": 166
+      },
+      {
+        "edgeID": 175,
+        "fromID": 166,
+        "toID": 174
+      },
+      {
+        "edgeID": 176,
+        "fromID": 147,
+        "toID": 156
+      },
+      {
+        "edgeID": 177,
+        "fromID": 156,
+        "toID": 142
+      },
+      {
+        "edgeID": 178,
+        "fromID": 174,
+        "toID": 152
+      },
+      {
+        "edgeID": 179,
+        "fromID": 137,
+        "toID": 174
+      },
+      {
+        "edgeID": 183,
+        "fromID": 180,
+        "toID": 181
+      },
+      {
+        "edgeID": 186,
+        "fromID": 181,
+        "toID": 184
+      },
+      {
+        "edgeID": 187,
+        "fromID": 184,
+        "toID": 152
+      },
+      {
+        "edgeID": 189,
+        "fromID": 181,
+        "toID": 188
+      },
+      {
+        "edgeID": 190,
+        "fromID": 188,
+        "toID": 38
+      },
+      {
+        "edgeID": 192,
+        "fromID": 150,
+        "toID": 191
+      },
+      {
+        "edgeID": 193,
+        "fromID": 191,
+        "toID": 180
+      },
+      {
+        "edgeID": 195,
+        "fromID": 36,
+        "toID": 194
+      },
+      {
+        "edgeID": 196,
+        "fromID": 194,
+        "toID": 135
+      },
+      {
+        "edgeID": 200,
+        "fromID": 197,
+        "toID": 198
+      },
+      {
+        "edgeID": 201,
+        "fromID": 198,
+        "toID": 199
+      },
+      {
+        "edgeID": 205,
+        "fromID": 202,
+        "toID": 203
+      },
+      {
+        "edgeID": 207,
+        "fromID": 203,
+        "toID": 197
+      },
+      {
+        "edgeID": 211,
+        "fromID": 208,
+        "toID": 209
+      },
+      {
+        "edgeID": 212,
+        "fromID": 209,
+        "toID": 210
+      },
+      {
+        "edgeID": 216,
+        "fromID": 213,
+        "toID": 214
+      },
+      {
+        "edgeID": 217,
+        "fromID": 214,
+        "toID": 215
+      },
+      {
+        "edgeID": 221,
+        "fromID": 180,
+        "toID": 218
+      },
+      {
+        "edgeID": 222,
+        "fromID": 218,
+        "toID": 202
+      },
+      {
+        "edgeID": 223,
+        "fromID": 202,
+        "toID": 219
+      },
+      {
+        "edgeID": 224,
+        "fromID": 219,
+        "toID": 197
+      },
+      {
+        "edgeID": 225,
+        "fromID": 197,
+        "toID": 220
+      },
+      {
+        "edgeID": 226,
+        "fromID": 220,
+        "toID": 208
+      },
+      {
+        "edgeID": 228,
+        "fromID": 208,
+        "toID": 227
+      },
+      {
+        "edgeID": 229,
+        "fromID": 227,
+        "toID": 213
+      },
+      {
+        "edgeID": 232,
+        "fromID": 230,
+        "toID": 199
+      },
+      {
+        "edgeID": 234,
+        "fromID": 219,
+        "toID": 233
+      },
+      {
+        "edgeID": 235,
+        "fromID": 233,
+        "toID": 230
+      },
+      {
+        "edgeID": 238,
+        "fromID": 237,
+        "toID": 230
+      },
+      {
+        "edgeID": 239,
+        "fromID": 203,
+        "toID": 237
+      },
+      {
+        "edgeID": 240,
+        "fromID": 215,
+        "toID": 188
+      },
+      {
+        "edgeID": 241,
+        "fromID": 215,
+        "toID": 184
+      },
+      {
+        "edgeID": 243,
+        "fromID": 210,
+        "toID": 242
+      },
+      {
+        "edgeID": 244,
+        "fromID": 242,
+        "toID": 215
+      },
+      {
+        "edgeID": 245,
+        "fromID": 199,
+        "toID": 242,
+        "role": "lever"
+      },
+      {
+        "edgeID": 247,
+        "fromID": 227,
+        "toID": 246
+      },
+      {
+        "edgeID": 248,
+        "fromID": 246,
+        "toID": 242
+      },
+      {
+        "edgeID": 252,
+        "fromID": 249,
+        "toID": 251
+      },
+      {
+        "edgeID": 253,
+        "fromID": 251,
+        "toID": 250
+      },
+      {
+        "edgeID": 255,
+        "fromID": 250,
+        "toID": 254
+      },
+      {
+        "edgeID": 256,
+        "fromID": 215,
+        "toID": 250
+      },
+      {
+        "edgeID": 258,
+        "fromID": 213,
+        "toID": 257
+      },
+      {
+        "edgeID": 259,
+        "fromID": 257,
+        "toID": 249
       }
     ],
     "schemefulfillments": [],
@@ -302,6 +1385,66 @@
         "personID": 1,
         "start": 314,
         "end": 333
+      },
+      {
+        "nodeID": 135,
+        "personID": 1,
+        "start": 347,
+        "end": 395
+      },
+      {
+        "nodeID": 140,
+        "personID": 1,
+        "start": 397,
+        "end": 462
+      },
+      {
+        "nodeID": 145,
+        "personID": 1,
+        "start": 464,
+        "end": 525
+      },
+      {
+        "nodeID": 150,
+        "personID": 1,
+        "start": 537,
+        "end": 569
+      },
+      {
+        "nodeID": 180,
+        "personID": 1,
+        "start": 571,
+        "end": 588
+      },
+      {
+        "nodeID": 197,
+        "personID": 3,
+        "start": 610,
+        "end": 719
+      },
+      {
+        "nodeID": 202,
+        "personID": 1,
+        "start": 590,
+        "end": 609
+      },
+      {
+        "nodeID": 208,
+        "personID": 1,
+        "start": 721,
+        "end": 782
+      },
+      {
+        "nodeID": 213,
+        "personID": 1,
+        "start": 784,
+        "end": 809
+      },
+      {
+        "nodeID": 249,
+        "personID": 1,
+        "start": 818,
+        "end": 873
       }
     ],
     "participants": [
@@ -313,6 +1456,11 @@
       {
         "participantID": 2,
         "firstname": "Thessalonians",
+        "surname": ""
+      },
+      {
+        "participantID": 3,
+        "firstname": "Augustine",
         "surname": ""
       }
     ]
@@ -326,146 +1474,578 @@
       {
         "nodeID": 1,
         "visible": true,
-        "x": 480,
-        "y": -70
+        "x": 569,
+        "y": 23
       },
       {
         "nodeID": 2,
         "visible": true,
-        "x": 290,
-        "y": -60
+        "x": 346,
+        "y": 26
       },
       {
         "nodeID": 3,
         "visible": true,
-        "x": 0,
-        "y": -70
+        "x": -11,
+        "y": 0
+      },
+      {
+        "nodeID": 48,
+        "visible": true,
+        "x": 636,
+        "y": 128
       },
       {
         "nodeID": 6,
         "visible": true,
-        "x": 480,
-        "y": 36
+        "x": 569,
+        "y": 201
       },
       {
         "nodeID": 7,
         "visible": true,
-        "x": 290,
-        "y": 46
+        "x": 346,
+        "y": 213
       },
       {
         "nodeID": 8,
         "visible": true,
-        "x": 0,
-        "y": 36
+        "x": -11,
+        "y": 187
+      },
+      {
+        "nodeID": 47,
+        "visible": true,
+        "x": 636,
+        "y": 328
+      },
+      {
+        "nodeID": 103,
+        "visible": true,
+        "x": 47,
+        "y": 315
+      },
+      {
+        "nodeID": 110,
+        "visible": true,
+        "x": 346,
+        "y": 319
       },
       {
         "nodeID": 11,
         "visible": true,
-        "x": 480,
-        "y": 157
+        "x": 569,
+        "y": 497
       },
       {
         "nodeID": 12,
         "visible": true,
-        "x": 290,
-        "y": 167
+        "x": 346,
+        "y": 509
       },
       {
         "nodeID": 13,
         "visible": true,
-        "x": 0,
-        "y": 157
+        "x": -11,
+        "y": 399
+      },
+      {
+        "nodeID": 96,
+        "visible": true,
+        "x": -11,
+        "y": 517
+      },
+      {
+        "nodeID": 46,
+        "visible": true,
+        "x": 636,
+        "y": 708
+      },
+      {
+        "nodeID": 97,
+        "visible": true,
+        "x": 47,
+        "y": 695
+      },
+      {
+        "nodeID": 107,
+        "visible": true,
+        "x": 346,
+        "y": 699
       },
       {
         "nodeID": 16,
         "visible": true,
-        "x": 480,
-        "y": 278
+        "x": 569,
+        "y": 802
       },
       {
         "nodeID": 17,
         "visible": true,
-        "x": 290,
-        "y": 288
+        "x": 346,
+        "y": 798
       },
       {
         "nodeID": 18,
         "visible": true,
-        "x": 0,
-        "y": 278
+        "x": -11,
+        "y": 779
+      },
+      {
+        "nodeID": 45,
+        "visible": true,
+        "x": 636,
+        "y": 920
+      },
+      {
+        "nodeID": 89,
+        "visible": true,
+        "x": 47,
+        "y": 907
+      },
+      {
+        "nodeID": 92,
+        "visible": true,
+        "x": 346,
+        "y": 911
       },
       {
         "nodeID": 21,
         "visible": true,
-        "x": 480,
-        "y": 384
-      },
-      {
-        "nodeID": 22,
-        "visible": true,
-        "x": 290,
-        "y": 394
+        "x": 569,
+        "y": 1073
       },
       {
         "nodeID": 23,
         "visible": true,
-        "x": 0,
-        "y": 384
+        "x": -11,
+        "y": 1109
+      },
+      {
+        "nodeID": 124,
+        "visible": true,
+        "x": -11,
+        "y": 991
+      },
+      {
+        "nodeID": 74,
+        "visible": true,
+        "x": 636,
+        "y": 1250
+      },
+      {
+        "nodeID": 78,
+        "visible": true,
+        "x": 346,
+        "y": 1241
+      },
+      {
+        "nodeID": 80,
+        "visible": true,
+        "x": 48,
+        "y": 1237
       },
       {
         "nodeID": 26,
         "visible": true,
-        "x": 480,
-        "y": 490
+        "x": 569,
+        "y": 1334
       },
       {
         "nodeID": 27,
         "visible": true,
-        "x": 290,
-        "y": 500
+        "x": 346,
+        "y": 1322
       },
       {
         "nodeID": 28,
         "visible": true,
-        "x": 0,
-        "y": 490
+        "x": -11,
+        "y": 1321
+      },
+      {
+        "nodeID": 42,
+        "visible": true,
+        "x": 636,
+        "y": 1426
+      },
+      {
+        "nodeID": 65,
+        "visible": true,
+        "x": 346,
+        "y": 1417
+      },
+      {
+        "nodeID": 68,
+        "visible": true,
+        "x": 48,
+        "y": 1413
       },
       {
         "nodeID": 31,
         "visible": true,
-        "x": 480,
-        "y": 596
+        "x": 569,
+        "y": 1545
       },
       {
         "nodeID": 32,
         "visible": true,
-        "x": 290,
-        "y": 606
+        "x": 346,
+        "y": 1548
       },
       {
         "nodeID": 33,
         "visible": true,
-        "x": 0,
-        "y": 596
+        "x": -11,
+        "y": 1497
+      },
+      {
+        "nodeID": 121,
+        "visible": true,
+        "x": 56,
+        "y": 1684
+      },
+      {
+        "nodeID": 49,
+        "visible": true,
+        "x": 636,
+        "y": 1684
+      },
+      {
+        "nodeID": 117,
+        "visible": true,
+        "x": 346,
+        "y": 1675
       },
       {
         "nodeID": 36,
         "visible": true,
-        "x": 480,
-        "y": 702
+        "x": 569,
+        "y": 1765
       },
       {
         "nodeID": 37,
         "visible": true,
-        "x": 290,
-        "y": 712
+        "x": 346,
+        "y": 1761
       },
       {
         "nodeID": 38,
         "visible": true,
-        "x": 0,
-        "y": 738
+        "x": -11,
+        "y": 1751
+      },
+      {
+        "nodeID": 129,
+        "visible": true,
+        "x": 341,
+        "y": 1029
+      },
+      {
+        "nodeID": 130,
+        "visible": true,
+        "x": 341,
+        "y": 1109
+      },
+      {
+        "nodeID": 135,
+        "visible": true,
+        "x": 569,
+        "y": 1943
+      },
+      {
+        "nodeID": 136,
+        "visible": true,
+        "x": 346,
+        "y": 1939
+      },
+      {
+        "nodeID": 137,
+        "visible": true,
+        "x": -11,
+        "y": 1920
+      },
+      {
+        "nodeID": 140,
+        "visible": true,
+        "x": 569,
+        "y": 2121
+      },
+      {
+        "nodeID": 141,
+        "visible": true,
+        "x": 346,
+        "y": 2126
+      },
+      {
+        "nodeID": 142,
+        "visible": true,
+        "x": -11,
+        "y": 2107
+      },
+      {
+        "nodeID": 145,
+        "visible": true,
+        "x": 569,
+        "y": 2349
+      },
+      {
+        "nodeID": 146,
+        "visible": true,
+        "x": 346,
+        "y": 2354
+      },
+      {
+        "nodeID": 147,
+        "visible": true,
+        "x": -11,
+        "y": 2319
+      },
+      {
+        "nodeID": 150,
+        "visible": true,
+        "x": 569,
+        "y": 2568
+      },
+      {
+        "nodeID": 151,
+        "visible": true,
+        "x": 346,
+        "y": 2564
+      },
+      {
+        "nodeID": 152,
+        "visible": true,
+        "x": -11,
+        "y": 2563
+      },
+      {
+        "nodeID": 156,
+        "visible": true,
+        "x": 47,
+        "y": 2235
+      },
+      {
+        "nodeID": 157,
+        "visible": true,
+        "x": 636,
+        "y": 2492
+      },
+      {
+        "nodeID": 158,
+        "visible": true,
+        "x": 636,
+        "y": 2248
+      },
+      {
+        "nodeID": 159,
+        "visible": true,
+        "x": 636,
+        "y": 2048
+      },
+      {
+        "nodeID": 166,
+        "visible": true,
+        "x": 346,
+        "y": 2483
+      },
+      {
+        "nodeID": 167,
+        "visible": true,
+        "x": 346,
+        "y": 2239
+      },
+      {
+        "nodeID": 174,
+        "visible": true,
+        "x": 47,
+        "y": 2479
+      },
+      {
+        "nodeID": 180,
+        "visible": true,
+        "x": 569,
+        "y": 2727
+      },
+      {
+        "nodeID": 181,
+        "visible": true,
+        "x": 346,
+        "y": 2730
+      },
+      {
+        "nodeID": 184,
+        "visible": true,
+        "x": 56,
+        "y": 2714
+      },
+      {
+        "nodeID": 188,
+        "visible": true,
+        "x": 56,
+        "y": 2763
+      },
+      {
+        "nodeID": 191,
+        "visible": true,
+        "x": 636,
+        "y": 2655
+      },
+      {
+        "nodeID": 194,
+        "visible": true,
+        "x": 636,
+        "y": 1861
+      },
+      {
+        "nodeID": 197,
+        "visible": true,
+        "x": 569,
+        "y": 3173
+      },
+      {
+        "nodeID": 198,
+        "visible": true,
+        "x": 346,
+        "y": 3187
+      },
+      {
+        "nodeID": 199,
+        "visible": true,
+        "x": -11,
+        "y": 3143
+      },
+      {
+        "nodeID": 202,
+        "visible": true,
+        "x": 569,
+        "y": 2929
+      },
+      {
+        "nodeID": 203,
+        "visible": true,
+        "x": 346,
+        "y": 2932
+      },
+      {
+        "nodeID": 208,
+        "visible": true,
+        "x": 569,
+        "y": 3428
+      },
+      {
+        "nodeID": 209,
+        "visible": true,
+        "x": 343,
+        "y": 3433
+      },
+      {
+        "nodeID": 210,
+        "visible": true,
+        "x": -11,
+        "y": 3380
+      },
+      {
+        "nodeID": 213,
+        "visible": true,
+        "x": 569,
+        "y": 3665
+      },
+      {
+        "nodeID": 214,
+        "visible": true,
+        "x": 343,
+        "y": 3661
+      },
+      {
+        "nodeID": 215,
+        "visible": true,
+        "x": -11,
+        "y": 3660
+      },
+      {
+        "nodeID": 218,
+        "visible": true,
+        "x": 636,
+        "y": 2822
+      },
+      {
+        "nodeID": 219,
+        "visible": true,
+        "x": 636,
+        "y": 3072
+      },
+      {
+        "nodeID": 220,
+        "visible": true,
+        "x": 636,
+        "y": 3321
+      },
+      {
+        "nodeID": 227,
+        "visible": true,
+        "x": 636,
+        "y": 3589
+      },
+      {
+        "nodeID": 230,
+        "visible": true,
+        "x": 48,
+        "y": 3059
+      },
+      {
+        "nodeID": 233,
+        "visible": true,
+        "x": 346,
+        "y": 3063
+      },
+      {
+        "nodeID": 237,
+        "visible": true,
+        "x": -11,
+        "y": 2881
+      },
+      {
+        "nodeID": 242,
+        "visible": true,
+        "x": 47,
+        "y": 3576
+      },
+      {
+        "nodeID": 246,
+        "visible": true,
+        "x": 346,
+        "y": 3580
+      },
+      {
+        "nodeID": 249,
+        "visible": true,
+        "x": 569,
+        "y": 3858
+      },
+      {
+        "nodeID": 250,
+        "visible": true,
+        "x": 56,
+        "y": 3811
+      },
+      {
+        "nodeID": 251,
+        "visible": true,
+        "x": 346,
+        "y": 3871
+      },
+      {
+        "nodeID": 254,
+        "visible": true,
+        "x": -11,
+        "y": 3860
+      },
+      {
+        "nodeID": 257,
+        "visible": true,
+        "x": 636,
+        "y": 3752
       }
     ],
     "edges": [
@@ -510,16 +2090,6 @@
         "visible": true
       },
       {
-        "fromID": 21,
-        "toID": 22,
-        "visible": true
-      },
-      {
-        "fromID": 22,
-        "toID": 23,
-        "visible": true
-      },
-      {
         "fromID": 26,
         "toID": 27,
         "visible": true
@@ -547,6 +2117,556 @@
       {
         "fromID": 37,
         "toID": 38,
+        "visible": true
+      },
+      {
+        "fromID": 32,
+        "toID": 26,
+        "visible": true
+      },
+      {
+        "fromID": 1,
+        "toID": 48,
+        "visible": true
+      },
+      {
+        "fromID": 48,
+        "toID": 6,
+        "visible": true
+      },
+      {
+        "fromID": 6,
+        "toID": 47,
+        "visible": true
+      },
+      {
+        "fromID": 47,
+        "toID": 11,
+        "visible": true
+      },
+      {
+        "fromID": 11,
+        "toID": 46,
+        "visible": true
+      },
+      {
+        "fromID": 46,
+        "toID": 16,
+        "visible": true
+      },
+      {
+        "fromID": 16,
+        "toID": 45,
+        "visible": true
+      },
+      {
+        "fromID": 45,
+        "toID": 21,
+        "visible": true
+      },
+      {
+        "fromID": 42,
+        "toID": 31,
+        "visible": true
+      },
+      {
+        "fromID": 31,
+        "toID": 49,
+        "visible": true
+      },
+      {
+        "fromID": 49,
+        "toID": 36,
+        "visible": true
+      },
+      {
+        "fromID": 42,
+        "toID": 65,
+        "visible": true
+      },
+      {
+        "fromID": 68,
+        "toID": 28,
+        "visible": true
+      },
+      {
+        "fromID": 33,
+        "toID": 68,
+        "visible": true
+      },
+      {
+        "fromID": 65,
+        "toID": 68,
+        "visible": true
+      },
+      {
+        "fromID": 21,
+        "toID": 74,
+        "visible": true
+      },
+      {
+        "fromID": 74,
+        "toID": 26,
+        "visible": true
+      },
+      {
+        "fromID": 26,
+        "toID": 42,
+        "visible": true
+      },
+      {
+        "fromID": 74,
+        "toID": 78,
+        "visible": true
+      },
+      {
+        "fromID": 78,
+        "toID": 80,
+        "visible": true
+      },
+      {
+        "fromID": 80,
+        "toID": 23,
+        "visible": true
+      },
+      {
+        "fromID": 28,
+        "toID": 80,
+        "visible": true
+      },
+      {
+        "fromID": 45,
+        "toID": 92,
+        "visible": true
+      },
+      {
+        "fromID": 92,
+        "toID": 89,
+        "visible": true
+      },
+      {
+        "fromID": 97,
+        "toID": 96,
+        "visible": true
+      },
+      {
+        "fromID": 13,
+        "toID": 97,
+        "visible": true
+      },
+      {
+        "fromID": 96,
+        "toID": 103,
+        "visible": true
+      },
+      {
+        "fromID": 8,
+        "toID": 103,
+        "visible": true
+      },
+      {
+        "fromID": 46,
+        "toID": 107,
+        "visible": true
+      },
+      {
+        "fromID": 107,
+        "toID": 97,
+        "visible": true
+      },
+      {
+        "fromID": 47,
+        "toID": 110,
+        "visible": true
+      },
+      {
+        "fromID": 110,
+        "toID": 103,
+        "visible": true
+      },
+      {
+        "fromID": 103,
+        "toID": 3,
+        "visible": true
+      },
+      {
+        "fromID": 49,
+        "toID": 117,
+        "visible": true
+      },
+      {
+        "fromID": 18,
+        "toID": 97,
+        "visible": true
+      },
+      {
+        "fromID": 121,
+        "toID": 38,
+        "visible": true
+      },
+      {
+        "fromID": 3,
+        "toID": 121,
+        "visible": true
+      },
+      {
+        "fromID": 89,
+        "toID": 18,
+        "visible": true
+      },
+      {
+        "fromID": 124,
+        "toID": 89,
+        "visible": true
+      },
+      {
+        "fromID": 117,
+        "toID": 121,
+        "visible": true
+      },
+      {
+        "fromID": 130,
+        "toID": 23,
+        "visible": true
+      },
+      {
+        "fromID": 129,
+        "toID": 124,
+        "visible": true
+      },
+      {
+        "fromID": 21,
+        "toID": 130,
+        "visible": true
+      },
+      {
+        "fromID": 21,
+        "toID": 129,
+        "visible": true
+      },
+      {
+        "fromID": 135,
+        "toID": 136,
+        "visible": true
+      },
+      {
+        "fromID": 136,
+        "toID": 137,
+        "visible": true
+      },
+      {
+        "fromID": 140,
+        "toID": 141,
+        "visible": true
+      },
+      {
+        "fromID": 141,
+        "toID": 142,
+        "visible": true
+      },
+      {
+        "fromID": 145,
+        "toID": 146,
+        "visible": true
+      },
+      {
+        "fromID": 146,
+        "toID": 147,
+        "visible": true
+      },
+      {
+        "fromID": 150,
+        "toID": 151,
+        "visible": true
+      },
+      {
+        "fromID": 151,
+        "toID": 152,
+        "visible": true
+      },
+      {
+        "fromID": 159,
+        "toID": 140,
+        "visible": true
+      },
+      {
+        "fromID": 140,
+        "toID": 158,
+        "visible": true
+      },
+      {
+        "fromID": 158,
+        "toID": 145,
+        "visible": true
+      },
+      {
+        "fromID": 145,
+        "toID": 157,
+        "visible": true
+      },
+      {
+        "fromID": 157,
+        "toID": 150,
+        "visible": true
+      },
+      {
+        "fromID": 135,
+        "toID": 159,
+        "visible": true
+      },
+      {
+        "fromID": 158,
+        "toID": 167,
+        "visible": true
+      },
+      {
+        "fromID": 167,
+        "toID": 156,
+        "visible": true
+      },
+      {
+        "fromID": 157,
+        "toID": 166,
+        "visible": true
+      },
+      {
+        "fromID": 166,
+        "toID": 174,
+        "visible": true
+      },
+      {
+        "fromID": 147,
+        "toID": 156,
+        "visible": true
+      },
+      {
+        "fromID": 156,
+        "toID": 142,
+        "visible": true
+      },
+      {
+        "fromID": 174,
+        "toID": 152,
+        "visible": true
+      },
+      {
+        "fromID": 137,
+        "toID": 174,
+        "visible": true
+      },
+      {
+        "fromID": 180,
+        "toID": 181,
+        "visible": true
+      },
+      {
+        "fromID": 181,
+        "toID": 184,
+        "visible": true
+      },
+      {
+        "fromID": 184,
+        "toID": 152,
+        "visible": true
+      },
+      {
+        "fromID": 181,
+        "toID": 188,
+        "visible": true
+      },
+      {
+        "fromID": 188,
+        "toID": 38,
+        "visible": true
+      },
+      {
+        "fromID": 150,
+        "toID": 191,
+        "visible": true
+      },
+      {
+        "fromID": 191,
+        "toID": 180,
+        "visible": true
+      },
+      {
+        "fromID": 36,
+        "toID": 194,
+        "visible": true
+      },
+      {
+        "fromID": 194,
+        "toID": 135,
+        "visible": true
+      },
+      {
+        "fromID": 197,
+        "toID": 198,
+        "visible": true
+      },
+      {
+        "fromID": 198,
+        "toID": 199,
+        "visible": true
+      },
+      {
+        "fromID": 202,
+        "toID": 203,
+        "visible": true
+      },
+      {
+        "fromID": 203,
+        "toID": 197,
+        "visible": true
+      },
+      {
+        "fromID": 208,
+        "toID": 209,
+        "visible": true
+      },
+      {
+        "fromID": 209,
+        "toID": 210,
+        "visible": true
+      },
+      {
+        "fromID": 213,
+        "toID": 214,
+        "visible": true
+      },
+      {
+        "fromID": 214,
+        "toID": 215,
+        "visible": true
+      },
+      {
+        "fromID": 180,
+        "toID": 218,
+        "visible": true
+      },
+      {
+        "fromID": 218,
+        "toID": 202,
+        "visible": true
+      },
+      {
+        "fromID": 202,
+        "toID": 219,
+        "visible": true
+      },
+      {
+        "fromID": 219,
+        "toID": 197,
+        "visible": true
+      },
+      {
+        "fromID": 197,
+        "toID": 220,
+        "visible": true
+      },
+      {
+        "fromID": 220,
+        "toID": 208,
+        "visible": true
+      },
+      {
+        "fromID": 208,
+        "toID": 227,
+        "visible": true
+      },
+      {
+        "fromID": 227,
+        "toID": 213,
+        "visible": true
+      },
+      {
+        "fromID": 230,
+        "toID": 199,
+        "visible": true
+      },
+      {
+        "fromID": 219,
+        "toID": 233,
+        "visible": true
+      },
+      {
+        "fromID": 233,
+        "toID": 230,
+        "visible": true
+      },
+      {
+        "fromID": 237,
+        "toID": 230,
+        "visible": true
+      },
+      {
+        "fromID": 203,
+        "toID": 237,
+        "visible": true
+      },
+      {
+        "fromID": 215,
+        "toID": 188,
+        "visible": true
+      },
+      {
+        "fromID": 215,
+        "toID": 184,
+        "visible": true
+      },
+      {
+        "fromID": 210,
+        "toID": 242,
+        "visible": true
+      },
+      {
+        "fromID": 242,
+        "toID": 215,
+        "visible": true
+      },
+      {
+        "fromID": 199,
+        "toID": 242,
+        "visible": true
+      },
+      {
+        "fromID": 227,
+        "toID": 246,
+        "visible": true
+      },
+      {
+        "fromID": 246,
+        "toID": 242,
+        "visible": true
+      },
+      {
+        "fromID": 249,
+        "toID": 251,
+        "visible": true
+      },
+      {
+        "fromID": 251,
+        "toID": 250,
+        "visible": true
+      },
+      {
+        "fromID": 250,
+        "toID": 254,
+        "visible": true
+      },
+      {
+        "fromID": 215,
+        "toID": 250,
+        "visible": true
+      },
+      {
+        "fromID": 213,
+        "toID": 257,
+        "visible": true
+      },
+      {
+        "fromID": 257,
+        "toID": 249,
         "visible": true
       }
     ]
