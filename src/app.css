@@ -4,3 +4,54 @@ body {
   height: 100%;
   font-family: system-ui, sans-serif;
 }
+
+/* Focus: the selection is ringed in orange; what it connects to gets a
+   lighter ring and bold edges; everything else fades. */
+:root {
+  --focus: #ea580c;
+  --linked: #fdba74;
+}
+.inode.selected,
+.lnode.selected,
+.scheme.selected {
+  box-shadow: 0 0 0 4px var(--focus);
+}
+.inode.linked,
+.lnode.linked,
+.scheme.linked {
+  box-shadow: 0 0 0 3px var(--linked);
+}
+.focusing .svelte-flow__node:not(.selected):not(:has(.linked)) {
+  opacity: 0.4;
+}
+.svelte-flow__edge-path.edge {
+  stroke: #64748b;
+  stroke-width: 1.5;
+}
+.svelte-flow__edge-path.edge.lever {
+  stroke: #059669;
+  stroke-dasharray: 5 4;
+}
+.svelte-flow__edge-path.edge.focused {
+  stroke: var(--focus);
+  stroke-width: 3;
+}
+.svelte-flow__edge-path.edge.faded {
+  opacity: 0.2;
+}
+
+/* Ports: hollow in, filled out. */
+.svelte-flow__handle {
+  width: 9px;
+  height: 9px;
+  border: 1.5px solid #334155;
+}
+.svelte-flow__handle.port-target {
+  background: white;
+}
+.svelte-flow__handle.port-source {
+  background: #334155;
+}
+.svelte-flow__handle.port-lever {
+  border-color: #059669;
+}

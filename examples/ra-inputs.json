@@ -1,0 +1,2046 @@
+{
+  "AIF": {
+    "nodes": [
+      {
+        "nodeID": 1,
+        "type": "L",
+        "text": "Alice: The neighbours are home"
+      },
+      {
+        "nodeID": 2,
+        "type": "I",
+        "text": "The neighbours are home",
+        "pta": {
+          "subject": "the neighbours",
+          "predicate": "are home",
+          "kind": "F",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 3,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 4,
+        "type": "L",
+        "text": "Alice: Their lights are on"
+      },
+      {
+        "nodeID": 5,
+        "type": "I",
+        "text": "The neighbours have their lights on",
+        "pta": {
+          "subject": "the neighbours",
+          "predicate": "have their lights on",
+          "kind": "F",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 6,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora",
+            "activization"
+          ]
+        }
+      },
+      {
+        "nodeID": 7,
+        "type": "L",
+        "text": "Alice: Lights on mean someone is home"
+      },
+      {
+        "nodeID": 8,
+        "type": "I",
+        "text": "Having the lights on is a sign of being home",
+        "pta": {
+          "subject": "having the lights on",
+          "predicate": "is a sign of being home",
+          "kind": "F",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 9,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "nominalisation"
+          ]
+        }
+      },
+      {
+        "nodeID": 10,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 11,
+        "type": "RA",
+        "text": "α FF Sig",
+        "pta": {
+          "lever": "SIGN"
+        }
+      },
+      {
+        "nodeID": 12,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 13,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 14,
+        "type": "L",
+        "text": "Bob: They leave their lights on when they travel"
+      },
+      {
+        "nodeID": 15,
+        "type": "I",
+        "text": "The neighbours leave their lights on when they travel",
+        "pta": {
+          "subject": "the neighbours",
+          "predicate": "leave their lights on when they travel",
+          "kind": "F",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 16,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora"
+          ]
+        }
+      },
+      {
+        "nodeID": 17,
+        "type": "CA",
+        "text": "Default Conflict"
+      },
+      {
+        "nodeID": 18,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 19,
+        "type": "YA",
+        "text": "Disagreeing"
+      },
+      {
+        "nodeID": 20,
+        "type": "L",
+        "text": "Alice: Mia will win the race"
+      },
+      {
+        "nodeID": 21,
+        "type": "I",
+        "text": "Mia will win the race",
+        "pta": {
+          "subject": "Mia",
+          "predicate": "will win the race",
+          "kind": "F",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 22,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 23,
+        "type": "L",
+        "text": "Alice: She is the best runner"
+      },
+      {
+        "nodeID": 24,
+        "type": "I",
+        "text": "Mia is the best runner",
+        "pta": {
+          "subject": "Mia",
+          "predicate": "is the best runner",
+          "kind": "V",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 25,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora"
+          ]
+        }
+      },
+      {
+        "nodeID": 26,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 27,
+        "type": "RA",
+        "text": "α FV novel",
+        "pta": {
+          "lever": "novel",
+          "note": "PTA 3.1 lists no FV levers"
+        }
+      },
+      {
+        "nodeID": 28,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 29,
+        "type": "L",
+        "text": "Bob: Nothing is certain"
+      },
+      {
+        "nodeID": 30,
+        "type": "I",
+        "text": "Nothing is certain",
+        "pta": {
+          "subject": "nothing",
+          "predicate": "is certain",
+          "kind": "F",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 31,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 32,
+        "type": "L",
+        "text": "Alice: That is false"
+      },
+      {
+        "nodeID": 33,
+        "type": "I",
+        "text": "⟨Nothing is certain⟩ is false",
+        "pta": {
+          "subjectNode": "30",
+          "predicate": "is false",
+          "kind": "V",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 34,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora"
+          ]
+        }
+      },
+      {
+        "nodeID": 35,
+        "type": "CA",
+        "text": "Default Conflict"
+      },
+      {
+        "nodeID": 36,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 37,
+        "type": "YA",
+        "text": "Disagreeing"
+      },
+      {
+        "nodeID": 38,
+        "type": "L",
+        "text": "Alice: It refutes itself"
+      },
+      {
+        "nodeID": 39,
+        "type": "I",
+        "text": "⟨Nothing is certain⟩ refutes itself",
+        "pta": {
+          "subjectNode": "30",
+          "predicate": "refutes itself",
+          "kind": "V",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 40,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora"
+          ]
+        }
+      },
+      {
+        "nodeID": 41,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 42,
+        "type": "RA",
+        "text": "α VV Dis",
+        "pta": {
+          "lever": "DISQUALIFIER"
+        }
+      },
+      {
+        "nodeID": 43,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 44,
+        "type": "L",
+        "text": "Alice: Socrates is mortal"
+      },
+      {
+        "nodeID": 45,
+        "type": "I",
+        "text": "Socrates is mortal",
+        "pta": {
+          "subject": "Socrates",
+          "predicate": "is mortal",
+          "kind": "F",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 46,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 47,
+        "type": "L",
+        "text": "Alice: All men are mortal"
+      },
+      {
+        "nodeID": 48,
+        "type": "I",
+        "text": "All men are mortal",
+        "pta": {
+          "subject": "all men",
+          "predicate": "is mortal",
+          "kind": "F",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 49,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "same term"
+          ]
+        }
+      },
+      {
+        "nodeID": 50,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 51,
+        "type": "RA",
+        "text": "β su To",
+        "pta": {
+          "lever": "TOTALITY"
+        }
+      },
+      {
+        "nodeID": 52,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 53,
+        "type": "L",
+        "text": "Alice: Peace can be started by the truth"
+      },
+      {
+        "nodeID": 54,
+        "type": "I",
+        "text": "Peace can be started by the truth",
+        "pta": {
+          "subject": "peace",
+          "predicate": "can be started by the truth",
+          "kind": "F",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 55,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 56,
+        "type": "L",
+        "text": "Alice: because war can be started by lies"
+      },
+      {
+        "nodeID": 57,
+        "type": "I",
+        "text": "War can be started by lies",
+        "pta": {
+          "subject": "war",
+          "predicate": "can be started by lies",
+          "kind": "F",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 58,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 59,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 60,
+        "type": "RA",
+        "text": "γ i Op",
+        "pta": {
+          "lever": "OPPOSITE"
+        }
+      },
+      {
+        "nodeID": 61,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 62,
+        "type": "L",
+        "text": "Alice: The moon is made of cheese"
+      },
+      {
+        "nodeID": 63,
+        "type": "I",
+        "text": "The moon is made of cheese",
+        "pta": {
+          "subject": "the moon",
+          "predicate": "is made of cheese",
+          "kind": "F",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 64,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 65,
+        "type": "L",
+        "text": "Alice: My cat is orange"
+      },
+      {
+        "nodeID": 66,
+        "type": "I",
+        "text": "Alice's cat is orange",
+        "pta": {
+          "subject": "Alice's cat",
+          "predicate": "is orange",
+          "kind": "F",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 67,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora"
+          ]
+        }
+      },
+      {
+        "nodeID": 68,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 69,
+        "type": "RA",
+        "text": "γ d Non",
+        "pta": {
+          "lever": "none"
+        }
+      },
+      {
+        "nodeID": 70,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 71,
+        "type": "L",
+        "text": "Alice: Cats are mammals"
+      },
+      {
+        "nodeID": 72,
+        "type": "I",
+        "text": "Cats are mammals",
+        "pta": {
+          "subject": "cats",
+          "predicate": "are mammals",
+          "kind": "F",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 73,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 74,
+        "type": "L",
+        "text": "Alice: Cats are mammals"
+      },
+      {
+        "nodeID": 75,
+        "type": "I",
+        "text": "Cats are mammals",
+        "pta": {
+          "subject": "cats",
+          "predicate": "are mammals",
+          "kind": "F",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 76,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 77,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 78,
+        "type": "RA",
+        "text": "Default Inference",
+        "pta": {
+          "note": "same subject and predicate: no form"
+        }
+      },
+      {
+        "nodeID": 79,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 80,
+        "type": "L",
+        "text": "Alice: The meeting is at nine"
+      },
+      {
+        "nodeID": 81,
+        "type": "I",
+        "text": "The meeting is at nine",
+        "pta": {
+          "subject": "the meeting",
+          "predicate": "is at nine",
+          "kind": "F",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 82,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 83,
+        "type": "L",
+        "text": "Alice: I booked the room myself"
+      },
+      {
+        "nodeID": 84,
+        "type": "I",
+        "text": "⟨The meeting is at nine⟩ is said by the person who booked the room",
+        "pta": {
+          "subjectNode": "81",
+          "predicate": "is said by the person who booked the room",
+          "kind": "F",
+          "scope": "s",
+          "perspective": "I"
+        }
+      },
+      {
+        "nodeID": 85,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "explication"
+          ]
+        }
+      },
+      {
+        "nodeID": 86,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 87,
+        "type": "RA",
+        "text": "δ I Eth",
+        "pta": {
+          "lever": "ETHOTICALLY AUTHORITATIVE"
+        }
+      },
+      {
+        "nodeID": 88,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 89,
+        "type": "L",
+        "text": "Bob: Vaccines are dangerous"
+      },
+      {
+        "nodeID": 90,
+        "type": "I",
+        "text": "Vaccines are dangerous",
+        "pta": {
+          "subject": "vaccines",
+          "predicate": "are dangerous",
+          "kind": "F",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 91,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 92,
+        "type": "L",
+        "text": "Alice: That is not to be believed"
+      },
+      {
+        "nodeID": 93,
+        "type": "I",
+        "text": "⟨Vaccines are dangerous⟩ [is unacceptable]",
+        "pta": {
+          "subjectNode": "90",
+          "acceptability": "U",
+          "kind": "V",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 94,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora",
+            "explication"
+          ]
+        }
+      },
+      {
+        "nodeID": 95,
+        "type": "CA",
+        "text": "Default Conflict"
+      },
+      {
+        "nodeID": 96,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 97,
+        "type": "YA",
+        "text": "Disagreeing"
+      },
+      {
+        "nodeID": 98,
+        "type": "L",
+        "text": "Alice: You sell supplements"
+      },
+      {
+        "nodeID": 99,
+        "type": "I",
+        "text": "⟨Vaccines are dangerous⟩ is said by someone who sells supplements",
+        "pta": {
+          "subjectNode": "90",
+          "predicate": "is said by someone who sells supplements",
+          "kind": "F",
+          "scope": "s",
+          "perspective": "II"
+        }
+      },
+      {
+        "nodeID": 100,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "explication"
+          ]
+        }
+      },
+      {
+        "nodeID": 101,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 102,
+        "type": "RA",
+        "text": "δ II H",
+        "pta": {
+          "lever": "CHARACTERALLY AUTHORITATIVE"
+        }
+      },
+      {
+        "nodeID": 103,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 104,
+        "type": "L",
+        "text": "Alice: Smoking causes cancer"
+      },
+      {
+        "nodeID": 105,
+        "type": "I",
+        "text": "Smoking causes cancer",
+        "pta": {
+          "subject": "smoking",
+          "predicate": "causes cancer",
+          "kind": "F",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 106,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 107,
+        "type": "L",
+        "text": "Alice: Every oncologist says so"
+      },
+      {
+        "nodeID": 108,
+        "type": "I",
+        "text": "⟨Smoking causes cancer⟩ is said by every oncologist",
+        "pta": {
+          "subjectNode": "105",
+          "predicate": "is said by every oncologist",
+          "kind": "F",
+          "scope": "s",
+          "perspective": "III"
+        }
+      },
+      {
+        "nodeID": 109,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora",
+            "passivization"
+          ]
+        }
+      },
+      {
+        "nodeID": 110,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 111,
+        "type": "RA",
+        "text": "δ III Exp",
+        "pta": {
+          "lever": "EPISTEMICALLY AUTHORITATIVE"
+        }
+      },
+      {
+        "nodeID": 112,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 113,
+        "type": "L",
+        "text": "Bob: Exercise is good for you"
+      },
+      {
+        "nodeID": 114,
+        "type": "I",
+        "text": "Exercise is good for people",
+        "pta": {
+          "subject": "exercise",
+          "predicate": "is good for people",
+          "kind": "V",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 115,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "explication"
+          ]
+        }
+      },
+      {
+        "nodeID": 116,
+        "type": "L",
+        "text": "Alice: Then you are committed to that"
+      },
+      {
+        "nodeID": 117,
+        "type": "I",
+        "text": "⟨Exercise is good for people⟩ [is acceptable]",
+        "pta": {
+          "subjectNode": "114",
+          "acceptability": "A",
+          "kind": "V",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 118,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora",
+            "explication"
+          ]
+        }
+      },
+      {
+        "nodeID": 119,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 120,
+        "type": "RA",
+        "text": "δ II Cce",
+        "pta": {
+          "lever": "COMMITS"
+        }
+      },
+      {
+        "nodeID": 121,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 122,
+        "type": "L",
+        "text": "Alice: The ferry is late"
+      },
+      {
+        "nodeID": 123,
+        "type": "I",
+        "text": "The ferry is late",
+        "pta": {
+          "subject": "the ferry",
+          "predicate": "is late",
+          "kind": "F",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 124,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 125,
+        "type": "L",
+        "text": "Alice: Carol said so"
+      },
+      {
+        "nodeID": 126,
+        "type": "L",
+        "text": "Carol: the ferry is late"
+      },
+      {
+        "nodeID": 127,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora"
+          ]
+        }
+      },
+      {
+        "nodeID": 128,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 129,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 130,
+        "type": "RA",
+        "text": "δ III Tes",
+        "pta": {
+          "lever": "TESTIMONIALLY AUTHORITATIVE"
+        }
+      },
+      {
+        "nodeID": 131,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 132,
+        "type": "L",
+        "text": "Alice: Take an umbrella"
+      },
+      {
+        "nodeID": 133,
+        "type": "I",
+        "text": "Alice's listener should take an umbrella",
+        "pta": {
+          "subject": "Alice's listener",
+          "predicate": "should take an umbrella",
+          "kind": "P",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 134,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "explication"
+          ]
+        }
+      },
+      {
+        "nodeID": 135,
+        "type": "L",
+        "text": "Alice: Carol said it will rain"
+      },
+      {
+        "nodeID": 136,
+        "type": "L",
+        "text": "Carol: it will rain"
+      },
+      {
+        "nodeID": 137,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 138,
+        "type": "I",
+        "text": "It will rain",
+        "pta": {
+          "subject": "it",
+          "predicate": "will rain",
+          "kind": "F",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 139,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 140,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 141,
+        "type": "RA",
+        "text": "Default Inference",
+        "pta": {
+          "note": "L premise that does not say q: no form. Use the I-node (γ) or argue q from the locution first (δ)"
+        }
+      },
+      {
+        "nodeID": 142,
+        "type": "YA",
+        "text": "Arguing"
+      }
+    ],
+    "edges": [
+      {
+        "edgeID": 1000,
+        "fromID": 1,
+        "toID": 3
+      },
+      {
+        "edgeID": 1001,
+        "fromID": 3,
+        "toID": 2
+      },
+      {
+        "edgeID": 1002,
+        "fromID": 4,
+        "toID": 6
+      },
+      {
+        "edgeID": 1003,
+        "fromID": 6,
+        "toID": 5
+      },
+      {
+        "edgeID": 1004,
+        "fromID": 7,
+        "toID": 9
+      },
+      {
+        "edgeID": 1005,
+        "fromID": 9,
+        "toID": 8
+      },
+      {
+        "edgeID": 1006,
+        "fromID": 1,
+        "toID": 10
+      },
+      {
+        "edgeID": 1007,
+        "fromID": 10,
+        "toID": 4
+      },
+      {
+        "edgeID": 1008,
+        "fromID": 5,
+        "toID": 11
+      },
+      {
+        "edgeID": 1009,
+        "fromID": 11,
+        "toID": 2
+      },
+      {
+        "edgeID": 1010,
+        "fromID": 10,
+        "toID": 12
+      },
+      {
+        "edgeID": 1011,
+        "fromID": 12,
+        "toID": 11
+      },
+      {
+        "edgeID": 1012,
+        "fromID": 8,
+        "toID": 11,
+        "role": "lever"
+      },
+      {
+        "edgeID": 1013,
+        "fromID": 4,
+        "toID": 13
+      },
+      {
+        "edgeID": 1014,
+        "fromID": 13,
+        "toID": 7
+      },
+      {
+        "edgeID": 1015,
+        "fromID": 14,
+        "toID": 16
+      },
+      {
+        "edgeID": 1016,
+        "fromID": 16,
+        "toID": 15
+      },
+      {
+        "edgeID": 1017,
+        "fromID": 15,
+        "toID": 17
+      },
+      {
+        "edgeID": 1018,
+        "fromID": 17,
+        "toID": 11
+      },
+      {
+        "edgeID": 1019,
+        "fromID": 7,
+        "toID": 18
+      },
+      {
+        "edgeID": 1020,
+        "fromID": 18,
+        "toID": 14
+      },
+      {
+        "edgeID": 1021,
+        "fromID": 18,
+        "toID": 19
+      },
+      {
+        "edgeID": 1022,
+        "fromID": 19,
+        "toID": 17
+      },
+      {
+        "edgeID": 1023,
+        "fromID": 20,
+        "toID": 22
+      },
+      {
+        "edgeID": 1024,
+        "fromID": 22,
+        "toID": 21
+      },
+      {
+        "edgeID": 1025,
+        "fromID": 23,
+        "toID": 25
+      },
+      {
+        "edgeID": 1026,
+        "fromID": 25,
+        "toID": 24
+      },
+      {
+        "edgeID": 1027,
+        "fromID": 20,
+        "toID": 26
+      },
+      {
+        "edgeID": 1028,
+        "fromID": 26,
+        "toID": 23
+      },
+      {
+        "edgeID": 1029,
+        "fromID": 24,
+        "toID": 27
+      },
+      {
+        "edgeID": 1030,
+        "fromID": 27,
+        "toID": 21
+      },
+      {
+        "edgeID": 1031,
+        "fromID": 26,
+        "toID": 28
+      },
+      {
+        "edgeID": 1032,
+        "fromID": 28,
+        "toID": 27
+      },
+      {
+        "edgeID": 1033,
+        "fromID": 29,
+        "toID": 31
+      },
+      {
+        "edgeID": 1034,
+        "fromID": 31,
+        "toID": 30
+      },
+      {
+        "edgeID": 1035,
+        "fromID": 32,
+        "toID": 34
+      },
+      {
+        "edgeID": 1036,
+        "fromID": 34,
+        "toID": 33
+      },
+      {
+        "edgeID": 1037,
+        "fromID": 33,
+        "toID": 35
+      },
+      {
+        "edgeID": 1038,
+        "fromID": 35,
+        "toID": 30
+      },
+      {
+        "edgeID": 1039,
+        "fromID": 29,
+        "toID": 36
+      },
+      {
+        "edgeID": 1040,
+        "fromID": 36,
+        "toID": 32
+      },
+      {
+        "edgeID": 1041,
+        "fromID": 36,
+        "toID": 37
+      },
+      {
+        "edgeID": 1042,
+        "fromID": 37,
+        "toID": 35
+      },
+      {
+        "edgeID": 1043,
+        "fromID": 38,
+        "toID": 40
+      },
+      {
+        "edgeID": 1044,
+        "fromID": 40,
+        "toID": 39
+      },
+      {
+        "edgeID": 1045,
+        "fromID": 32,
+        "toID": 41
+      },
+      {
+        "edgeID": 1046,
+        "fromID": 41,
+        "toID": 38
+      },
+      {
+        "edgeID": 1047,
+        "fromID": 39,
+        "toID": 42
+      },
+      {
+        "edgeID": 1048,
+        "fromID": 42,
+        "toID": 33
+      },
+      {
+        "edgeID": 1049,
+        "fromID": 41,
+        "toID": 43
+      },
+      {
+        "edgeID": 1050,
+        "fromID": 43,
+        "toID": 42
+      },
+      {
+        "edgeID": 1051,
+        "fromID": 44,
+        "toID": 46
+      },
+      {
+        "edgeID": 1052,
+        "fromID": 46,
+        "toID": 45
+      },
+      {
+        "edgeID": 1053,
+        "fromID": 47,
+        "toID": 49
+      },
+      {
+        "edgeID": 1054,
+        "fromID": 49,
+        "toID": 48
+      },
+      {
+        "edgeID": 1055,
+        "fromID": 44,
+        "toID": 50
+      },
+      {
+        "edgeID": 1056,
+        "fromID": 50,
+        "toID": 47
+      },
+      {
+        "edgeID": 1057,
+        "fromID": 48,
+        "toID": 51
+      },
+      {
+        "edgeID": 1058,
+        "fromID": 51,
+        "toID": 45
+      },
+      {
+        "edgeID": 1059,
+        "fromID": 50,
+        "toID": 52
+      },
+      {
+        "edgeID": 1060,
+        "fromID": 52,
+        "toID": 51
+      },
+      {
+        "edgeID": 1061,
+        "fromID": 53,
+        "toID": 55
+      },
+      {
+        "edgeID": 1062,
+        "fromID": 55,
+        "toID": 54
+      },
+      {
+        "edgeID": 1063,
+        "fromID": 56,
+        "toID": 58
+      },
+      {
+        "edgeID": 1064,
+        "fromID": 58,
+        "toID": 57
+      },
+      {
+        "edgeID": 1065,
+        "fromID": 53,
+        "toID": 59
+      },
+      {
+        "edgeID": 1066,
+        "fromID": 59,
+        "toID": 56
+      },
+      {
+        "edgeID": 1067,
+        "fromID": 57,
+        "toID": 60
+      },
+      {
+        "edgeID": 1068,
+        "fromID": 60,
+        "toID": 54
+      },
+      {
+        "edgeID": 1069,
+        "fromID": 59,
+        "toID": 61
+      },
+      {
+        "edgeID": 1070,
+        "fromID": 61,
+        "toID": 60
+      },
+      {
+        "edgeID": 1071,
+        "fromID": 62,
+        "toID": 64
+      },
+      {
+        "edgeID": 1072,
+        "fromID": 64,
+        "toID": 63
+      },
+      {
+        "edgeID": 1073,
+        "fromID": 65,
+        "toID": 67
+      },
+      {
+        "edgeID": 1074,
+        "fromID": 67,
+        "toID": 66
+      },
+      {
+        "edgeID": 1075,
+        "fromID": 62,
+        "toID": 68
+      },
+      {
+        "edgeID": 1076,
+        "fromID": 68,
+        "toID": 65
+      },
+      {
+        "edgeID": 1077,
+        "fromID": 66,
+        "toID": 69
+      },
+      {
+        "edgeID": 1078,
+        "fromID": 69,
+        "toID": 63
+      },
+      {
+        "edgeID": 1079,
+        "fromID": 68,
+        "toID": 70
+      },
+      {
+        "edgeID": 1080,
+        "fromID": 70,
+        "toID": 69
+      },
+      {
+        "edgeID": 1081,
+        "fromID": 71,
+        "toID": 73
+      },
+      {
+        "edgeID": 1082,
+        "fromID": 73,
+        "toID": 72
+      },
+      {
+        "edgeID": 1083,
+        "fromID": 74,
+        "toID": 76
+      },
+      {
+        "edgeID": 1084,
+        "fromID": 76,
+        "toID": 75
+      },
+      {
+        "edgeID": 1085,
+        "fromID": 71,
+        "toID": 77
+      },
+      {
+        "edgeID": 1086,
+        "fromID": 77,
+        "toID": 74
+      },
+      {
+        "edgeID": 1087,
+        "fromID": 75,
+        "toID": 78
+      },
+      {
+        "edgeID": 1088,
+        "fromID": 78,
+        "toID": 72
+      },
+      {
+        "edgeID": 1089,
+        "fromID": 77,
+        "toID": 79
+      },
+      {
+        "edgeID": 1090,
+        "fromID": 79,
+        "toID": 78
+      },
+      {
+        "edgeID": 1091,
+        "fromID": 80,
+        "toID": 82
+      },
+      {
+        "edgeID": 1092,
+        "fromID": 82,
+        "toID": 81
+      },
+      {
+        "edgeID": 1093,
+        "fromID": 83,
+        "toID": 85
+      },
+      {
+        "edgeID": 1094,
+        "fromID": 85,
+        "toID": 84
+      },
+      {
+        "edgeID": 1095,
+        "fromID": 80,
+        "toID": 86
+      },
+      {
+        "edgeID": 1096,
+        "fromID": 86,
+        "toID": 83
+      },
+      {
+        "edgeID": 1097,
+        "fromID": 84,
+        "toID": 87
+      },
+      {
+        "edgeID": 1098,
+        "fromID": 87,
+        "toID": 81
+      },
+      {
+        "edgeID": 1099,
+        "fromID": 86,
+        "toID": 88
+      },
+      {
+        "edgeID": 1100,
+        "fromID": 88,
+        "toID": 87
+      },
+      {
+        "edgeID": 1101,
+        "fromID": 89,
+        "toID": 91
+      },
+      {
+        "edgeID": 1102,
+        "fromID": 91,
+        "toID": 90
+      },
+      {
+        "edgeID": 1103,
+        "fromID": 92,
+        "toID": 94
+      },
+      {
+        "edgeID": 1104,
+        "fromID": 94,
+        "toID": 93
+      },
+      {
+        "edgeID": 1105,
+        "fromID": 93,
+        "toID": 95
+      },
+      {
+        "edgeID": 1106,
+        "fromID": 95,
+        "toID": 90
+      },
+      {
+        "edgeID": 1107,
+        "fromID": 89,
+        "toID": 96
+      },
+      {
+        "edgeID": 1108,
+        "fromID": 96,
+        "toID": 92
+      },
+      {
+        "edgeID": 1109,
+        "fromID": 96,
+        "toID": 97
+      },
+      {
+        "edgeID": 1110,
+        "fromID": 97,
+        "toID": 95
+      },
+      {
+        "edgeID": 1111,
+        "fromID": 98,
+        "toID": 100
+      },
+      {
+        "edgeID": 1112,
+        "fromID": 100,
+        "toID": 99
+      },
+      {
+        "edgeID": 1113,
+        "fromID": 92,
+        "toID": 101
+      },
+      {
+        "edgeID": 1114,
+        "fromID": 101,
+        "toID": 98
+      },
+      {
+        "edgeID": 1115,
+        "fromID": 99,
+        "toID": 102
+      },
+      {
+        "edgeID": 1116,
+        "fromID": 102,
+        "toID": 93
+      },
+      {
+        "edgeID": 1117,
+        "fromID": 101,
+        "toID": 103
+      },
+      {
+        "edgeID": 1118,
+        "fromID": 103,
+        "toID": 102
+      },
+      {
+        "edgeID": 1119,
+        "fromID": 104,
+        "toID": 106
+      },
+      {
+        "edgeID": 1120,
+        "fromID": 106,
+        "toID": 105
+      },
+      {
+        "edgeID": 1121,
+        "fromID": 107,
+        "toID": 109
+      },
+      {
+        "edgeID": 1122,
+        "fromID": 109,
+        "toID": 108
+      },
+      {
+        "edgeID": 1123,
+        "fromID": 104,
+        "toID": 110
+      },
+      {
+        "edgeID": 1124,
+        "fromID": 110,
+        "toID": 107
+      },
+      {
+        "edgeID": 1125,
+        "fromID": 108,
+        "toID": 111
+      },
+      {
+        "edgeID": 1126,
+        "fromID": 111,
+        "toID": 105
+      },
+      {
+        "edgeID": 1127,
+        "fromID": 110,
+        "toID": 112
+      },
+      {
+        "edgeID": 1128,
+        "fromID": 112,
+        "toID": 111
+      },
+      {
+        "edgeID": 1129,
+        "fromID": 113,
+        "toID": 115
+      },
+      {
+        "edgeID": 1130,
+        "fromID": 115,
+        "toID": 114
+      },
+      {
+        "edgeID": 1131,
+        "fromID": 116,
+        "toID": 118
+      },
+      {
+        "edgeID": 1132,
+        "fromID": 118,
+        "toID": 117
+      },
+      {
+        "edgeID": 1133,
+        "fromID": 113,
+        "toID": 119
+      },
+      {
+        "edgeID": 1134,
+        "fromID": 119,
+        "toID": 116
+      },
+      {
+        "edgeID": 1135,
+        "fromID": 113,
+        "toID": 120
+      },
+      {
+        "edgeID": 1136,
+        "fromID": 120,
+        "toID": 117
+      },
+      {
+        "edgeID": 1137,
+        "fromID": 119,
+        "toID": 121
+      },
+      {
+        "edgeID": 1138,
+        "fromID": 121,
+        "toID": 120
+      },
+      {
+        "edgeID": 1139,
+        "fromID": 122,
+        "toID": 124
+      },
+      {
+        "edgeID": 1140,
+        "fromID": 124,
+        "toID": 123
+      },
+      {
+        "edgeID": 1141,
+        "fromID": 125,
+        "toID": 127
+      },
+      {
+        "edgeID": 1142,
+        "fromID": 127,
+        "toID": 126
+      },
+      {
+        "edgeID": 1143,
+        "fromID": 126,
+        "toID": 128
+      },
+      {
+        "edgeID": 1144,
+        "fromID": 128,
+        "toID": 123
+      },
+      {
+        "edgeID": 1145,
+        "fromID": 122,
+        "toID": 129
+      },
+      {
+        "edgeID": 1146,
+        "fromID": 129,
+        "toID": 125
+      },
+      {
+        "edgeID": 1147,
+        "fromID": 126,
+        "toID": 130
+      },
+      {
+        "edgeID": 1148,
+        "fromID": 130,
+        "toID": 123
+      },
+      {
+        "edgeID": 1149,
+        "fromID": 129,
+        "toID": 131
+      },
+      {
+        "edgeID": 1150,
+        "fromID": 131,
+        "toID": 130
+      },
+      {
+        "edgeID": 1151,
+        "fromID": 132,
+        "toID": 134
+      },
+      {
+        "edgeID": 1152,
+        "fromID": 134,
+        "toID": 133
+      },
+      {
+        "edgeID": 1153,
+        "fromID": 135,
+        "toID": 137
+      },
+      {
+        "edgeID": 1154,
+        "fromID": 137,
+        "toID": 136
+      },
+      {
+        "edgeID": 1155,
+        "fromID": 136,
+        "toID": 139
+      },
+      {
+        "edgeID": 1156,
+        "fromID": 139,
+        "toID": 138
+      },
+      {
+        "edgeID": 1157,
+        "fromID": 132,
+        "toID": 140
+      },
+      {
+        "edgeID": 1158,
+        "fromID": 140,
+        "toID": 135
+      },
+      {
+        "edgeID": 1159,
+        "fromID": 136,
+        "toID": 141
+      },
+      {
+        "edgeID": 1160,
+        "fromID": 141,
+        "toID": 133
+      },
+      {
+        "edgeID": 1161,
+        "fromID": 140,
+        "toID": 142
+      },
+      {
+        "edgeID": 1162,
+        "fromID": 142,
+        "toID": 141
+      }
+    ],
+    "locutions": [
+      {
+        "nodeID": 1,
+        "personID": 1,
+        "start": 107,
+        "end": 130
+      },
+      {
+        "nodeID": 4,
+        "personID": 1,
+        "start": 132,
+        "end": 151
+      },
+      {
+        "nodeID": 7,
+        "personID": 1,
+        "start": 153,
+        "end": 183
+      },
+      {
+        "nodeID": 14,
+        "personID": 2,
+        "start": 190,
+        "end": 233
+      },
+      {
+        "nodeID": 20,
+        "personID": 1,
+        "start": 286,
+        "end": 307
+      },
+      {
+        "nodeID": 23,
+        "personID": 1,
+        "start": 309,
+        "end": 331
+      },
+      {
+        "nodeID": 29,
+        "personID": 2,
+        "start": 428,
+        "end": 446
+      },
+      {
+        "nodeID": 32,
+        "personID": 1,
+        "start": 455,
+        "end": 468
+      },
+      {
+        "nodeID": 38,
+        "personID": 1,
+        "start": 470,
+        "end": 487
+      },
+      {
+        "nodeID": 44,
+        "personID": 1,
+        "start": 558,
+        "end": 576
+      },
+      {
+        "nodeID": 47,
+        "personID": 1,
+        "start": 578,
+        "end": 596
+      },
+      {
+        "nodeID": 53,
+        "personID": 1,
+        "start": 663,
+        "end": 696
+      },
+      {
+        "nodeID": 56,
+        "personID": 1,
+        "start": 698,
+        "end": 732
+      },
+      {
+        "nodeID": 62,
+        "personID": 1,
+        "start": 793,
+        "end": 819
+      },
+      {
+        "nodeID": 65,
+        "personID": 1,
+        "start": 821,
+        "end": 837
+      },
+      {
+        "nodeID": 71,
+        "personID": 1,
+        "start": 924,
+        "end": 940
+      },
+      {
+        "nodeID": 74,
+        "personID": 1,
+        "start": 942,
+        "end": 958
+      },
+      {
+        "nodeID": 80,
+        "personID": 1,
+        "start": 1071,
+        "end": 1093
+      },
+      {
+        "nodeID": 83,
+        "personID": 1,
+        "start": 1095,
+        "end": 1119
+      },
+      {
+        "nodeID": 89,
+        "personID": 2,
+        "start": 1216,
+        "end": 1238
+      },
+      {
+        "nodeID": 92,
+        "personID": 1,
+        "start": 1247,
+        "end": 1273
+      },
+      {
+        "nodeID": 98,
+        "personID": 1,
+        "start": 1275,
+        "end": 1295
+      },
+      {
+        "nodeID": 104,
+        "personID": 1,
+        "start": 1357,
+        "end": 1378
+      },
+      {
+        "nodeID": 107,
+        "personID": 1,
+        "start": 1380,
+        "end": 1404
+      },
+      {
+        "nodeID": 113,
+        "personID": 2,
+        "start": 1509,
+        "end": 1533
+      },
+      {
+        "nodeID": 116,
+        "personID": 1,
+        "start": 1542,
+        "end": 1572
+      },
+      {
+        "nodeID": 122,
+        "personID": 1,
+        "start": 1673,
+        "end": 1690
+      },
+      {
+        "nodeID": 125,
+        "personID": 1,
+        "start": 1692,
+        "end": 1705
+      },
+      {
+        "nodeID": 126,
+        "personID": 3
+      },
+      {
+        "nodeID": 132,
+        "personID": 1,
+        "start": 1807,
+        "end": 1823
+      },
+      {
+        "nodeID": 135,
+        "personID": 1,
+        "start": 1825,
+        "end": 1848
+      },
+      {
+        "nodeID": 136,
+        "personID": 3
+      }
+    ],
+    "participants": [
+      {
+        "participantID": 1,
+        "firstname": "Alice",
+        "surname": ""
+      },
+      {
+        "participantID": 2,
+        "firstname": "Bob",
+        "surname": ""
+      },
+      {
+        "participantID": 3,
+        "firstname": "Carol",
+        "surname": ""
+      }
+    ],
+    "schemefulfillments": [],
+    "descriptorfulfillments": []
+  },
+  "text": "1. α (I → RA → I, same subject), with a stated lever (I → lever port) and an undercut (I → CA → RA)\nAlice: The neighbours are home. Their lights are on. Lights on mean someone is home.\nBob: They leave their lights on when they travel.\n\n2. α with no PTA lever (FV): lever \"novel\"\nAlice: Mia will win the race. She is the best runner.\n\n3. α on second-order statements: both about the same proposition (◎), neither marked A/U\nBob: Nothing is certain.\nAlice: That is false. It refutes itself.\n\n4. β (I → RA → I, same predicate): scopes give the substance\nAlice: Socrates is mortal. All men are mortal.\n\n5. γ i (I → RA → I, nothing shared): the lever settles i\nAlice: Peace can be started by the truth, because war can be started by lies.\n\n6. γ d (nothing shared, no relation): lever \"none\"\nAlice: The moon is made of cheese. My cat is orange.\n\n7. No form (same subject and predicate): the premise restates the conclusion\nAlice: Cats are mammals. Cats are mammals!\n\n8. δ I (second-order I premise about the conclusion, perspective I): conclusion q itself, implicitly A\nAlice: The meeting is at nine. I booked the room myself.\n\n9. δ II (second-order I premise, perspective II) into a second-order conclusion marked U\nBob: Vaccines are dangerous.\nAlice: That is not to be believed. You sell supplements.\n\n10. δ III (second-order I premise, perspective III)\nAlice: Smoking causes cancer. Every oncologist says so.\n\n11. δ II from a locution (L → RA): the addressee's own words; perspective from the TA's speakers\nBob: Exercise is good for you.\nAlice: Then you are committed to that.\n\n12. δ III from a reported locution (L → Asserting → L(reported) → RA): conclusion q itself\nAlice: The ferry is late. Carol said so.\n\n13. No form from a locution that does not say the conclusion: argue from its I-node instead\nAlice: Take an umbrella. Carol said it will rain.",
+  "dialog": true
+}

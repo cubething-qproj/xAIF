@@ -7,12 +7,15 @@
 -->
 <script lang="ts">
   import { getContext } from 'svelte';
-  import { Handle, Position, useSvelteFlow, type NodeProps } from '@xyflow/svelte';
-  import { LEVER_HANDLE, type FlowNode } from './flow';
+  import { useSvelteFlow, type NodeProps } from '@xyflow/svelte';
+  import Ports from './Ports.svelte';
+  import type { FlowNode, Focus } from './flow';
   import { DEFAULT_TEXT, type argumentType } from './xaif';
   import { NOVEL, leverOptions, ptaOf, type Connector, type Reconstruction } from './pta';
 
   let { id, data, selected }: NodeProps<FlowNode> = $props();
+  /** What is selected, if anything; provided by the app. */
+  const focus = getContext<() => Focus | null>('focus');
   const { updateNodeData } = useSvelteFlow();
   /** Looks up an RA's derived type; provided by the app. */
   const typeFor = getContext<(id: string) => ReturnType<typeof argumentType>>('argumentType');
@@ -30,13 +33,10 @@
   }
 </script>
 
-<div class="scheme {data.kind}" class:selected>
+<div class="scheme {data.kind}" class:selected class:linked={focus()?.ends.has(id)}>
   {#if ports}<span class="port out">{ports[1]}</span>{/if}
-  <Handle type="target" position={Position.Top} />
-  {#if data.kind === 'RA'}
-    <Handle id={LEVER_HANDLE} type="target" position={Position.Left} />
-    <span class="port side">lever</span>
-  {/if}
+  <Ports kind={data.kind} />
+  {#if data.kind === 'RA'}<span class="port side">lever</span>{/if}
   <div class="head"><b>{data.kind}</b> <span class="id">{id}</span></div>
   {#if data.kind === 'RA'}
     {#if type}
@@ -59,7 +59,6 @@
   {:else if data.kind !== 'I' && data.kind !== 'L' && data.text !== DEFAULT_TEXT[data.kind]}
     <div class="foreign">{data.text}</div>
   {/if}
-  <Handle type="source" position={Position.Bottom} />
   {#if ports}<span class="port in">{ports[0]}</span>{/if}
 </div>
 
@@ -95,9 +94,6 @@
   }
   .force {
     color: #713f12;
-  }
-  .selected {
-    box-shadow: 0 0 0 3px #cbd5e1;
   }
   .id {
     color: #64748b;
@@ -150,6 +146,6 @@
   .port.side {
     left: auto;
     right: calc(100% + 8px);
-    top: calc(50% - 14px);
+    top: calc(35% - 14px);
   }
 </style>

@@ -15,6 +15,7 @@ pnpm check    # svelte-check
 
 Open `examples/downloading.json` (a dialogue with an undercut) or
 `examples/einstein.json` (reported speech, a δ argument).
+`examples/ra-inputs.json` is a catalogue of every way into an RA.
 
 ## Sessions
 
@@ -25,15 +26,13 @@ side by side, and back/forward moves between sessions you've switched to.
 - The picker switches this tab to another saved session.
 - **New** starts an empty session here; **New tab** starts one in another tab.
 - **Open…** loads a file as a new session, leaving the current one alone.
-- **Save as…** asks where to save (the browser's native file dialog) and
-  makes that file the session's name and Save target; **Save** writes back to
-  the session's file, asking the first time. Files opened with **Open…** are
-  Save targets too. Without native dialogs (Firefox), Save as asks for a
-  name and both download. File targets last until the tab is closed. File
+- **Download xAIF** saves the session as a file: through the browser's
+  save dialog where it has one (Chromium), where a name you choose becomes
+  the session's name; otherwise as a download named after the session. File
   handling uses [browser-fs-access](https://github.com/GoogleChromeLabs/browser-fs-access).
 - **Delete** removes the session (download it first if you want to keep it).
 
-Two tabs on the *same* session overwrite each other; the last save wins.
+Two tabs on the *same* session overwrite each other; the last change wins.
 
 Interpretive decisions made while annotating are logged in
 `judgement-calls.md`; conventions are in the `xaif-iat` skill.
@@ -44,9 +43,23 @@ Three panels: the source text, the graph, and the inspector. **Auto layout**
 arranges the graph like an IAT diagram, in three columns: logic (I, RA, CA,
 MA) | links (YA) | locutions (L, TA). Locutions run down in text order, with
 each TA just before the locution it leads to and reported speech right after
-its reporter. Each YA sits level with the locution or TA that anchors it,
-and each proposition or relation level with its YA, so an RA appears beside
-the TA that argues it, between its premise and conclusion.
+its reporter. Each YA sits in the row of the locution or TA that anchors
+it, and each proposition or relation in the row of its YA, so an RA appears
+beside the TA that argues it. Rows span all three columns and are as tall as
+their tallest column, so the columns stay level with each other; this
+favours readability over compactness.
+
+Selecting a node rings it in orange, gives its neighbours a lighter ring,
+draws its edges bold and fades everything else; selecting an edge does the
+same for the edge and its two ends.
+
+Every node has typed ports, hollow for incoming and filled for outgoing,
+each on the side facing what it connects to: dialogue runs down the
+locution column (TA ports top and bottom), anchoring runs sideways through
+the links column (YA ports left and right), and inference runs down the
+logic column (premise in at the top, conclusion out at the bottom; RAs also
+take a lever and an undercut on the left). Hover over a port to see what it
+accepts; a port only takes the node kinds IAT allows there.
 
 ## Annotating
 
@@ -55,6 +68,8 @@ the TA that argues it, between its premise and conclusion.
 2. **Locutions.** Highlight a span and press **Add locution**. This creates
    L → YA (Asserting) → I, as OVA does; surrounding whitespace and final
    punctuation are trimmed. The L-node keeps the words exactly as said.
+   Selecting a locution puts a handle at each end of its span; drag one to
+   resize the span, and the L-node's words follow (its I-node doesn't).
 3. **Reconstruction.** Edit the I-node into its canonical form and tick the
    ATIP step-2 transformations on the YA (anaphora, passivization, …). MA
    nodes are only for rephrasing done by the speakers themselves.
@@ -65,32 +80,40 @@ the TA that argues it, between its premise and conclusion.
    which replaces its predicate. Both keep type and scope, for α and β.
 5. **Dialogue.** Link locutions with TAs, and anchor relations in them with
    YAs (Arguing → RA, Disagreeing → CA, Restating → MA). Connect by dragging
-   from a node's bottom handle and dropping on another node (anywhere on it,
-   or on an RA's side handle for a lever).
+   from a port and dropping on another node: on a port, or anywhere on the
+   node to use whichever port fits. A lever must be dropped on the RA's
+   lever port.
 
 Choices are dropdowns in the inspector wherever there is a list (illocutionary
 force, scheme names, speakers, types, levers), with **other…** for anything
 else. Concepts are chips: click one used elsewhere in the file to tag it, or
 type a new one and press Enter.
-6. **Arguments.** An RA with one premise and one conclusion derives its form
-   and substance; only the lever is chosen. Rules are tried top to bottom:
+6. **Arguments.** An RA takes exactly one premise (an I or L node) and gives
+   one conclusion (an I node), and derives its form and substance from them;
+   only the lever is chosen. Rules are tried top to bottom:
 
-   | Form | Premise | Conclusion | Substance | Levers |
-   | ---- | ------- | ---------- | --------- | ------ |
-   | δ | about q: its subject is q, or it is a locution that says q | q itself (implicitly A), or about q and marked A/U | premise's perspective I/II/III | those for A or U |
-   | — | same subject and predicate | | | none (premise restates conclusion) |
-   | α | b is Y, with b = a | a is X | types, conclusion first (F/V/P) | by substance |
-   | β | b is Y, with Y = X | a is X | scopes, conclusion first (s/p/u) | by substance |
-   | γ | b is Y | a is X | i or d, from the lever | all γ |
+   | Code | Premise → RA | RA → conclusion | Substance from |
+   | ---- | ------------ | --------------- | -------------- |
+   | δ | I whose subject is ◎ q, or L that anchors q (via a YA) | I q itself (A implied), or I whose subject is ◎ q, marked A/U | premise I's perspective; for an L, the TA's speakers |
+   | — | I with the conclusion's subject *and* predicate, or an L that doesn't anchor q | I | none: no form |
+   | α | I with the conclusion's subject (same words, or same ◎ node) | I | types F/V/P, conclusion first |
+   | β | I with the conclusion's predicate | I | scopes s/p/u, conclusion first |
+   | γ | I sharing neither | I | the lever: none → d, else i |
 
-   A locution's perspective comes from the speakers of the anchoring
-   transition (arguer → I, addressee → II, anyone else → III) unless set on
-   the L-node. A locution premise types only as δ. Terms match as strings (case, spacing and final punctuation
-   ignored); proposition subjects match by node.
+   For δ, only levers for the conclusion's A or U are offered; for γ, every γ
+   lever. A locution's perspective is arguer → I, addressee → II, anyone
+   else → III, read off the speakers of the TA that anchors the RA, unless
+   set on the L-node. Terms match as strings (case, spacing and final
+   punctuation ignored).
 
-   A stated lever links into the RA's side port. CAs are left untyped:
-   argue against something with an RA into a statement of the opposite,
-   and add a CA from that to the original if you want the clash recorded.
+   Two more inputs don't affect the type: a **lever statement** (I → the
+   RA's side port) and an **undercut** (I → CA → RA).
+   `examples/ra-inputs.json` has every row, one RA each, labelled with the
+   code it should derive (`pnpm test` checks the labels).
+
+   CAs are left untyped: argue against something with an RA into a
+   statement of the opposite, and add a CA from that to the original if you
+   want the clash recorded.
 
 ## Storage
 

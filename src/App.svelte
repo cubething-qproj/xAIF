@@ -20,7 +20,7 @@
   import '@xyflow/svelte/dist/style.css';
   import INode from './lib/INode.svelte';
   import LNode from './lib/LNode.svelte';
-  import FloatingEdge from './lib/FloatingEdge.svelte';
+  import PortEdge from './lib/PortEdge.svelte';
   import TextPanel from './lib/TextPanel.svelte';
   import SchemeNode from './lib/SchemeNode.svelte';
   import Toolbar from './lib/Toolbar.svelte';
@@ -33,8 +33,9 @@
     flowEdge,
     flowNode,
     layout,
-    leverEdge,
+    portsFor,
     type FlowNode,
+    type Focus,
     type NodeData,
   } from './lib/flow';
   import {
@@ -53,15 +54,13 @@
   import { sessions, type SessionInfo } from './lib/sessions';
 
   const nodeTypes = { inode: INode, lnode: LNode, scheme: SchemeNode };
-  const edgeTypes = { floating: FloatingEdge };
+  const edgeTypes = { port: PortEdge };
 
   let doc = $state.raw(Doc.empty());
   let fileName = $state('untitled.json');
   /** This tab's session ID, also in the URL hash. */
   let session = $state('');
   let sessionList = $state.raw<SessionInfo[]>([]);
-  /** Files on disk that sessions were opened from or saved as, so Save writes back. Per tab, not persisted. */
-  const handles = new Map<string, FileSystemFileHandle>();
   let nodes = $state.raw<FlowNode[]>([]);
   let edges = $state.raw<Edge[]>([]);
   let text = $state('');
@@ -84,6 +83,16 @@
     const [ns, es] = [argNodes(nodes), argEdges(edges)];
     return new Map(ns.filter((n) => n.kind === 'RA').map((n) => [n.id, argumentType(n.id, ns, es)]));
   });
+  /** The selected node and its neighbours, or the selected edge and its ends. */
+  const focus = $derived.by((): Focus | null => {
+    if (selected) {
+      const ends = edges.flatMap((e) => (e.source === selected.id ? [e.target] : e.target === selected.id ? [e.source] : []));
+      return { node: selected.id, ends: new Set(ends) };
+    }
+    const edge = edges.find((e) => e.selected);
+    return edge ? { ends: new Set([edge.source, edge.target]) } : null;
+  });
+  setContext('focus', () => focus);
   setContext('argumentType', (id: string) => types.get(id) ?? null);
   const textOf = (id: string) => nodes.find((n) => n.id === id && n.data.kind === 'I')?.data.text;
   setContext('nodeText', textOf);
@@ -115,7 +124,8 @@
     text = next.text;
     participants = next.participants;
     const n = next.nodes.map(flowNode);
-    const e = next.edges.map(flowEdge);
+    const kinds = new Map(next.nodes.map((x) => [x.id, x.kind]));
+    const e = next.edges.map((x) => flowEdge(x, (id) => kinds.get(id)));
     const positioned = next.nodes.every((x) => x.position);
     nodes = positioned ? n : layout(n, e);
     edges = e;
@@ -157,14 +167,13 @@
     location.hash = id;
   }
 
-  /** Opens a file as a new session, leaving the current one untouched; remembers its handle for Save. */
-  async function openFile(file: File, handle?: FileSystemFileHandle) {
+  /** Opens a file as a new session, leaving the current one untouched. */
+  async function openFile(file: File) {
     try {
       const json = JSON.parse(await file.text());
       Doc.load(json);
       const id = sessions.newId();
       sessions.save(id, { name: file.name, json });
-      if (handle) handles.set(id, handle);
       switchTo(id);
     } catch (err) {
       alert(`Could not open ${file.name}: ${err instanceof Error ? err.message : err}`);
@@ -174,32 +183,17 @@
   /** Asks for a file and opens it as a new session. */
   async function pickFile() {
     const picked = await files.open().catch((err) => void alert(`Could not open: ${err}`));
-    if (picked) await openFile(picked.file, picked.handle);
-  }
-
-  /** Writes back to the session's file if it has one, else saves as. */
-  async function save() {
-    const handle = handles.get(session);
-    if (!handle) return saveAs();
-    await files.save(fileName, serialize(), handle).catch((err) => alert(`Could not save ${handle.name}: ${err}`));
+    if (picked) await openFile(picked);
   }
 
   /**
-   * Asks where to save (native dialog), writes there, and makes that file
-   * the session's name and Save target. Without native dialogs there's no
-   * way to ask, so it asks for a name and downloads.
+   * Downloads the session as an xAIF file: the browser's save dialog where
+   * it has one (Chromium), else a download named after the session. A name
+   * chosen in the dialog becomes the session's name.
    */
-  async function saveAs() {
-    const id = session;
-    if (!files.supported()) {
-      const name = prompt('Save as', fileName)?.trim();
-      if (!name) return;
-      fileName = name.endsWith('.json') ? name : `${name}.json`;
-    }
-    const handle = await files.save(fileName, serialize()).catch((err) => void alert(`Could not save: ${err}`));
-    if (!handle) return;
-    handles.set(id, handle);
-    fileName = handle.name;
+  async function download() {
+    const name = await files.download(fileName, serialize()).catch((err) => void alert(`Could not download: ${err}`));
+    if (name) fileName = name;
   }
 
   function deleteSession() {
@@ -238,7 +232,9 @@
       { ...flowNode({ id: i, kind: 'I', text: words, position: { x: 0, y } }), selected: true },
     ];
     nodes = [...nodes.map((n) => ({ ...n, selected: false })), ...added];
-    edges = [...edges, flowEdge({ id: fresh(), from: l, to: ya }), flowEdge({ id: fresh(), from: ya, to: i })];
+    const kinds: Record<string, NodeKind> = { [l]: 'L', [ya]: 'YA', [i]: 'I' };
+    const kind = (id: string) => kinds[id];
+    edges = [...edges, flowEdge({ id: fresh(), from: l, to: ya }, kind), flowEdge({ id: fresh(), from: ya, to: i }, kind)];
   }
 
   /**
@@ -258,7 +254,12 @@
     text = next;
   }
 
-  function update(id: string, data: NodeData) {
+  /** Moves a locution's span; its words follow, since an L-node is exactly what was said. */
+  function setSpan(id: string, span: { start: number; end: number }) {
+    nodes = nodes.map((n) => (n.id === id ? { ...n, data: { ...n.data, span, text: text.slice(span.start, span.end) } } : n));
+  }
+
+    function update(id: string, data: NodeData) {
     nodes = nodes.map((n) => (n.id === id ? { ...n, data } : n));
   }
 
@@ -267,47 +268,55 @@
   }
 
   /**
-   * Rejects self-loops, duplicates and I → I edges. The lever port takes
-   * one I-node only.
+   * Accepts a connection if IAT allows it and both ports take the other
+   * end's kind (see `PORTS`); rejects self-loops, duplicates and a second
+   * lever on one RA. Without handles (a drop on a node's body), any fitting
+   * ports will do.
    */
   function isValidConnection(c: Connection | Edge) {
     const kind = (id: string) => nodes.find((n) => n.id === id)?.data.kind;
     const [from, to] = [kind(c.source), kind(c.target)];
-    const lever = c.targetHandle === LEVER_HANDLE;
     return (
       !!from &&
       !!to &&
       c.source !== c.target &&
       canConnect(from, to) &&
+      !!portsFor(from, to, { source: c.sourceHandle, target: c.targetHandle }) &&
       !edges.some((e) => e.source === c.source && e.target === c.target) &&
-      (!lever || (from === 'I' && !edges.some((e) => e.target === c.target && e.targetHandle === LEVER_HANDLE)))
+      (c.targetHandle !== LEVER_HANDLE || !edges.some((e) => e.target === c.target && e.targetHandle === LEVER_HANDLE))
     );
   }
 
   /**
    * Lets a connection be dropped anywhere on a node, not just on its handle,
-   * as in OVA: if the drag ended over a node without connecting, connect to
-   * that node's main port (its input if dragged from an output, and back).
+   * as in OVA: if the drag ended over a node without connecting, connect the
+   * dragged port to whichever port of that node fits.
    */
   const connectOnDrop: OnConnectEnd = (event, state) => {
     if (state.isValid || !state.fromNode || !state.fromHandle) return;
     const point = 'changedTouches' in event ? event.changedTouches[0] : event;
     const target = document.elementFromPoint(point.clientX, point.clientY)?.closest<HTMLElement>('.svelte-flow__node')?.dataset.id;
     if (!target) return;
-    const [from, to] = state.fromHandle.type === 'source' ? [state.fromNode.id, target] : [target, state.fromNode.id];
-    const connection = { source: from, target: to, sourceHandle: null, targetHandle: null };
+    const outward = state.fromHandle.type === 'source';
+    const handle = state.fromHandle.id ?? null;
+    const connection = outward
+      ? { source: state.fromNode.id, target, sourceHandle: handle, targetHandle: null }
+      : { source: target, target: state.fromNode.id, sourceHandle: null, targetHandle: handle };
     if (isValidConnection(connection)) connect(connection);
   };
 
   /**
-   * Adds an edge for a connection, with an ID in the document's ID space and
-   * lever styling where it applies. Both handle drops (`onbeforeconnect`,
+   * Adds an edge for a connection, with an ID in the document's ID space,
+   * attached to the ports that fit. Both handle drops (`onbeforeconnect`,
    * which then returns false so Svelte Flow doesn't add its own copy) and
    * body drops ({@link connectOnDrop}) go through here.
    */
   function connect(c: Connection) {
-    const edge: Edge = { id: doc.freshId(takenIds()), source: c.source, target: c.target, type: 'floating', markerEnd: MARKER };
-    edges = [...edges, c.targetHandle === LEVER_HANDLE ? leverEdge(edge) : edge];
+    const kind = (id: string) => nodes.find((n) => n.id === id)?.data.kind;
+    const [from, to] = [kind(c.source), kind(c.target)];
+    const handles = from && to && portsFor(from, to, { source: c.sourceHandle, target: c.targetHandle });
+    if (!handles) return;
+    edges = [...edges, { id: doc.freshId(takenIds()), source: c.source, target: c.target, type: 'port', markerEnd: MARKER, ...handles }];
   }
 
   sessions.migrate();
@@ -332,7 +341,7 @@
   onstorage={() => (sessionList = sessions.list())}
 />
 
-<main class:picking>
+<main class:picking class:focusing={!!focus}>
   <TextPanel
     {text}
     {participants}
@@ -342,6 +351,7 @@
     onparticipants={(p) => (participants = p)}
     onadd={addLocution}
     onselect={select}
+    onspan={setSpan}
   />
   <SvelteFlow
     bind:nodes
@@ -354,7 +364,7 @@
       return false;
     }}
     onconnectend={connectOnDrop}
-    defaultEdgeOptions={{ type: 'floating', markerEnd: MARKER }}
+    defaultEdgeOptions={{ type: 'port', markerEnd: MARKER }}
     deleteKey={['Backspace', 'Delete']}
     onnodeclick={({ node }) => pickSubject(node)}
     onpaneclick={() => (picking = null)}
@@ -373,8 +383,7 @@
       list={sessionList}
       onswitch={switchTo}
       onopen={pickFile}
-      onsave={save}
-      onsaveas={saveAs}
+      ondownload={download}
       onnew={() => switchTo(sessions.newId())}
       onnewtab={() => window.open(`${location.pathname}#${sessions.newId()}`, '_blank')}
       ondelete={deleteSession}

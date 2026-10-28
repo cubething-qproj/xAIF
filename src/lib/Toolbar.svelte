@@ -14,8 +14,7 @@
     list,
     onswitch,
     onopen,
-    onsave,
-    onsaveas,
+    ondownload,
     onnew,
     onnewtab,
     ondelete,
@@ -28,8 +27,7 @@
     list: SessionInfo[];
     onswitch: (id: string) => void;
     onopen: () => void;
-    onsave: () => void;
-    onsaveas: () => void;
+    ondownload: () => void;
     onnew: () => void;
     onnewtab: () => void;
     ondelete: () => void;
@@ -62,8 +60,7 @@
     </select>
     <button onclick={onnew} title="start a new session in this tab">New</button>
     <button onclick={onopen} title="open a file as a new session">Open…</button>
-    <button onclick={onsave} title="save to this session's file (asks where the first time)">Save</button>
-    <button onclick={onsaveas} title="save to a new file, which becomes this session's file">Save as…</button>
+    <button onclick={ondownload} title="download this session as an xAIF file">Download xAIF</button>
     <button onclick={onnewtab} title="open a new session in another tab">New tab</button>
     <button onclick={ondelete} title="delete this session">Delete</button>
     <span class="sep"></span>

@@ -269,8 +269,8 @@
     {/if}
   {:else}
     <p class="muted">
-      Select a node or edge. Highlight text on the left to add a locution. Drag from a node's bottom handle to another
-      node's top handle to connect them; drag to an RA's side handle to link a stated lever. Backspace or Delete
+      Select a node or edge. Highlight text on the left to add a locution. Drag from a port (hover to see what it
+      takes) onto another node to connect them; drop on an RA's lever port to link a stated lever. Backspace or Delete
       removes the selection.
     </p>
   {/if}

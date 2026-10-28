@@ -4,22 +4,24 @@
 -->
 <script lang="ts">
   import { getContext } from 'svelte';
-  import { Handle, Position, type NodeProps } from '@xyflow/svelte';
-  import type { FlowNode } from './flow';
+  import type { NodeProps } from '@xyflow/svelte';
+  import Ports from './Ports.svelte';
+  import type { FlowNode, Focus } from './flow';
 
   let { id, data, selected }: NodeProps<FlowNode> = $props();
+  /** What is selected, if anything; provided by the app. */
+  const focus = getContext<() => Focus | null>('focus');
   /** Looks up a speaker's name; provided by the app. */
   const speakerName = getContext<(id: string) => string | undefined>('speakerName');
 </script>
 
-<div class="lnode" class:selected>
-  <Handle type="target" position={Position.Top} />
+<div class="lnode" class:selected class:linked={focus()?.ends.has(id)}>
+  <Ports kind="L" />
   <span class="id">{id}</span>
   <div class="text">
     {#if data.speaker}<b>{speakerName(data.speaker) ?? 'Unknown Speaker'}:</b>{/if}
     {data.text}
   </div>
-  <Handle type="source" position={Position.Bottom} />
 </div>
 
 <style>
@@ -31,9 +33,6 @@
     border-radius: 6px;
     font-size: 13px;
     line-height: 1.35;
-  }
-  .selected {
-    box-shadow: 0 0 0 3px #67e8f9;
   }
   .id {
     float: right;

@@ -2,7 +2,8 @@
   The source text, as in OVA's left panel. Highlighting a span offers to add
   it as a locution for the current speaker; spans already made into
   locutions are shaded in their speaker's colour and select their L-node
-  when clicked. Speakers are added and renamed here. "Edit text" switches
+  when clicked. The selected locution's span has a handle at each end;
+  dragging one resizes the span. Speakers are added and renamed here. "Edit text" switches
   to a plain textarea; the app relocates spans when the text changes.
 -->
 <script lang="ts">
@@ -17,6 +18,7 @@
     onparticipants,
     onadd,
     onselect,
+    onspan,
   }: {
     text: string;
     participants: Participant[];
@@ -28,6 +30,8 @@
     /** Adds a locution for a span of the text, spoken by `speaker` if set. */
     onadd: (span: { start: number; end: number }, speaker: string | undefined) => void;
     onselect: (id: string) => void;
+    /** Moves a locution's span. */
+    onspan: (id: string, span: { start: number; end: number }) => void;
   } = $props();
 
   let editing = $state(false);
@@ -35,6 +39,11 @@
   let speaker = $state<string | undefined>();
   let pending = $state<{ start: number; end: number } | null>(null);
   let container: HTMLDivElement | undefined = $state();
+  /** The span end being dragged, if any. */
+  let dragging = $state<'start' | 'end' | null>(null);
+
+  /** The selected locution's span, which gets resize handles. */
+  const span = $derived(locutions.find((l) => l.id === selected)?.span);
 
   const colour = (id: string | undefined) => {
     const i = participants.findIndex((p) => p.id === id);
@@ -61,6 +70,37 @@
     return range.toString().length;
   }
 
+  /** Offset in the text under a screen point, if it is over the text. */
+  function offsetAt(x: number, y: number): number | null {
+    const pos = document.caretPositionFromPoint?.(x, y);
+    const range = pos ? null : document.caretRangeFromPoint?.(x, y);
+    const [node, offset] = pos ? [pos.offsetNode, pos.offset] : range ? [range.startContainer, range.startOffset] : [null, 0];
+    return node && container?.contains(node) ? offsetOf(node, offset) : null;
+  }
+
+  /** Trims a span as new locutions are trimmed: no surrounding whitespace or final punctuation. */
+  function trim(start: number, end: number) {
+    while (start < end && /\s/.test(text[start])) start++;
+    while (end > start && /[\s.,;:!?]/.test(text[end - 1])) end--;
+    return { start, end };
+  }
+
+  /** Starts dragging one end of the selected span. */
+  function grab(e: PointerEvent, which: 'start' | 'end') {
+    e.preventDefault();
+    e.stopPropagation();
+    dragging = which;
+  }
+
+  /** Moves the dragged end to the text offset under the pointer, keeping the span non-empty. */
+  function drag(e: PointerEvent) {
+    if (!dragging || !span || !selected) return;
+    const at = offsetAt(e.clientX, e.clientY);
+    if (at === null) return;
+    const next = trim(dragging === 'start' ? Math.min(at, span.end - 1) : span.start, dragging === 'end' ? Math.max(at, span.start + 1) : span.end);
+    if (next.end > next.start && (next.start !== span.start || next.end !== span.end)) onspan(selected, next);
+  }
+
   /**
    * On mouseup: a non-empty selection inside the text becomes the pending
    * span, trimmed of surrounding whitespace and final punctuation (IAT
@@ -68,6 +108,7 @@
    * its locution.
    */
   function onmouseup(e: MouseEvent) {
+    if (dragging) return;
     const sel = window.getSelection();
     if (!sel || !container || !sel.anchorNode || !container.contains(sel.anchorNode) || !container.contains(sel.focusNode)) return;
     if (sel.isCollapsed) {
@@ -76,9 +117,8 @@
       if (covering.length) onselect(covering.at(-1)!.id);
       return;
     }
-    let [start, end] = [offsetOf(sel.anchorNode, sel.anchorOffset), offsetOf(sel.focusNode!, sel.focusOffset)].sort((a, b) => a - b);
-    while (start < end && /\s/.test(text[start])) start++;
-    while (end > start && /[\s.,;:!?]/.test(text[end - 1])) end--;
+    const [from, to] = [offsetOf(sel.anchorNode, sel.anchorOffset), offsetOf(sel.focusNode!, sel.focusOffset)].sort((a, b) => a - b);
+    const { start, end } = trim(from, to);
     pending = end > start ? { start, end } : null;
   }
 
@@ -113,7 +153,10 @@
   }
 </script>
 
-<section>
+<!-- Release after the click that ends the drag, so it doesn't also select a locution. -->
+<svelte:window onpointermove={drag} onpointerup={() => dragging && setTimeout(() => (dragging = null))} />
+
+<section class:dragging>
   <header>
     <div class="speakers">
       {#each participants as p (p.id)}
@@ -146,13 +189,25 @@
   {:else if text}
     <!-- svelte-ignore a11y_no_static_element_interactions -->
     <div class="text" bind:this={container} {onmouseup}>
-      {#each segments as s (s.start)}<span
+      {#each segments as s (s.start)}{#if span && s.start === span.start}<span
+            class="grip"
+            title="drag to move the start of the span"
+            onpointerdown={(e) => grab(e, 'start')}
+          ></span>{/if}{#if span && s.start === span.end}<span
+            class="grip"
+            title="drag to move the end of the span"
+            onpointerdown={(e) => grab(e, 'end')}
+          ></span>{/if}<span
           data-start={s.start}
           class:hl={s.covering.length}
           class:sel={s.covering.some((c) => c.id === selected)}
           style:background={s.covering.length ? colour(s.covering.at(-1)!.speaker) : undefined}
           style:box-shadow={s.covering.length > 1 ? 'inset 0 -3px 0 #0891b2' : undefined}>{text.slice(s.start, s.end)}</span
-        >{/each}
+        >{/each}{#if span && span.end === text.length}<span
+          class="grip"
+          title="drag to move the end of the span"
+          onpointerdown={(e) => grab(e, 'end')}
+        ></span>{/if}
     </div>
   {:else}
     <p class="muted">No text yet. Use “Edit text” to paste the passage you're analysing.</p>
@@ -217,6 +272,32 @@
   }
   .sel {
     outline: 2px solid #0891b2;
+  }
+  .grip {
+    display: inline-block;
+    position: relative;
+    width: 0;
+    height: 1.2em;
+    vertical-align: text-bottom;
+    border-left: 3px solid #0891b2;
+    margin: 0 -1.5px;
+    cursor: ew-resize;
+    touch-action: none;
+  }
+  .grip::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -6px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #0891b2;
+  }
+  .dragging,
+  .dragging .text {
+    cursor: ew-resize;
+    user-select: none;
   }
   textarea {
     flex: 1;

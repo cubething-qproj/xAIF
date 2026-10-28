@@ -3,6 +3,7 @@ import { Doc, argumentType, canConnect, lint, type ArgEdge, type ArgNode } from 
 import { LEVERS, NOVEL, deriveCode, leverOptions, ptaOf, typeOf, type Analysis } from './pta';
 import downloading from '../../examples/downloading.json';
 import einstein from '../../examples/einstein.json';
+import raInputs from '../../examples/ra-inputs.json';
 import layers from '../../../nlp/inception/pta-layers.json';
 
 const example = (): any => structuredClone(downloading);
@@ -137,6 +138,17 @@ describe('delta from locutions', () => {
     const doc = Doc.load(structuredClone(einstein));
     const nodes = doc.nodes.map((n) => (n.id === '4' ? { ...n, pta: { perspective: 'II' as const } } : n));
     expect(argumentType('10', nodes, doc.edges)).toMatchObject({ form: 'δ', substance: 'II' });
+  });
+});
+
+describe('ra-inputs example', () => {
+  // Every way into an RA, one RA each, labelled with the code it should derive.
+  it('lints clean and every RA types as its label says', () => {
+    const src: any = structuredClone(raInputs);
+    const doc = Doc.load(src);
+    expect(lint(doc.nodes, doc.edges, doc.text)).toEqual([]);
+    const saved = resave(doc).AIF.nodes.filter((n) => n.type === 'RA');
+    expect(saved.map((n) => n.text)).toEqual(src.AIF.nodes.filter((n: any) => n.type === 'RA').map((n: any) => n.text));
   });
 });
 

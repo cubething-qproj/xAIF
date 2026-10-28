@@ -4,11 +4,14 @@
 -->
 <script lang="ts">
   import { getContext } from 'svelte';
-  import { Handle, Position, type NodeProps } from '@xyflow/svelte';
-  import { snippet, type FlowNode } from './flow';
+  import type { NodeProps } from '@xyflow/svelte';
+  import Ports from './Ports.svelte';
+  import { snippet, type FlowNode, type Focus } from './flow';
   import { badgeOf, predicateOf, type Analysis } from './pta';
 
   let { id, data, selected }: NodeProps<FlowNode> = $props();
+  /** What is selected, if anything; provided by the app. */
+  const focus = getContext<() => Focus | null>('focus');
   /** Looks up another I-node's text; provided by the app. */
   const textOf = getContext<(id: string) => string | undefined>('nodeText');
   const a = $derived((data.pta ?? {}) as Analysis);
@@ -16,8 +19,8 @@
   const predicate = $derived(predicateOf(a));
 </script>
 
-<div class="inode" class:selected>
-  <Handle type="target" position={Position.Top} />
+<div class="inode" class:selected class:linked={focus()?.ends.has(id)}>
+  <Ports kind="I" />
   <span class="id">{id}</span>
   <div class="text">{data.text}</div>
   {#if a.subject || a.subjectNode || predicate || types}
@@ -29,7 +32,6 @@
       {#if types}<span class="types" title="type · scope · perspective · acceptability">{types}</span>{/if}
     </div>
   {/if}
-  <Handle type="source" position={Position.Bottom} />
 </div>
 
 <style>
@@ -41,9 +43,6 @@
     border-radius: 6px;
     font-size: 13px;
     line-height: 1.35;
-  }
-  .selected {
-    box-shadow: 0 0 0 3px #a5b4fc;
   }
   .id {
     float: right;
