@@ -1,0 +1,620 @@
+{
+  "AIF": {
+    "nodes": [
+      {
+        "nodeID": 1,
+        "type": "L",
+        "text": "Friedrich Engels: the necessity of authority, and of imperious authority at that, will nowhere be found more evident than on board a ship on the high seas"
+      },
+      {
+        "nodeID": 2,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "nominalisation"
+          ]
+        }
+      },
+      {
+        "nodeID": 3,
+        "type": "I",
+        "text": "Authority is necessary",
+        "pta": {
+          "subject": "authority",
+          "predicate": "is necessary",
+          "kind": "V",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 16,
+        "type": "RA",
+        "text": "β up Exa",
+        "pta": {
+          "lever": "EXAMPLE",
+          "concepts": [
+            "authority",
+            "necessity"
+          ]
+        }
+      },
+      {
+        "nodeID": 11,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 19,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 6,
+        "type": "L",
+        "text": "Friedrich Engels: There, in time of danger, the lives of all depend on the instantaneous and absolute obedience of all to the will of one"
+      },
+      {
+        "nodeID": 7,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora",
+            "explication",
+            "same term"
+          ]
+        }
+      },
+      {
+        "nodeID": 8,
+        "type": "I",
+        "text": "Authority on board a ship on the high seas saves lives in time of danger",
+        "pta": {
+          "subject": "authority on board a ship on the high seas",
+          "predicate": "saves lives in time of danger",
+          "kind": "F",
+          "scope": "p"
+        }
+      },
+      {
+        "nodeID": 21,
+        "type": "L",
+        "text": "Friedrich Engels: When I submitted arguments like these to the most rabid anti-authoritarians, the only answer they were able to give me was the following"
+      },
+      {
+        "nodeID": 26,
+        "type": "L",
+        "text": "Anti-Authoritarian: Yes, that’s true"
+      },
+      {
+        "nodeID": 27,
+        "type": "YA",
+        "text": "Agreeing"
+      },
+      {
+        "nodeID": 90,
+        "type": "CA",
+        "text": "Default Conflict"
+      },
+      {
+        "nodeID": 31,
+        "type": "L",
+        "text": "Anti-Authoritarian: but there it is not the case of authority which we confer on our delegates, but of a commission entrusted"
+      },
+      {
+        "nodeID": 32,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 33,
+        "type": "I",
+        "text": "On a ship at sea, what we confer on our delegates is a commission entrusted, not authority",
+        "pta": {
+          "subject": "what we confer on our delegates on a ship at sea",
+          "predicate": "is a commission entrusted, not authority",
+          "kind": "V",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 36,
+        "type": "L",
+        "text": "Friedrich Engels: These gentlemen think that when they have changed the names of things they have changed the things themselves"
+      },
+      {
+        "nodeID": 42,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 93,
+        "type": "RA",
+        "text": "δ II H",
+        "pta": {
+          "lever": "CHARACTERALLY AUTHORITATIVE",
+          "concepts": [
+            "authority"
+          ]
+        }
+      },
+      {
+        "nodeID": 74,
+        "type": "L",
+        "text": "Anti-Authoritarian: Changing the name of a thing changes the thing itself"
+      },
+      {
+        "nodeID": 79,
+        "type": "I",
+        "text": "Changing the name of a thing changes the thing itself",
+        "pta": {
+          "subject": "Changing the name of a thing",
+          "predicate": "changes the thing itself",
+          "kind": "F",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 80,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 46,
+        "type": "L",
+        "text": "Friedrich Engels: This is how these profound thinkers mock at the whole world"
+      },
+      {
+        "nodeID": 200,
+        "type": "I",
+        "text": "Authority on board a ship on the high seas is necessary",
+        "pta": {
+          "subject": "authority on board a ship on the high seas",
+          "predicate": "is necessary",
+          "kind": "V",
+          "scope": "p"
+        }
+      },
+      {
+        "nodeID": 201,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "nominalisation"
+          ]
+        }
+      },
+      {
+        "nodeID": 202,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 203,
+        "type": "RA",
+        "text": "α VF Cr",
+        "pta": {
+          "lever": "CRITERION",
+          "concepts": [
+            "authority",
+            "necessity"
+          ]
+        }
+      },
+      {
+        "nodeID": 204,
+        "type": "I",
+        "text": "The anti-authoritarians' reply is held by people who think that changing the names of things changes the things themselves",
+        "pta": {
+          "subjectNode": "33",
+          "predicate": "is held by people who think that changing the names of things changes the things themselves",
+          "kind": "F",
+          "scope": "s",
+          "perspective": "II"
+        }
+      },
+      {
+        "nodeID": 205,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 206,
+        "type": "I",
+        "text": "The anti-authoritarians' reply is unacceptable",
+        "pta": {
+          "subjectNode": "33",
+          "acceptability": "U",
+          "kind": "V",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 207,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "illocution substitution"
+          ]
+        }
+      },
+      {
+        "nodeID": 208,
+        "type": "CA",
+        "text": "Default Conflict"
+      },
+      {
+        "nodeID": 209,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 211,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 212,
+        "type": "YA",
+        "text": "Disagreeing"
+      },
+      {
+        "nodeID": 213,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 214,
+        "type": "YA",
+        "text": "Disagreeing"
+      },
+      {
+        "nodeID": 215,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 216,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 217,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 218,
+        "type": "YA",
+        "text": "Asserting"
+      }
+    ],
+    "edges": [
+      {
+        "edgeID": 4,
+        "fromID": 1,
+        "toID": 2
+      },
+      {
+        "edgeID": 5,
+        "fromID": 2,
+        "toID": 3
+      },
+      {
+        "edgeID": 9,
+        "fromID": 6,
+        "toID": 7
+      },
+      {
+        "edgeID": 10,
+        "fromID": 7,
+        "toID": 8
+      },
+      {
+        "edgeID": 29,
+        "fromID": 26,
+        "toID": 27
+      },
+      {
+        "edgeID": 34,
+        "fromID": 31,
+        "toID": 32
+      },
+      {
+        "edgeID": 35,
+        "fromID": 32,
+        "toID": 33
+      },
+      {
+        "edgeID": 81,
+        "fromID": 74,
+        "toID": 80
+      },
+      {
+        "edgeID": 82,
+        "fromID": 80,
+        "toID": 79
+      },
+      {
+        "edgeID": 89,
+        "fromID": 27,
+        "toID": 8
+      },
+      {
+        "edgeID": 300,
+        "fromID": 1,
+        "toID": 201
+      },
+      {
+        "edgeID": 301,
+        "fromID": 201,
+        "toID": 200
+      },
+      {
+        "edgeID": 302,
+        "fromID": 200,
+        "toID": 16
+      },
+      {
+        "edgeID": 303,
+        "fromID": 16,
+        "toID": 3
+      },
+      {
+        "edgeID": 304,
+        "fromID": 1,
+        "toID": 202
+      },
+      {
+        "edgeID": 305,
+        "fromID": 202,
+        "toID": 16
+      },
+      {
+        "edgeID": 306,
+        "fromID": 8,
+        "toID": 203
+      },
+      {
+        "edgeID": 307,
+        "fromID": 203,
+        "toID": 200
+      },
+      {
+        "edgeID": 308,
+        "fromID": 1,
+        "toID": 11
+      },
+      {
+        "edgeID": 309,
+        "fromID": 11,
+        "toID": 6
+      },
+      {
+        "edgeID": 310,
+        "fromID": 11,
+        "toID": 19
+      },
+      {
+        "edgeID": 311,
+        "fromID": 19,
+        "toID": 203
+      },
+      {
+        "edgeID": 312,
+        "fromID": 21,
+        "toID": 217
+      },
+      {
+        "edgeID": 313,
+        "fromID": 217,
+        "toID": 26
+      },
+      {
+        "edgeID": 314,
+        "fromID": 21,
+        "toID": 218
+      },
+      {
+        "edgeID": 315,
+        "fromID": 218,
+        "toID": 31
+      },
+      {
+        "edgeID": 316,
+        "fromID": 6,
+        "toID": 209
+      },
+      {
+        "edgeID": 317,
+        "fromID": 209,
+        "toID": 26
+      },
+      {
+        "edgeID": 318,
+        "fromID": 33,
+        "toID": 90
+      },
+      {
+        "edgeID": 319,
+        "fromID": 90,
+        "toID": 200
+      },
+      {
+        "edgeID": 320,
+        "fromID": 6,
+        "toID": 211
+      },
+      {
+        "edgeID": 321,
+        "fromID": 211,
+        "toID": 31
+      },
+      {
+        "edgeID": 322,
+        "fromID": 211,
+        "toID": 212
+      },
+      {
+        "edgeID": 323,
+        "fromID": 212,
+        "toID": 90
+      },
+      {
+        "edgeID": 324,
+        "fromID": 36,
+        "toID": 42
+      },
+      {
+        "edgeID": 325,
+        "fromID": 42,
+        "toID": 74
+      },
+      {
+        "edgeID": 326,
+        "fromID": 36,
+        "toID": 205
+      },
+      {
+        "edgeID": 327,
+        "fromID": 205,
+        "toID": 204
+      },
+      {
+        "edgeID": 328,
+        "fromID": 204,
+        "toID": 93
+      },
+      {
+        "edgeID": 329,
+        "fromID": 93,
+        "toID": 206
+      },
+      {
+        "edgeID": 330,
+        "fromID": 46,
+        "toID": 207
+      },
+      {
+        "edgeID": 331,
+        "fromID": 207,
+        "toID": 206
+      },
+      {
+        "edgeID": 332,
+        "fromID": 206,
+        "toID": 208
+      },
+      {
+        "edgeID": 333,
+        "fromID": 208,
+        "toID": 33
+      },
+      {
+        "edgeID": 334,
+        "fromID": 31,
+        "toID": 213
+      },
+      {
+        "edgeID": 335,
+        "fromID": 213,
+        "toID": 36
+      },
+      {
+        "edgeID": 336,
+        "fromID": 213,
+        "toID": 214
+      },
+      {
+        "edgeID": 337,
+        "fromID": 214,
+        "toID": 208
+      },
+      {
+        "edgeID": 338,
+        "fromID": 36,
+        "toID": 215
+      },
+      {
+        "edgeID": 339,
+        "fromID": 215,
+        "toID": 46
+      },
+      {
+        "edgeID": 340,
+        "fromID": 215,
+        "toID": 216
+      },
+      {
+        "edgeID": 341,
+        "fromID": 216,
+        "toID": 93
+      }
+    ],
+    "schemefulfillments": [],
+    "locutions": [
+      {
+        "nodeID": 1,
+        "personID": 1,
+        "start": 4,
+        "end": 140
+      },
+      {
+        "nodeID": 6,
+        "personID": 1,
+        "start": 142,
+        "end": 261
+      },
+      {
+        "nodeID": 21,
+        "personID": 1,
+        "start": 263,
+        "end": 399
+      },
+      {
+        "nodeID": 26,
+        "personID": 2,
+        "start": 401,
+        "end": 417
+      },
+      {
+        "nodeID": 31,
+        "personID": 2,
+        "start": 419,
+        "end": 524
+      },
+      {
+        "nodeID": 36,
+        "personID": 1,
+        "start": 526,
+        "end": 635
+      },
+      {
+        "nodeID": 74,
+        "personID": 2
+      },
+      {
+        "nodeID": 46,
+        "personID": 1,
+        "start": 637,
+        "end": 696
+      }
+    ],
+    "participants": [
+      {
+        "participantID": 1,
+        "firstname": "Friedrich",
+        "surname": "Engels"
+      },
+      {
+        "participantID": 2,
+        "firstname": "Anti-Authoritarian",
+        "surname": ""
+      }
+    ]
+  },
+  "text": "But the necessity of authority, and of imperious authority at that, will nowhere be found more evident than on board a ship on the high seas. There, in time of danger, the lives of all depend on the instantaneous and absolute obedience of all to the will of one. When I submitted arguments like these to the most rabid anti-authoritarians, the only answer they were able to give me was the following: Yes, that’s true, but there it is not the case of authority which we confer on our delegates, but of a commission entrusted! These gentlemen think that when they have changed the names of things they have changed the things themselves. This is how these profound thinkers mock at the whole world.\n"
+}

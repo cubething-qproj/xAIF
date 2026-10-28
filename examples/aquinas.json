@@ -1,0 +1,554 @@
+{
+  "AIF": {
+    "nodes": [
+      {
+        "nodeID": 1,
+        "type": "L",
+        "text": "Thomas Aquinas: Christian theology does not look like science"
+      },
+      {
+        "nodeID": 2,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 3,
+        "type": "I",
+        "text": "Christian theology does not look like science",
+        "pta": {
+          "subject": "Christian theology",
+          "predicate": "does not look like science",
+          "kind": "V",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 6,
+        "type": "L",
+        "text": "Thomas Aquinas: every science advances from self-evident principles"
+      },
+      {
+        "nodeID": 7,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 8,
+        "type": "I",
+        "text": "every science advances from self-evident principles",
+        "pta": {
+          "subject": "Every science",
+          "predicate": "advances from self-evident principles",
+          "kind": "V",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 11,
+        "type": "L",
+        "text": "Thomas Aquinas: Christian theology advances from the articles of faith"
+      },
+      {
+        "nodeID": 12,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 13,
+        "type": "I",
+        "text": "Christian theology advances from the articles of faith",
+        "pta": {
+          "subject": "Christian theology ",
+          "predicate": "advances from the articles of faith",
+          "kind": "V",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 16,
+        "type": "L",
+        "text": "Thomas Aquinas: these are not self-evident"
+      },
+      {
+        "nodeID": 17,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 18,
+        "type": "I",
+        "text": "The articles of faith are not self-evident",
+        "pta": {
+          "subject": "The articles of faith",
+          "predicate": "are not self-evident",
+          "kind": "V",
+          "scope": "p"
+        }
+      },
+      {
+        "nodeID": 21,
+        "type": "L",
+        "text": "Thomas Aquinas: not everybody grants them"
+      },
+      {
+        "nodeID": 22,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 23,
+        "type": "I",
+        "text": "everybody does not grants them",
+        "pta": {
+          "subject": "everybody",
+          "predicate": "does not grants them",
+          "kind": "F",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 26,
+        "type": "L",
+        "text": "Thessalonians: not all have faith"
+      },
+      {
+        "nodeID": 27,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 28,
+        "type": "I",
+        "text": "all people do not have faith",
+        "pta": {
+          "subject": "all people",
+          "predicate": "do not have faith",
+          "kind": "F",
+          "scope": "u",
+          "note": "should this be a contradicted statement? i.e. \"all people have faith\" with the thessalonians CA'ing it?\nThe way this is worded it sounds like \"nobody has faith,\" when what I mean is \"it is not the case that everybody has faith\""
+        }
+      },
+      {
+        "nodeID": 31,
+        "type": "L",
+        "text": "Thomas Aquinas: says the second epistle to the Thessalonians"
+      },
+      {
+        "nodeID": 32,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 33,
+        "type": "I",
+        "text": "\"all people do not have faith\" is said by the second epistle to the Thessalonians",
+        "pta": {
+          "subjectNode": "28",
+          "predicate": "is said by the second epistle to the Thessalonians",
+          "perspective": "III",
+          "acceptability": "A"
+        }
+      },
+      {
+        "nodeID": 36,
+        "type": "L",
+        "text": "Thomas Aquinas: it is not a science"
+      },
+      {
+        "nodeID": 37,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 38,
+        "type": "I",
+        "text": "Christian theology is not a science",
+        "pta": {
+          "subject": "Christian theology",
+          "predicate": "is not a science",
+          "kind": "V",
+          "scope": "s"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "edgeID": 4,
+        "fromID": 1,
+        "toID": 2
+      },
+      {
+        "edgeID": 5,
+        "fromID": 2,
+        "toID": 3
+      },
+      {
+        "edgeID": 9,
+        "fromID": 6,
+        "toID": 7
+      },
+      {
+        "edgeID": 10,
+        "fromID": 7,
+        "toID": 8
+      },
+      {
+        "edgeID": 14,
+        "fromID": 11,
+        "toID": 12
+      },
+      {
+        "edgeID": 15,
+        "fromID": 12,
+        "toID": 13
+      },
+      {
+        "edgeID": 19,
+        "fromID": 16,
+        "toID": 17
+      },
+      {
+        "edgeID": 20,
+        "fromID": 17,
+        "toID": 18
+      },
+      {
+        "edgeID": 24,
+        "fromID": 21,
+        "toID": 22
+      },
+      {
+        "edgeID": 25,
+        "fromID": 22,
+        "toID": 23
+      },
+      {
+        "edgeID": 29,
+        "fromID": 26,
+        "toID": 27
+      },
+      {
+        "edgeID": 30,
+        "fromID": 27,
+        "toID": 28
+      },
+      {
+        "edgeID": 34,
+        "fromID": 31,
+        "toID": 32
+      },
+      {
+        "edgeID": 35,
+        "fromID": 32,
+        "toID": 33
+      },
+      {
+        "edgeID": 39,
+        "fromID": 36,
+        "toID": 37
+      },
+      {
+        "edgeID": 40,
+        "fromID": 37,
+        "toID": 38
+      }
+    ],
+    "schemefulfillments": [],
+    "locutions": [
+      {
+        "nodeID": 1,
+        "personID": 1,
+        "start": 3,
+        "end": 48
+      },
+      {
+        "nodeID": 6,
+        "personID": 1,
+        "start": 54,
+        "end": 105
+      },
+      {
+        "nodeID": 11,
+        "personID": 1,
+        "start": 111,
+        "end": 165
+      },
+      {
+        "nodeID": 16,
+        "personID": 1,
+        "start": 170,
+        "end": 196
+      },
+      {
+        "nodeID": 21,
+        "personID": 1,
+        "start": 204,
+        "end": 229
+      },
+      {
+        "nodeID": 26,
+        "personID": 2,
+        "start": 235,
+        "end": 253
+      },
+      {
+        "nodeID": 31,
+        "personID": 1,
+        "start": 255,
+        "end": 299
+      },
+      {
+        "nodeID": 36,
+        "personID": 1,
+        "start": 314,
+        "end": 333
+      }
+    ],
+    "participants": [
+      {
+        "participantID": 1,
+        "firstname": "Thomas",
+        "surname": "Aquinas"
+      },
+      {
+        "participantID": 2,
+        "firstname": "Thessalonians",
+        "surname": ""
+      }
+    ]
+  },
+  "text": "1. Christian theology does not look like science. For every science advances from self-evident principles. Yet Christian theology advances from the articles of faith and these are not self-evident, since not everybody grants them; for not all have faith, says the second epistle to the Thessalonians. Consequently it is not a science. 2. Besides, a science is not concerned with individual cases. Sacred doctrine, however, deals with individual events and people, for instance the doings of Abraham, Isaac, Jacob and the like. Therefore sacred doctrine is not a science. ON THE OTHER HAND. Augustine says that this science alone is credited with begetting, nourishing, protecting, and making robust the healthiest faith. These functions belong to no science other than holy teaching. Therefore it is a science. REPLY: Christian theology should be pronounced to be a science. Yet bear in mind that sciences are of two kinds: some work from premises recognized in the innate light of intelligence, for instance arithmetic, geometry, and sciences of the same sort; while others work from premises recognized in the light of a higher science, for instance optics starts out from principles marked out by geometry and harmony from principles indicated by arithmetic. In this second manner is Christian theology a science, for it flows from founts recognized in the light of a higher science, namely God's very own which he shares with the blessed. Hence as harmony credits its principles which are taken from arithmetic so Christian theology takes on faith its principles revealed by God.\n",
+  "OVA": {
+    "firstname": "",
+    "surname": "",
+    "url": "",
+    "nodes": [
+      {
+        "nodeID": 1,
+        "visible": true,
+        "x": 480,
+        "y": -70
+      },
+      {
+        "nodeID": 2,
+        "visible": true,
+        "x": 290,
+        "y": -60
+      },
+      {
+        "nodeID": 3,
+        "visible": true,
+        "x": 0,
+        "y": -70
+      },
+      {
+        "nodeID": 6,
+        "visible": true,
+        "x": 480,
+        "y": 36
+      },
+      {
+        "nodeID": 7,
+        "visible": true,
+        "x": 290,
+        "y": 46
+      },
+      {
+        "nodeID": 8,
+        "visible": true,
+        "x": 0,
+        "y": 36
+      },
+      {
+        "nodeID": 11,
+        "visible": true,
+        "x": 480,
+        "y": 157
+      },
+      {
+        "nodeID": 12,
+        "visible": true,
+        "x": 290,
+        "y": 167
+      },
+      {
+        "nodeID": 13,
+        "visible": true,
+        "x": 0,
+        "y": 157
+      },
+      {
+        "nodeID": 16,
+        "visible": true,
+        "x": 480,
+        "y": 278
+      },
+      {
+        "nodeID": 17,
+        "visible": true,
+        "x": 290,
+        "y": 288
+      },
+      {
+        "nodeID": 18,
+        "visible": true,
+        "x": 0,
+        "y": 278
+      },
+      {
+        "nodeID": 21,
+        "visible": true,
+        "x": 480,
+        "y": 384
+      },
+      {
+        "nodeID": 22,
+        "visible": true,
+        "x": 290,
+        "y": 394
+      },
+      {
+        "nodeID": 23,
+        "visible": true,
+        "x": 0,
+        "y": 384
+      },
+      {
+        "nodeID": 26,
+        "visible": true,
+        "x": 480,
+        "y": 490
+      },
+      {
+        "nodeID": 27,
+        "visible": true,
+        "x": 290,
+        "y": 500
+      },
+      {
+        "nodeID": 28,
+        "visible": true,
+        "x": 0,
+        "y": 490
+      },
+      {
+        "nodeID": 31,
+        "visible": true,
+        "x": 480,
+        "y": 596
+      },
+      {
+        "nodeID": 32,
+        "visible": true,
+        "x": 290,
+        "y": 606
+      },
+      {
+        "nodeID": 33,
+        "visible": true,
+        "x": 0,
+        "y": 596
+      },
+      {
+        "nodeID": 36,
+        "visible": true,
+        "x": 480,
+        "y": 702
+      },
+      {
+        "nodeID": 37,
+        "visible": true,
+        "x": 290,
+        "y": 712
+      },
+      {
+        "nodeID": 38,
+        "visible": true,
+        "x": 0,
+        "y": 738
+      }
+    ],
+    "edges": [
+      {
+        "fromID": 1,
+        "toID": 2,
+        "visible": true
+      },
+      {
+        "fromID": 2,
+        "toID": 3,
+        "visible": true
+      },
+      {
+        "fromID": 6,
+        "toID": 7,
+        "visible": true
+      },
+      {
+        "fromID": 7,
+        "toID": 8,
+        "visible": true
+      },
+      {
+        "fromID": 11,
+        "toID": 12,
+        "visible": true
+      },
+      {
+        "fromID": 12,
+        "toID": 13,
+        "visible": true
+      },
+      {
+        "fromID": 16,
+        "toID": 17,
+        "visible": true
+      },
+      {
+        "fromID": 17,
+        "toID": 18,
+        "visible": true
+      },
+      {
+        "fromID": 21,
+        "toID": 22,
+        "visible": true
+      },
+      {
+        "fromID": 22,
+        "toID": 23,
+        "visible": true
+      },
+      {
+        "fromID": 26,
+        "toID": 27,
+        "visible": true
+      },
+      {
+        "fromID": 27,
+        "toID": 28,
+        "visible": true
+      },
+      {
+        "fromID": 31,
+        "toID": 32,
+        "visible": true
+      },
+      {
+        "fromID": 32,
+        "toID": 33,
+        "visible": true
+      },
+      {
+        "fromID": 36,
+        "toID": 37,
+        "visible": true
+      },
+      {
+        "fromID": 37,
+        "toID": 38,
+        "visible": true
+      }
+    ]
+  }
+}

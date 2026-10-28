@@ -1,0 +1,170 @@
+{
+  "AIF": {
+    "nodes": [
+      {
+        "nodeID": 1,
+        "type": "L",
+        "text": "Narrator: We only use 10% of our brains"
+      },
+      {
+        "nodeID": 2,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 3,
+        "type": "I",
+        "text": "We only use 10% of our brains",
+        "pta": {
+          "subject": "we",
+          "predicate": "only use 10% of our brains",
+          "kind": "F",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 4,
+        "type": "L",
+        "text": "Albert Einstein: we only use 10% of our brains"
+      },
+      {
+        "nodeID": 5,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 6,
+        "type": "L",
+        "text": "Narrator: Einstein said so"
+      },
+      {
+        "nodeID": 7,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora"
+          ]
+        }
+      },
+      {
+        "nodeID": 8,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 9,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 10,
+        "type": "RA",
+        "text": "δ III Exp",
+        "pta": {
+          "lever": "EPISTEMICALLY AUTHORITATIVE",
+          "concepts": [
+            "authority",
+            "expertise"
+          ]
+        }
+      }
+    ],
+    "edges": [
+      {
+        "edgeID": 20,
+        "fromID": 1,
+        "toID": 2
+      },
+      {
+        "edgeID": 21,
+        "fromID": 2,
+        "toID": 3
+      },
+      {
+        "edgeID": 22,
+        "fromID": 6,
+        "toID": 7
+      },
+      {
+        "edgeID": 23,
+        "fromID": 7,
+        "toID": 4
+      },
+      {
+        "edgeID": 24,
+        "fromID": 4,
+        "toID": 5
+      },
+      {
+        "edgeID": 25,
+        "fromID": 5,
+        "toID": 3
+      },
+      {
+        "edgeID": 26,
+        "fromID": 1,
+        "toID": 8
+      },
+      {
+        "edgeID": 27,
+        "fromID": 8,
+        "toID": 6
+      },
+      {
+        "edgeID": 28,
+        "fromID": 8,
+        "toID": 9
+      },
+      {
+        "edgeID": 29,
+        "fromID": 9,
+        "toID": 10
+      },
+      {
+        "edgeID": 30,
+        "fromID": 4,
+        "toID": 10
+      },
+      {
+        "edgeID": 31,
+        "fromID": 10,
+        "toID": 3
+      }
+    ],
+    "locutions": [
+      {
+        "nodeID": 1,
+        "personID": 1,
+        "start": 0,
+        "end": 29
+      },
+      {
+        "nodeID": 4,
+        "personID": 2
+      },
+      {
+        "nodeID": 6,
+        "personID": 1,
+        "start": 31,
+        "end": 47
+      }
+    ],
+    "participants": [
+      {
+        "participantID": 1,
+        "firstname": "Narrator",
+        "surname": ""
+      },
+      {
+        "participantID": 2,
+        "firstname": "Albert",
+        "surname": "Einstein"
+      }
+    ],
+    "schemefulfillments": [],
+    "descriptorfulfillments": []
+  },
+  "text": "We only use 10% of our brains. Einstein said so.",
+  "dialog": true
+}

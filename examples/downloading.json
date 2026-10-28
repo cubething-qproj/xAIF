@@ -1,0 +1,233 @@
+{
+  "AIF": {
+    "nodes": [
+      {
+        "nodeID": 1,
+        "type": "L",
+        "text": "Ada Lovelace: Unauthorized downloading is not theft"
+      },
+      {
+        "nodeID": 2,
+        "type": "L",
+        "text": "Ada Lovelace: It does not deprive the owner of the use of an object"
+      },
+      {
+        "nodeID": 3,
+        "type": "I",
+        "text": "Unauthorized downloading is not theft",
+        "pta": {
+          "subject": "unauthorized downloading",
+          "predicate": "is not theft",
+          "kind": "V",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 4,
+        "type": "I",
+        "text": "Unauthorized downloading does not deprive the original owner of the use of an object",
+        "pta": {
+          "subject": "unauthorized downloading",
+          "predicate": "does not deprive the original owner of the use of an object",
+          "kind": "F",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 5,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 6,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora",
+            "explication"
+          ]
+        }
+      },
+      {
+        "nodeID": 7,
+        "type": "RA",
+        "text": "α VF Cr",
+        "pta": {
+          "lever": "CRITERION",
+          "concepts": [
+            "theft"
+          ]
+        }
+      },
+      {
+        "nodeID": 8,
+        "type": "I",
+        "text": "Copying a file deprives the owner of potential sales"
+      },
+      {
+        "nodeID": 9,
+        "type": "CA",
+        "text": "Default Conflict"
+      },
+      {
+        "nodeID": 10,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 11,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 12,
+        "type": "L",
+        "text": "Bea Smith: copying a file deprives the owner of potential sales"
+      },
+      {
+        "nodeID": 13,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 14,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 15,
+        "type": "YA",
+        "text": "Disagreeing"
+      }
+    ],
+    "edges": [
+      {
+        "edgeID": 20,
+        "fromID": 1,
+        "toID": 5
+      },
+      {
+        "edgeID": 21,
+        "fromID": 5,
+        "toID": 3
+      },
+      {
+        "edgeID": 22,
+        "fromID": 2,
+        "toID": 6
+      },
+      {
+        "edgeID": 23,
+        "fromID": 6,
+        "toID": 4
+      },
+      {
+        "edgeID": 24,
+        "fromID": 4,
+        "toID": 7
+      },
+      {
+        "edgeID": 25,
+        "fromID": 7,
+        "toID": 3
+      },
+      {
+        "edgeID": 26,
+        "fromID": 8,
+        "toID": 9
+      },
+      {
+        "edgeID": 27,
+        "fromID": 9,
+        "toID": 7
+      },
+      {
+        "edgeID": 28,
+        "fromID": 1,
+        "toID": 10
+      },
+      {
+        "edgeID": 29,
+        "fromID": 10,
+        "toID": 2
+      },
+      {
+        "edgeID": 30,
+        "fromID": 10,
+        "toID": 11
+      },
+      {
+        "edgeID": 31,
+        "fromID": 11,
+        "toID": 7
+      },
+      {
+        "edgeID": 32,
+        "fromID": 12,
+        "toID": 13
+      },
+      {
+        "edgeID": 33,
+        "fromID": 13,
+        "toID": 8
+      },
+      {
+        "edgeID": 34,
+        "fromID": 2,
+        "toID": 14
+      },
+      {
+        "edgeID": 35,
+        "fromID": 14,
+        "toID": 12
+      },
+      {
+        "edgeID": 36,
+        "fromID": 14,
+        "toID": 15
+      },
+      {
+        "edgeID": 37,
+        "fromID": 15,
+        "toID": 9
+      }
+    ],
+    "locutions": [
+      {
+        "nodeID": 1,
+        "personID": 1,
+        "start": 0,
+        "end": 37
+      },
+      {
+        "nodeID": 2,
+        "personID": 1,
+        "start": 39,
+        "end": 92
+      },
+      {
+        "nodeID": 12,
+        "personID": 2,
+        "start": 103,
+        "end": 155
+      }
+    ],
+    "participants": [
+      {
+        "participantID": 1,
+        "firstname": "Ada",
+        "surname": "Lovelace"
+      },
+      {
+        "participantID": 2,
+        "firstname": "Bea",
+        "surname": "Smith"
+      }
+    ],
+    "schemefulfillments": [],
+    "descriptorfulfillments": []
+  },
+  "text": "Unauthorized downloading is not theft. It does not deprive the owner of the use of an object.\nBea: But copying a file deprives the owner of potential sales.",
+  "dialog": true
+}
