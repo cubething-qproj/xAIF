@@ -1,0 +1,619 @@
+{
+  "AIF": {
+    "nodes": [
+      {
+        "nodeID": 1,
+        "type": "L",
+        "text": "Bernard Suits: aside from bureaucratic practice, in anything but a game the gratuitous introduction of unnecessary obstacles to the achievement of an end is regarded as a decidedly irrational thing to do"
+      },
+      {
+        "nodeID": 2,
+        "type": "L",
+        "text": "Bernard Suits: in games it appears to be an absolutely essential thing to do"
+      },
+      {
+        "nodeID": 3,
+        "type": "L",
+        "text": "Bernard Suits: This fact about games has led some observers to conclude that there is something inherently absurd about games, or that games must involve a fundamental paradox"
+      },
+      {
+        "nodeID": 4,
+        "type": "L",
+        "text": "Observer: there is something inherently absurd about games"
+      },
+      {
+        "nodeID": 5,
+        "type": "L",
+        "text": "Observer: games must involve a fundamental paradox"
+      },
+      {
+        "nodeID": 6,
+        "type": "L",
+        "text": "Bernard Suits: This kind of view seems to me to be mistaken"
+      },
+      {
+        "nodeID": 7,
+        "type": "L",
+        "text": "Bernard Suits: The mistake consists in applying the same standard to games that is applied to means-end activities which are not games"
+      },
+      {
+        "nodeID": 8,
+        "type": "L",
+        "text": "Bernard Suits: If playing a game is regarded as not essentially different from going to the office or writing a cheque, then there is certainly something absurd or paradoxical or, more plausibly, simply something stupid about game playing"
+      },
+      {
+        "nodeID": 9,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 10,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 11,
+        "type": "I",
+        "text": "Introducing unnecessary obstacles to achieving an end in means-end activities that are not games is irrational",
+        "pta": {
+          "subject": "introducing unnecessary obstacles to achieving an end in means-end activities that are not games",
+          "predicate": "is irrational",
+          "kind": "V",
+          "scope": "u",
+          "note": "'aside from bureaucratic practice' is a joke and is dropped; 'is regarded as' is an illocutive marker. Worded like L7 so the undercut names the same standard."
+        }
+      },
+      {
+        "nodeID": 12,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "same term"
+          ]
+        }
+      },
+      {
+        "nodeID": 13,
+        "type": "I",
+        "text": "Games essentially involve introducing unnecessary obstacles to achieving an end",
+        "pta": {
+          "subject": "games",
+          "predicate": "essentially involve introducing unnecessary obstacles to achieving an end",
+          "kind": "F",
+          "scope": "u",
+          "note": "Recast with 'games' as subject so it shares a subject with the observers' conclusion. F: a claim about what games consist of."
+        }
+      },
+      {
+        "nodeID": 14,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora",
+            "explication"
+          ]
+        }
+      },
+      {
+        "nodeID": 15,
+        "type": "I",
+        "text": "Games are inherently absurd",
+        "pta": {
+          "subject": "games",
+          "predicate": "are inherently absurd",
+          "kind": "V",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 16,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "same term"
+          ]
+        }
+      },
+      {
+        "nodeID": 17,
+        "type": "I",
+        "text": "Games involve a fundamental paradox",
+        "pta": {
+          "subject": "games",
+          "predicate": "involve a fundamental paradox",
+          "kind": "V",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 18,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 19,
+        "type": "I",
+        "text": "The view that games are inherently absurd is unacceptable",
+        "pta": {
+          "subjectNode": "15",
+          "acceptability": "U",
+          "kind": "V",
+          "scope": "s",
+          "note": "'This kind of view' covers both formulations; anchored to the first, which the second restates."
+        }
+      },
+      {
+        "nodeID": 20,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora"
+          ]
+        }
+      },
+      {
+        "nodeID": 21,
+        "type": "I",
+        "text": "The standard applied to means-end activities that are not games does not apply to games",
+        "pta": {
+          "subject": "the standard applied to means-end activities that are not games",
+          "predicate": "does not apply to games",
+          "kind": "V",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 22,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "explication"
+          ]
+        }
+      },
+      {
+        "nodeID": 23,
+        "type": "I",
+        "text": "The view that games are inherently absurd implies that game playing is simply stupid",
+        "pta": {
+          "subjectNode": "15",
+          "predicate": "implies that game playing is simply stupid",
+          "kind": "V",
+          "scope": "s",
+          "perspective": "II",
+          "note": "A reductio, not a concession: judged like going to the office, games come out simply stupid, which nobody accepts."
+        }
+      },
+      {
+        "nodeID": 24,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "explication"
+          ]
+        }
+      },
+      {
+        "nodeID": 25,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 26,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 27,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 28,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 29,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 30,
+        "type": "RA",
+        "text": "α VF Cr",
+        "pta": {
+          "lever": "CRITERION",
+          "concepts": [
+            "game",
+            "absurdity",
+            "obstacle"
+          ]
+        }
+      },
+      {
+        "nodeID": 31,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 32,
+        "type": "MA",
+        "text": "Default Rephrase"
+      },
+      {
+        "nodeID": 33,
+        "type": "YA",
+        "text": "Restating"
+      },
+      {
+        "nodeID": 34,
+        "type": "CA",
+        "text": "Default Conflict"
+      },
+      {
+        "nodeID": 35,
+        "type": "YA",
+        "text": "Disagreeing"
+      },
+      {
+        "nodeID": 36,
+        "type": "CA",
+        "text": "Default Conflict"
+      },
+      {
+        "nodeID": 37,
+        "type": "YA",
+        "text": "Disagreeing"
+      },
+      {
+        "nodeID": 38,
+        "type": "RA",
+        "text": "δ II Cse",
+        "pta": {
+          "lever": "UNDESIRABLE IMPLICATION",
+          "concepts": [
+            "game",
+            "absurdity",
+            "stupidity"
+          ]
+        }
+      },
+      {
+        "nodeID": 39,
+        "type": "YA",
+        "text": "Arguing"
+      }
+    ],
+    "edges": [
+      {
+        "edgeID": 1000,
+        "fromID": 3,
+        "toID": 9
+      },
+      {
+        "edgeID": 1001,
+        "fromID": 9,
+        "toID": 4
+      },
+      {
+        "edgeID": 1002,
+        "fromID": 3,
+        "toID": 10
+      },
+      {
+        "edgeID": 1003,
+        "fromID": 10,
+        "toID": 5
+      },
+      {
+        "edgeID": 1004,
+        "fromID": 1,
+        "toID": 12
+      },
+      {
+        "edgeID": 1005,
+        "fromID": 12,
+        "toID": 11
+      },
+      {
+        "edgeID": 1006,
+        "fromID": 2,
+        "toID": 14
+      },
+      {
+        "edgeID": 1007,
+        "fromID": 14,
+        "toID": 13
+      },
+      {
+        "edgeID": 1008,
+        "fromID": 4,
+        "toID": 16
+      },
+      {
+        "edgeID": 1009,
+        "fromID": 16,
+        "toID": 15
+      },
+      {
+        "edgeID": 1010,
+        "fromID": 5,
+        "toID": 18
+      },
+      {
+        "edgeID": 1011,
+        "fromID": 18,
+        "toID": 17
+      },
+      {
+        "edgeID": 1012,
+        "fromID": 6,
+        "toID": 20
+      },
+      {
+        "edgeID": 1013,
+        "fromID": 20,
+        "toID": 19
+      },
+      {
+        "edgeID": 1014,
+        "fromID": 7,
+        "toID": 22
+      },
+      {
+        "edgeID": 1015,
+        "fromID": 22,
+        "toID": 21
+      },
+      {
+        "edgeID": 1016,
+        "fromID": 8,
+        "toID": 24
+      },
+      {
+        "edgeID": 1017,
+        "fromID": 24,
+        "toID": 23
+      },
+      {
+        "edgeID": 1018,
+        "fromID": 1,
+        "toID": 25
+      },
+      {
+        "edgeID": 1019,
+        "fromID": 25,
+        "toID": 2
+      },
+      {
+        "edgeID": 1020,
+        "fromID": 2,
+        "toID": 26
+      },
+      {
+        "edgeID": 1021,
+        "fromID": 26,
+        "toID": 3
+      },
+      {
+        "edgeID": 1022,
+        "fromID": 3,
+        "toID": 27
+      },
+      {
+        "edgeID": 1023,
+        "fromID": 27,
+        "toID": 6
+      },
+      {
+        "edgeID": 1024,
+        "fromID": 6,
+        "toID": 28
+      },
+      {
+        "edgeID": 1025,
+        "fromID": 3,
+        "toID": 28
+      },
+      {
+        "edgeID": 1026,
+        "fromID": 28,
+        "toID": 7
+      },
+      {
+        "edgeID": 1027,
+        "fromID": 7,
+        "toID": 29
+      },
+      {
+        "edgeID": 1028,
+        "fromID": 29,
+        "toID": 8
+      },
+      {
+        "edgeID": 1029,
+        "fromID": 13,
+        "toID": 30
+      },
+      {
+        "edgeID": 1030,
+        "fromID": 30,
+        "toID": 15
+      },
+      {
+        "edgeID": 1031,
+        "fromID": 11,
+        "toID": 30,
+        "role": "lever"
+      },
+      {
+        "edgeID": 1032,
+        "fromID": 26,
+        "toID": 31
+      },
+      {
+        "edgeID": 1033,
+        "fromID": 31,
+        "toID": 30
+      },
+      {
+        "edgeID": 1034,
+        "fromID": 15,
+        "toID": 32
+      },
+      {
+        "edgeID": 1035,
+        "fromID": 32,
+        "toID": 17
+      },
+      {
+        "edgeID": 1036,
+        "fromID": 3,
+        "toID": 33
+      },
+      {
+        "edgeID": 1037,
+        "fromID": 33,
+        "toID": 32
+      },
+      {
+        "edgeID": 1038,
+        "fromID": 19,
+        "toID": 34
+      },
+      {
+        "edgeID": 1039,
+        "fromID": 34,
+        "toID": 15
+      },
+      {
+        "edgeID": 1040,
+        "fromID": 27,
+        "toID": 35
+      },
+      {
+        "edgeID": 1041,
+        "fromID": 35,
+        "toID": 34
+      },
+      {
+        "edgeID": 1042,
+        "fromID": 21,
+        "toID": 36
+      },
+      {
+        "edgeID": 1043,
+        "fromID": 36,
+        "toID": 30
+      },
+      {
+        "edgeID": 1044,
+        "fromID": 28,
+        "toID": 37
+      },
+      {
+        "edgeID": 1045,
+        "fromID": 37,
+        "toID": 36
+      },
+      {
+        "edgeID": 1046,
+        "fromID": 6,
+        "toID": 29
+      },
+      {
+        "edgeID": 1047,
+        "fromID": 23,
+        "toID": 38
+      },
+      {
+        "edgeID": 1048,
+        "fromID": 38,
+        "toID": 19
+      },
+      {
+        "edgeID": 1049,
+        "fromID": 29,
+        "toID": 39
+      },
+      {
+        "edgeID": 1050,
+        "fromID": 39,
+        "toID": 38
+      }
+    ],
+    "locutions": [
+      {
+        "nodeID": 1,
+        "personID": 1,
+        "start": 4,
+        "end": 192
+      },
+      {
+        "nodeID": 2,
+        "personID": 1,
+        "start": 202,
+        "end": 263
+      },
+      {
+        "nodeID": 3,
+        "personID": 1,
+        "start": 265,
+        "end": 425
+      },
+      {
+        "nodeID": 4,
+        "personID": 2,
+        "start": 327,
+        "end": 375
+      },
+      {
+        "nodeID": 5,
+        "personID": 2,
+        "start": 385,
+        "end": 425
+      },
+      {
+        "nodeID": 6,
+        "personID": 1,
+        "start": 427,
+        "end": 471
+      },
+      {
+        "nodeID": 7,
+        "personID": 1,
+        "start": 473,
+        "end": 592
+      },
+      {
+        "nodeID": 8,
+        "personID": 1,
+        "start": 594,
+        "end": 817
+      }
+    ],
+    "participants": [
+      {
+        "participantID": 1,
+        "firstname": "Bernard",
+        "surname": "Suits"
+      },
+      {
+        "participantID": 2,
+        "firstname": "Observer",
+        "surname": ""
+      }
+    ],
+    "schemefulfillments": [],
+    "descriptorfulfillments": []
+  },
+  "text": "But aside from bureaucratic practice, in anything but a game the gratuitous introduction of unnecessary obstacles to the achievement of an end is regarded as a decidedly irrational thing to do, whereas in games it appears to be an absolutely essential thing to do. This fact about games has led some observers to conclude that there is something inherently absurd about games, or that games must involve a fundamental paradox. This kind of view seems to me to be mistaken. The mistake consists in applying the same standard to games that is applied to means-end activities which are not games. If playing a game is regarded as not essentially different from going to the office or writing a cheque, then there is certainly something absurd or paradoxical or, more plausibly, simply something stupid about game playing.",
+  "dialog": true
+}

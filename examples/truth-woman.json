@@ -1,0 +1,889 @@
+{
+  "AIF": {
+    "nodes": [
+      {
+        "nodeID": 1,
+        "type": "L",
+        "text": "Sojourner Truth: That man over there says that women need to be helped into carriages, and lifted over ditches, and to have the best place everywhere"
+      },
+      {
+        "nodeID": 2,
+        "type": "L",
+        "text": "That Man: women need to be helped into carriages, and lifted over ditches, and to have the best place everywhere"
+      },
+      {
+        "nodeID": 3,
+        "type": "L",
+        "text": "Sojourner Truth: Nobody ever helps me into carriages, or over mud-puddles, or gives me any best place"
+      },
+      {
+        "nodeID": 4,
+        "type": "L",
+        "text": "Sojourner Truth: ain’t I a woman"
+      },
+      {
+        "nodeID": 5,
+        "type": "L",
+        "text": "Sojourner Truth: Look at me! Look at my arm"
+      },
+      {
+        "nodeID": 6,
+        "type": "L",
+        "text": "Sojourner Truth: I have ploughed and planted, and gathered into barns, and no man could head me"
+      },
+      {
+        "nodeID": 7,
+        "type": "L",
+        "text": "Sojourner Truth: ain’t I a woman"
+      },
+      {
+        "nodeID": 8,
+        "type": "L",
+        "text": "Sojourner Truth: I could work as much and eat as much as a man – when I could get it – and bear the lash as well"
+      },
+      {
+        "nodeID": 9,
+        "type": "L",
+        "text": "Sojourner Truth: ain’t I a woman"
+      },
+      {
+        "nodeID": 10,
+        "type": "L",
+        "text": "Sojourner Truth: I have borne thirteen children, and seen most all sold off to slavery, and when I cried out with my mother’s grief, none but Jesus heard me"
+      },
+      {
+        "nodeID": 11,
+        "type": "L",
+        "text": "Sojourner Truth: ain’t I a woman"
+      },
+      {
+        "nodeID": 12,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 13,
+        "type": "I",
+        "text": "Women need special treatment: to be helped into carriages, lifted over ditches and given the best place everywhere",
+        "pta": {
+          "subject": "women",
+          "predicate": "needs special treatment",
+          "kind": "F",
+          "scope": "u",
+          "note": "The three courtesies are one term, special treatment (chivalry)."
+        }
+      },
+      {
+        "nodeID": 14,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "same term"
+          ]
+        }
+      },
+      {
+        "nodeID": 15,
+        "type": "I",
+        "text": "Sojourner Truth is a woman",
+        "pta": {
+          "subject": "Sojourner Truth",
+          "predicate": "is a woman",
+          "kind": "F",
+          "scope": "s",
+          "note": "Anchored by all four refrains; the EXAMPLE lever statement of the counterexample."
+        }
+      },
+      {
+        "nodeID": 16,
+        "type": "YA",
+        "text": "Rhetorical Questioning",
+        "pta": {
+          "transformations": [
+            "illocution substitution",
+            "anaphora"
+          ]
+        }
+      },
+      {
+        "nodeID": 17,
+        "type": "YA",
+        "text": "Rhetorical Questioning",
+        "pta": {
+          "transformations": [
+            "illocution substitution",
+            "anaphora"
+          ]
+        }
+      },
+      {
+        "nodeID": 18,
+        "type": "YA",
+        "text": "Rhetorical Questioning",
+        "pta": {
+          "transformations": [
+            "illocution substitution",
+            "anaphora"
+          ]
+        }
+      },
+      {
+        "nodeID": 19,
+        "type": "YA",
+        "text": "Rhetorical Questioning",
+        "pta": {
+          "transformations": [
+            "illocution substitution",
+            "anaphora"
+          ]
+        }
+      },
+      {
+        "nodeID": 20,
+        "type": "I",
+        "text": "Sojourner Truth has never been given special treatment",
+        "pta": {
+          "subject": "Sojourner Truth",
+          "predicate": "has never been given special treatment",
+          "kind": "F",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 21,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora",
+            "passivization",
+            "same term"
+          ]
+        }
+      },
+      {
+        "nodeID": 22,
+        "type": "I",
+        "text": "Sojourner Truth is strong",
+        "pta": {
+          "subject": "Sojourner Truth",
+          "predicate": "is strong",
+          "kind": "F",
+          "scope": "s",
+          "note": "'Look at me! Look at my arm!' presents her as the example; the stanzas that follow say what to see."
+        }
+      },
+      {
+        "nodeID": 23,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "illocution substitution",
+            "explication"
+          ]
+        }
+      },
+      {
+        "nodeID": 24,
+        "type": "I",
+        "text": "Sojourner Truth has ploughed, planted and gathered into barns, and no man could head her",
+        "pta": {
+          "subject": "Sojourner Truth",
+          "predicate": "has ploughed, planted and gathered into barns, and no man could head her",
+          "kind": "F",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 25,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora"
+          ]
+        }
+      },
+      {
+        "nodeID": 26,
+        "type": "I",
+        "text": "Sojourner Truth could work and eat as much as a man, and bear the lash as well",
+        "pta": {
+          "subject": "Sojourner Truth",
+          "predicate": "could work and eat as much as a man, and bear the lash as well",
+          "kind": "F",
+          "scope": "s",
+          "note": "'when I could get it' is an aside, dropped."
+        }
+      },
+      {
+        "nodeID": 27,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora"
+          ]
+        }
+      },
+      {
+        "nodeID": 28,
+        "type": "I",
+        "text": "Sojourner Truth has borne thirteen children, seen most of them sold into slavery, and been heard in her grief by none but Jesus",
+        "pta": {
+          "subject": "Sojourner Truth",
+          "predicate": "has borne thirteen children, seen most of them sold into slavery, and been heard in her grief by none but Jesus",
+          "kind": "F",
+          "scope": "s",
+          "note": "Hardship borne and survived: evidence of strength. Bearing children also marks her as a woman, but that is not the argument here."
+        }
+      },
+      {
+        "nodeID": 29,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora",
+            "passivization"
+          ]
+        }
+      },
+      {
+        "nodeID": 30,
+        "type": "I",
+        "text": "Sojourner Truth does not need special treatment",
+        "pta": {
+          "subject": "Sojourner Truth",
+          "predicate": "does not need special treatment",
+          "kind": "F",
+          "scope": "s",
+          "note": "implicit: what her case shows"
+        }
+      },
+      {
+        "nodeID": 31,
+        "type": "I",
+        "text": "Not all women need special treatment",
+        "pta": {
+          "subject": "some women",
+          "predicate": "does not need special treatment",
+          "kind": "F",
+          "scope": "p",
+          "note": "implicit: the denial of the man's claim"
+        }
+      },
+      {
+        "nodeID": 32,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 33,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 34,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 35,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 36,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 37,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 38,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 39,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 40,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 41,
+        "type": "RA",
+        "text": "α FF Sig",
+        "pta": {
+          "lever": "SIGN",
+          "concepts": [
+            "woman",
+            "special treatment"
+          ]
+        }
+      },
+      {
+        "nodeID": 42,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 43,
+        "type": "RA",
+        "text": "α FF Inc",
+        "pta": {
+          "lever": "EXCLUDES",
+          "concepts": [
+            "woman",
+            "special treatment",
+            "strength"
+          ]
+        }
+      },
+      {
+        "nodeID": 44,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 45,
+        "type": "RA",
+        "text": "α FF Sig",
+        "pta": {
+          "lever": "SIGN",
+          "concepts": [
+            "strength",
+            "hardship",
+            "labour"
+          ]
+        }
+      },
+      {
+        "nodeID": 46,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 47,
+        "type": "RA",
+        "text": "α FF Sig",
+        "pta": {
+          "lever": "SIGN",
+          "concepts": [
+            "strength",
+            "hardship",
+            "labour"
+          ]
+        }
+      },
+      {
+        "nodeID": 48,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 49,
+        "type": "RA",
+        "text": "α FF Sig",
+        "pta": {
+          "lever": "SIGN",
+          "concepts": [
+            "strength",
+            "hardship",
+            "motherhood",
+            "slavery"
+          ]
+        }
+      },
+      {
+        "nodeID": 50,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 51,
+        "type": "RA",
+        "text": "β ps Exa",
+        "pta": {
+          "lever": "EXAMPLE",
+          "concepts": [
+            "woman",
+            "special treatment"
+          ]
+        }
+      },
+      {
+        "nodeID": 52,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 53,
+        "type": "CA",
+        "text": "Default Conflict"
+      },
+      {
+        "nodeID": 54,
+        "type": "YA",
+        "text": "Disagreeing"
+      }
+    ],
+    "edges": [
+      {
+        "edgeID": 1000,
+        "fromID": 1,
+        "toID": 12
+      },
+      {
+        "edgeID": 1001,
+        "fromID": 12,
+        "toID": 2
+      },
+      {
+        "edgeID": 1002,
+        "fromID": 2,
+        "toID": 14
+      },
+      {
+        "edgeID": 1003,
+        "fromID": 14,
+        "toID": 13
+      },
+      {
+        "edgeID": 1004,
+        "fromID": 4,
+        "toID": 16
+      },
+      {
+        "edgeID": 1005,
+        "fromID": 16,
+        "toID": 15
+      },
+      {
+        "edgeID": 1006,
+        "fromID": 7,
+        "toID": 17
+      },
+      {
+        "edgeID": 1007,
+        "fromID": 17,
+        "toID": 15
+      },
+      {
+        "edgeID": 1008,
+        "fromID": 9,
+        "toID": 18
+      },
+      {
+        "edgeID": 1009,
+        "fromID": 18,
+        "toID": 15
+      },
+      {
+        "edgeID": 1010,
+        "fromID": 11,
+        "toID": 19
+      },
+      {
+        "edgeID": 1011,
+        "fromID": 19,
+        "toID": 15
+      },
+      {
+        "edgeID": 1012,
+        "fromID": 3,
+        "toID": 21
+      },
+      {
+        "edgeID": 1013,
+        "fromID": 21,
+        "toID": 20
+      },
+      {
+        "edgeID": 1014,
+        "fromID": 5,
+        "toID": 23
+      },
+      {
+        "edgeID": 1015,
+        "fromID": 23,
+        "toID": 22
+      },
+      {
+        "edgeID": 1016,
+        "fromID": 6,
+        "toID": 25
+      },
+      {
+        "edgeID": 1017,
+        "fromID": 25,
+        "toID": 24
+      },
+      {
+        "edgeID": 1018,
+        "fromID": 8,
+        "toID": 27
+      },
+      {
+        "edgeID": 1019,
+        "fromID": 27,
+        "toID": 26
+      },
+      {
+        "edgeID": 1020,
+        "fromID": 10,
+        "toID": 29
+      },
+      {
+        "edgeID": 1021,
+        "fromID": 29,
+        "toID": 28
+      },
+      {
+        "edgeID": 1022,
+        "fromID": 1,
+        "toID": 32
+      },
+      {
+        "edgeID": 1023,
+        "fromID": 32,
+        "toID": 3
+      },
+      {
+        "edgeID": 1024,
+        "fromID": 3,
+        "toID": 33
+      },
+      {
+        "edgeID": 1025,
+        "fromID": 33,
+        "toID": 4
+      },
+      {
+        "edgeID": 1026,
+        "fromID": 4,
+        "toID": 34
+      },
+      {
+        "edgeID": 1027,
+        "fromID": 34,
+        "toID": 5
+      },
+      {
+        "edgeID": 1028,
+        "fromID": 5,
+        "toID": 35
+      },
+      {
+        "edgeID": 1029,
+        "fromID": 35,
+        "toID": 6
+      },
+      {
+        "edgeID": 1030,
+        "fromID": 6,
+        "toID": 36
+      },
+      {
+        "edgeID": 1031,
+        "fromID": 36,
+        "toID": 7
+      },
+      {
+        "edgeID": 1032,
+        "fromID": 7,
+        "toID": 37
+      },
+      {
+        "edgeID": 1033,
+        "fromID": 5,
+        "toID": 37
+      },
+      {
+        "edgeID": 1034,
+        "fromID": 37,
+        "toID": 8
+      },
+      {
+        "edgeID": 1035,
+        "fromID": 8,
+        "toID": 38
+      },
+      {
+        "edgeID": 1036,
+        "fromID": 38,
+        "toID": 9
+      },
+      {
+        "edgeID": 1037,
+        "fromID": 9,
+        "toID": 39
+      },
+      {
+        "edgeID": 1038,
+        "fromID": 39,
+        "toID": 10
+      },
+      {
+        "edgeID": 1039,
+        "fromID": 10,
+        "toID": 40
+      },
+      {
+        "edgeID": 1041,
+        "fromID": 40,
+        "toID": 11
+      },
+      {
+        "edgeID": 1042,
+        "fromID": 20,
+        "toID": 41
+      },
+      {
+        "edgeID": 1043,
+        "fromID": 41,
+        "toID": 30
+      },
+      {
+        "edgeID": 1044,
+        "fromID": 33,
+        "toID": 42
+      },
+      {
+        "edgeID": 1045,
+        "fromID": 42,
+        "toID": 41
+      },
+      {
+        "edgeID": 1046,
+        "fromID": 22,
+        "toID": 43
+      },
+      {
+        "edgeID": 1047,
+        "fromID": 43,
+        "toID": 30
+      },
+      {
+        "edgeID": 1048,
+        "fromID": 36,
+        "toID": 44
+      },
+      {
+        "edgeID": 1049,
+        "fromID": 44,
+        "toID": 43
+      },
+      {
+        "edgeID": 1050,
+        "fromID": 24,
+        "toID": 45
+      },
+      {
+        "edgeID": 1051,
+        "fromID": 45,
+        "toID": 22
+      },
+      {
+        "edgeID": 1052,
+        "fromID": 35,
+        "toID": 46
+      },
+      {
+        "edgeID": 1053,
+        "fromID": 46,
+        "toID": 45
+      },
+      {
+        "edgeID": 1054,
+        "fromID": 26,
+        "toID": 47
+      },
+      {
+        "edgeID": 1055,
+        "fromID": 47,
+        "toID": 22
+      },
+      {
+        "edgeID": 1056,
+        "fromID": 37,
+        "toID": 48
+      },
+      {
+        "edgeID": 1057,
+        "fromID": 48,
+        "toID": 47
+      },
+      {
+        "edgeID": 1058,
+        "fromID": 28,
+        "toID": 49
+      },
+      {
+        "edgeID": 1059,
+        "fromID": 49,
+        "toID": 22
+      },
+      {
+        "edgeID": 1060,
+        "fromID": 39,
+        "toID": 50
+      },
+      {
+        "edgeID": 1061,
+        "fromID": 50,
+        "toID": 49
+      },
+      {
+        "edgeID": 1062,
+        "fromID": 30,
+        "toID": 51
+      },
+      {
+        "edgeID": 1063,
+        "fromID": 51,
+        "toID": 31
+      },
+      {
+        "edgeID": 1064,
+        "fromID": 15,
+        "toID": 51,
+        "role": "lever"
+      },
+      {
+        "edgeID": 1065,
+        "fromID": 33,
+        "toID": 52
+      },
+      {
+        "edgeID": 1066,
+        "fromID": 52,
+        "toID": 51
+      },
+      {
+        "edgeID": 1067,
+        "fromID": 31,
+        "toID": 53
+      },
+      {
+        "edgeID": 1068,
+        "fromID": 53,
+        "toID": 13
+      },
+      {
+        "edgeID": 1069,
+        "fromID": 32,
+        "toID": 54
+      },
+      {
+        "edgeID": 1070,
+        "fromID": 54,
+        "toID": 53
+      },
+      {
+        "edgeID": 1071,
+        "fromID": 5,
+        "toID": 39
+      },
+      {
+        "edgeID": 1072,
+        "fromID": 5,
+        "toID": 36
+      }
+    ],
+    "locutions": [
+      {
+        "nodeID": 1,
+        "personID": 1,
+        "start": 0,
+        "end": 132
+      },
+      {
+        "nodeID": 2,
+        "personID": 2,
+        "start": 30,
+        "end": 132
+      },
+      {
+        "nodeID": 3,
+        "personID": 1,
+        "start": 134,
+        "end": 218
+      },
+      {
+        "nodeID": 4,
+        "personID": 1,
+        "start": 224,
+        "end": 239
+      },
+      {
+        "nodeID": 5,
+        "personID": 1,
+        "start": 241,
+        "end": 267
+      },
+      {
+        "nodeID": 6,
+        "personID": 1,
+        "start": 269,
+        "end": 347
+      },
+      {
+        "nodeID": 7,
+        "personID": 1,
+        "start": 353,
+        "end": 368
+      },
+      {
+        "nodeID": 8,
+        "personID": 1,
+        "start": 370,
+        "end": 465
+      },
+      {
+        "nodeID": 9,
+        "personID": 1,
+        "start": 471,
+        "end": 486
+      },
+      {
+        "nodeID": 10,
+        "personID": 1,
+        "start": 488,
+        "end": 627
+      },
+      {
+        "nodeID": 11,
+        "personID": 1,
+        "start": 633,
+        "end": 648
+      }
+    ],
+    "participants": [
+      {
+        "participantID": 1,
+        "firstname": "Sojourner",
+        "surname": "Truth"
+      },
+      {
+        "participantID": 2,
+        "firstname": "That Man",
+        "surname": ""
+      }
+    ],
+    "schemefulfillments": [],
+    "descriptorfulfillments": []
+  },
+  "text": "That man over there says that women need to be helped into carriages, and lifted over ditches, and to have the best place everywhere. Nobody ever helps me into carriages, or over mud-puddles, or gives me any best place! And ain’t I a woman? Look at me! Look at my arm! I have ploughed and planted, and gathered into barns, and no man could head me! And ain’t I a woman? I could work as much and eat as much as a man – when I could get it – and bear the lash as well! And ain’t I a woman? I have borne thirteen children, and seen most all sold off to slavery, and when I cried out with my mother’s grief, none but Jesus heard me! And ain’t I a woman?",
+  "dialog": true
+}

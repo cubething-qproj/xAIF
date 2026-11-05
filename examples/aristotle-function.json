@@ -1,0 +1,1198 @@
+{
+  "AIF": {
+    "nodes": [
+      {
+        "nodeID": 1,
+        "type": "L",
+        "text": "Aristotle: perhaps we shall find the best good if we first find the function of a human being"
+      },
+      {
+        "nodeID": 2,
+        "type": "I",
+        "text": "The function of a human being should be found first, to find the best good",
+        "pta": {
+          "subject": "the function of a human being",
+          "predicate": "should be found first, to find the best good",
+          "kind": "P",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 3,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "illocution substitution",
+            "passivization"
+          ]
+        }
+      },
+      {
+        "nodeID": 4,
+        "type": "L",
+        "text": "Aristotle: the good, i.e., ‹doing› well, for a flautist, a sculptor, and every craftsman, and, in general, for whatever has a function and ‹characteristic› action, seems to depend on its function"
+      },
+      {
+        "nodeID": 5,
+        "type": "I",
+        "text": "The good of a flautist, a sculptor and every craftsman depends on its function",
+        "pta": {
+          "subject": "the good of a flautist, a sculptor and every craftsman",
+          "predicate": "depends on its function",
+          "kind": "F",
+          "scope": "p"
+        }
+      },
+      {
+        "nodeID": 6,
+        "type": "I",
+        "text": "The good of whatever has a function depends on its function",
+        "pta": {
+          "subject": "the good of whatever has a function",
+          "predicate": "depends on its function",
+          "kind": "F",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 7,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 8,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "explication"
+          ]
+        }
+      },
+      {
+        "nodeID": 9,
+        "type": "L",
+        "text": "Aristotle: the same seems to be true for a human being, if a human being has some function"
+      },
+      {
+        "nodeID": 10,
+        "type": "I",
+        "text": "The good of a human being depends on its function",
+        "pta": {
+          "subject": "the good of a human being",
+          "predicate": "depends on its function",
+          "kind": "F",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 11,
+        "type": "I",
+        "text": "The function of a human being is what the good of a human being depends on",
+        "pta": {
+          "subject": "the function of a human being",
+          "predicate": "is what the good of a human being depends on",
+          "kind": "F",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 12,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora"
+          ]
+        }
+      },
+      {
+        "nodeID": 13,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora",
+            "passivization"
+          ]
+        }
+      },
+      {
+        "nodeID": 14,
+        "type": "L",
+        "text": "Aristotle: do the carpenter and the leatherworker have their functions and actions, while a human being has none, and is by nature idle, without any function"
+      },
+      {
+        "nodeID": 15,
+        "type": "I",
+        "text": "A human being has a function",
+        "pta": {
+          "subject": "a human being",
+          "predicate": "has a function",
+          "kind": "F",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 16,
+        "type": "I",
+        "text": "The carpenter and the leatherworker have a function",
+        "pta": {
+          "subject": "the carpenter and the leatherworker",
+          "predicate": "has a function",
+          "kind": "F",
+          "scope": "p"
+        }
+      },
+      {
+        "nodeID": 17,
+        "type": "YA",
+        "text": "Rhetorical Questioning",
+        "pta": {
+          "transformations": [
+            "illocution substitution"
+          ]
+        }
+      },
+      {
+        "nodeID": 18,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "same term"
+          ]
+        }
+      },
+      {
+        "nodeID": 19,
+        "type": "L",
+        "text": "Aristotle: just as eye, hand, foot and, in general, every ‹bodily› part apparently has its functions"
+      },
+      {
+        "nodeID": 20,
+        "type": "I",
+        "text": "Eye, hand and foot have a function",
+        "pta": {
+          "subject": "eye, hand and foot",
+          "predicate": "has a function",
+          "kind": "F",
+          "scope": "p"
+        }
+      },
+      {
+        "nodeID": 21,
+        "type": "I",
+        "text": "Every bodily part has a function",
+        "pta": {
+          "subject": "every bodily part",
+          "predicate": "has a function",
+          "kind": "F",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 22,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "same term"
+          ]
+        }
+      },
+      {
+        "nodeID": 23,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "same term"
+          ]
+        }
+      },
+      {
+        "nodeID": 24,
+        "type": "L",
+        "text": "Aristotle: may we likewise ascribe to a human being some function apart from all of theirs"
+      },
+      {
+        "nodeID": 25,
+        "type": "YA",
+        "text": "Rhetorical Questioning",
+        "pta": {
+          "transformations": [
+            "illocution substitution",
+            "activization"
+          ]
+        }
+      },
+      {
+        "nodeID": 26,
+        "type": "L",
+        "text": "Aristotle: living is apparently shared with plants"
+      },
+      {
+        "nodeID": 27,
+        "type": "I",
+        "text": "The life of nutrition and growth is shared with plants",
+        "pta": {
+          "subject": "the life of nutrition and growth",
+          "predicate": "is shared with plants",
+          "kind": "F",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 28,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "same term"
+          ]
+        }
+      },
+      {
+        "nodeID": 29,
+        "type": "L",
+        "text": "Aristotle: what we are looking for is the special function of a human being"
+      },
+      {
+        "nodeID": 30,
+        "type": "I",
+        "text": "The function of a human being is special to a human being",
+        "pta": {
+          "subject": "the function of a human being",
+          "predicate": "is special to a human being",
+          "kind": "F",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 31,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "explication"
+          ]
+        }
+      },
+      {
+        "nodeID": 32,
+        "type": "L",
+        "text": "Aristotle: we should set aside the life of nutrition and growth"
+      },
+      {
+        "nodeID": 33,
+        "type": "I",
+        "text": "The life of nutrition and growth is not the special function of a human being",
+        "pta": {
+          "subject": "the life of nutrition and growth",
+          "predicate": "is not the special function of a human being",
+          "kind": "F",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 34,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "illocution substitution"
+          ]
+        }
+      },
+      {
+        "nodeID": 35,
+        "type": "L",
+        "text": "Aristotle: The life next in order is some sort of life of sense-perception"
+      },
+      {
+        "nodeID": 36,
+        "type": "I",
+        "text": "The life of sense-perception is next in order",
+        "pta": {
+          "subject": "the life of sense-perception",
+          "predicate": "is next in order",
+          "kind": "F",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 37,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "passivization"
+          ]
+        }
+      },
+      {
+        "nodeID": 38,
+        "type": "L",
+        "text": "Aristotle: this too is apparently shared, with horse, ox and every animal"
+      },
+      {
+        "nodeID": 39,
+        "type": "I",
+        "text": "The life of sense-perception is shared with every animal",
+        "pta": {
+          "subject": "the life of sense-perception",
+          "predicate": "is shared with every animal",
+          "kind": "F",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 40,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora"
+          ]
+        }
+      },
+      {
+        "nodeID": 41,
+        "type": "I",
+        "text": "The life of sense-perception is not the special function of a human being",
+        "pta": {
+          "subject": "the life of sense-perception",
+          "predicate": "is not the special function of a human being",
+          "kind": "F",
+          "scope": "s",
+          "note": "implicit: the second elimination, by the same lever as the first"
+        }
+      },
+      {
+        "nodeID": 42,
+        "type": "L",
+        "text": "Aristotle: The remaining possibility, then, is some sort of life of action of the ‹part of the soul› that has reason"
+      },
+      {
+        "nodeID": 43,
+        "type": "I",
+        "text": "The life of action of the part of the soul that has reason is the remaining possibility for the special function of a human being",
+        "pta": {
+          "subject": "the life of action of the part of the soul that has reason",
+          "predicate": "is the remaining possibility for the special function of a human being",
+          "kind": "V",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 44,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "passivization",
+            "explication"
+          ]
+        }
+      },
+      {
+        "nodeID": 45,
+        "type": "I",
+        "text": "The life of action of the part of the soul that has reason is the only kind of life not shared with plants or animals",
+        "pta": {
+          "subject": "the life of action of the part of the soul that has reason",
+          "predicate": "is the only kind of life not shared with plants or animals",
+          "kind": "F",
+          "scope": "s",
+          "note": "implicit: what the two eliminations leave"
+        }
+      },
+      {
+        "nodeID": 46,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 47,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 48,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 49,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 50,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 51,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 52,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 53,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 54,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 55,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 56,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 57,
+        "type": "RA",
+        "text": "β up Exa",
+        "pta": {
+          "lever": "EXAMPLE",
+          "concepts": [
+            "good",
+            "function"
+          ]
+        }
+      },
+      {
+        "nodeID": 58,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 59,
+        "type": "RA",
+        "text": "β uu Div",
+        "pta": {
+          "lever": "PART",
+          "concepts": [
+            "good",
+            "function",
+            "human being"
+          ]
+        }
+      },
+      {
+        "nodeID": 60,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 61,
+        "type": "RA",
+        "text": "α PF Pra",
+        "pta": {
+          "lever": "PRAGMATIC MOTIVATION",
+          "concepts": [
+            "good",
+            "function",
+            "human being"
+          ]
+        }
+      },
+      {
+        "nodeID": 62,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 63,
+        "type": "RA",
+        "text": "β up Sp",
+        "pta": {
+          "lever": "SPECIES",
+          "concepts": [
+            "function",
+            "human being"
+          ]
+        }
+      },
+      {
+        "nodeID": 64,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 65,
+        "type": "RA",
+        "text": "β up Exa",
+        "pta": {
+          "lever": "EXAMPLE",
+          "concepts": [
+            "function"
+          ]
+        }
+      },
+      {
+        "nodeID": 66,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 67,
+        "type": "RA",
+        "text": "β uu Cpo",
+        "pta": {
+          "lever": "COMPOSED",
+          "concepts": [
+            "function",
+            "human being"
+          ]
+        }
+      },
+      {
+        "nodeID": 68,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 69,
+        "type": "RA",
+        "text": "α FF Inc",
+        "pta": {
+          "lever": "EXCLUDES",
+          "concepts": [
+            "function",
+            "life",
+            "nutrition"
+          ]
+        }
+      },
+      {
+        "nodeID": 70,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 71,
+        "type": "RA",
+        "text": "α FF Inc",
+        "pta": {
+          "lever": "EXCLUDES",
+          "concepts": [
+            "function",
+            "life",
+            "perception"
+          ]
+        }
+      },
+      {
+        "nodeID": 72,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 73,
+        "type": "RA",
+        "text": "α VF Cr",
+        "pta": {
+          "lever": "CRITERION",
+          "concepts": [
+            "function",
+            "life",
+            "reason",
+            "soul"
+          ]
+        }
+      },
+      {
+        "nodeID": 74,
+        "type": "YA",
+        "text": "Arguing"
+      }
+    ],
+    "edges": [
+      {
+        "edgeID": 1000,
+        "fromID": 1,
+        "toID": 3
+      },
+      {
+        "edgeID": 1001,
+        "fromID": 3,
+        "toID": 2
+      },
+      {
+        "edgeID": 1002,
+        "fromID": 4,
+        "toID": 7
+      },
+      {
+        "edgeID": 1003,
+        "fromID": 7,
+        "toID": 5
+      },
+      {
+        "edgeID": 1004,
+        "fromID": 4,
+        "toID": 8
+      },
+      {
+        "edgeID": 1005,
+        "fromID": 8,
+        "toID": 6
+      },
+      {
+        "edgeID": 1006,
+        "fromID": 9,
+        "toID": 12
+      },
+      {
+        "edgeID": 1007,
+        "fromID": 12,
+        "toID": 10
+      },
+      {
+        "edgeID": 1008,
+        "fromID": 9,
+        "toID": 13
+      },
+      {
+        "edgeID": 1009,
+        "fromID": 13,
+        "toID": 11
+      },
+      {
+        "edgeID": 1010,
+        "fromID": 14,
+        "toID": 17
+      },
+      {
+        "edgeID": 1011,
+        "fromID": 17,
+        "toID": 15
+      },
+      {
+        "edgeID": 1012,
+        "fromID": 14,
+        "toID": 18
+      },
+      {
+        "edgeID": 1013,
+        "fromID": 18,
+        "toID": 16
+      },
+      {
+        "edgeID": 1014,
+        "fromID": 19,
+        "toID": 22
+      },
+      {
+        "edgeID": 1015,
+        "fromID": 22,
+        "toID": 20
+      },
+      {
+        "edgeID": 1016,
+        "fromID": 19,
+        "toID": 23
+      },
+      {
+        "edgeID": 1017,
+        "fromID": 23,
+        "toID": 21
+      },
+      {
+        "edgeID": 1018,
+        "fromID": 24,
+        "toID": 25
+      },
+      {
+        "edgeID": 1019,
+        "fromID": 25,
+        "toID": 15
+      },
+      {
+        "edgeID": 1020,
+        "fromID": 26,
+        "toID": 28
+      },
+      {
+        "edgeID": 1021,
+        "fromID": 28,
+        "toID": 27
+      },
+      {
+        "edgeID": 1022,
+        "fromID": 29,
+        "toID": 31
+      },
+      {
+        "edgeID": 1023,
+        "fromID": 31,
+        "toID": 30
+      },
+      {
+        "edgeID": 1024,
+        "fromID": 32,
+        "toID": 34
+      },
+      {
+        "edgeID": 1025,
+        "fromID": 34,
+        "toID": 33
+      },
+      {
+        "edgeID": 1026,
+        "fromID": 35,
+        "toID": 37
+      },
+      {
+        "edgeID": 1027,
+        "fromID": 37,
+        "toID": 36
+      },
+      {
+        "edgeID": 1028,
+        "fromID": 38,
+        "toID": 40
+      },
+      {
+        "edgeID": 1029,
+        "fromID": 40,
+        "toID": 39
+      },
+      {
+        "edgeID": 1030,
+        "fromID": 42,
+        "toID": 44
+      },
+      {
+        "edgeID": 1031,
+        "fromID": 44,
+        "toID": 43
+      },
+      {
+        "edgeID": 1032,
+        "fromID": 1,
+        "toID": 46
+      },
+      {
+        "edgeID": 1033,
+        "fromID": 46,
+        "toID": 4
+      },
+      {
+        "edgeID": 1034,
+        "fromID": 4,
+        "toID": 47
+      },
+      {
+        "edgeID": 1035,
+        "fromID": 1,
+        "toID": 47
+      },
+      {
+        "edgeID": 1036,
+        "fromID": 47,
+        "toID": 9
+      },
+      {
+        "edgeID": 1037,
+        "fromID": 9,
+        "toID": 48
+      },
+      {
+        "edgeID": 1038,
+        "fromID": 48,
+        "toID": 14
+      },
+      {
+        "edgeID": 1039,
+        "fromID": 14,
+        "toID": 49
+      },
+      {
+        "edgeID": 1040,
+        "fromID": 49,
+        "toID": 19
+      },
+      {
+        "edgeID": 1041,
+        "fromID": 19,
+        "toID": 50
+      },
+      {
+        "edgeID": 1042,
+        "fromID": 50,
+        "toID": 24
+      },
+      {
+        "edgeID": 1043,
+        "fromID": 24,
+        "toID": 51
+      },
+      {
+        "edgeID": 1044,
+        "fromID": 51,
+        "toID": 26
+      },
+      {
+        "edgeID": 1045,
+        "fromID": 26,
+        "toID": 52
+      },
+      {
+        "edgeID": 1046,
+        "fromID": 52,
+        "toID": 29
+      },
+      {
+        "edgeID": 1047,
+        "fromID": 29,
+        "toID": 53
+      },
+      {
+        "edgeID": 1048,
+        "fromID": 26,
+        "toID": 53
+      },
+      {
+        "edgeID": 1049,
+        "fromID": 53,
+        "toID": 32
+      },
+      {
+        "edgeID": 1050,
+        "fromID": 32,
+        "toID": 54
+      },
+      {
+        "edgeID": 1051,
+        "fromID": 54,
+        "toID": 35
+      },
+      {
+        "edgeID": 1052,
+        "fromID": 35,
+        "toID": 55
+      },
+      {
+        "edgeID": 1053,
+        "fromID": 55,
+        "toID": 38
+      },
+      {
+        "edgeID": 1054,
+        "fromID": 38,
+        "toID": 56
+      },
+      {
+        "edgeID": 1055,
+        "fromID": 56,
+        "toID": 42
+      },
+      {
+        "edgeID": 1056,
+        "fromID": 5,
+        "toID": 57
+      },
+      {
+        "edgeID": 1057,
+        "fromID": 57,
+        "toID": 6
+      },
+      {
+        "edgeID": 1058,
+        "fromID": 4,
+        "toID": 58
+      },
+      {
+        "edgeID": 1059,
+        "fromID": 58,
+        "toID": 57
+      },
+      {
+        "edgeID": 1060,
+        "fromID": 6,
+        "toID": 59
+      },
+      {
+        "edgeID": 1061,
+        "fromID": 59,
+        "toID": 10
+      },
+      {
+        "edgeID": 1062,
+        "fromID": 47,
+        "toID": 60
+      },
+      {
+        "edgeID": 1063,
+        "fromID": 60,
+        "toID": 59
+      },
+      {
+        "edgeID": 1064,
+        "fromID": 15,
+        "toID": 59,
+        "role": "lever"
+      },
+      {
+        "edgeID": 1065,
+        "fromID": 11,
+        "toID": 61
+      },
+      {
+        "edgeID": 1066,
+        "fromID": 61,
+        "toID": 2
+      },
+      {
+        "edgeID": 1067,
+        "fromID": 47,
+        "toID": 62
+      },
+      {
+        "edgeID": 1068,
+        "fromID": 62,
+        "toID": 61
+      },
+      {
+        "edgeID": 1069,
+        "fromID": 16,
+        "toID": 63
+      },
+      {
+        "edgeID": 1070,
+        "fromID": 63,
+        "toID": 15
+      },
+      {
+        "edgeID": 1071,
+        "fromID": 14,
+        "toID": 64
+      },
+      {
+        "edgeID": 1072,
+        "fromID": 64,
+        "toID": 63
+      },
+      {
+        "edgeID": 1073,
+        "fromID": 20,
+        "toID": 65
+      },
+      {
+        "edgeID": 1074,
+        "fromID": 65,
+        "toID": 21
+      },
+      {
+        "edgeID": 1075,
+        "fromID": 19,
+        "toID": 66
+      },
+      {
+        "edgeID": 1076,
+        "fromID": 66,
+        "toID": 65
+      },
+      {
+        "edgeID": 1077,
+        "fromID": 21,
+        "toID": 67
+      },
+      {
+        "edgeID": 1078,
+        "fromID": 67,
+        "toID": 15
+      },
+      {
+        "edgeID": 1079,
+        "fromID": 50,
+        "toID": 68
+      },
+      {
+        "edgeID": 1080,
+        "fromID": 68,
+        "toID": 67
+      },
+      {
+        "edgeID": 1081,
+        "fromID": 27,
+        "toID": 69
+      },
+      {
+        "edgeID": 1082,
+        "fromID": 69,
+        "toID": 33
+      },
+      {
+        "edgeID": 1083,
+        "fromID": 53,
+        "toID": 70
+      },
+      {
+        "edgeID": 1084,
+        "fromID": 70,
+        "toID": 69
+      },
+      {
+        "edgeID": 1085,
+        "fromID": 30,
+        "toID": 69,
+        "role": "lever"
+      },
+      {
+        "edgeID": 1086,
+        "fromID": 39,
+        "toID": 71
+      },
+      {
+        "edgeID": 1087,
+        "fromID": 71,
+        "toID": 41
+      },
+      {
+        "edgeID": 1088,
+        "fromID": 38,
+        "toID": 72
+      },
+      {
+        "edgeID": 1089,
+        "fromID": 72,
+        "toID": 71
+      },
+      {
+        "edgeID": 1090,
+        "fromID": 30,
+        "toID": 71,
+        "role": "lever"
+      },
+      {
+        "edgeID": 1091,
+        "fromID": 45,
+        "toID": 73
+      },
+      {
+        "edgeID": 1092,
+        "fromID": 73,
+        "toID": 43
+      },
+      {
+        "edgeID": 1093,
+        "fromID": 56,
+        "toID": 74
+      },
+      {
+        "edgeID": 1094,
+        "fromID": 74,
+        "toID": 73
+      },
+      {
+        "edgeID": 1095,
+        "fromID": 30,
+        "toID": 73,
+        "role": "lever"
+      }
+    ],
+    "locutions": [
+      {
+        "nodeID": 1,
+        "personID": 1,
+        "start": 6,
+        "end": 88
+      },
+      {
+        "nodeID": 4,
+        "personID": 1,
+        "start": 102,
+        "end": 286
+      },
+      {
+        "nodeID": 9,
+        "personID": 1,
+        "start": 288,
+        "end": 367
+      },
+      {
+        "nodeID": 14,
+        "personID": 1,
+        "start": 374,
+        "end": 520
+      },
+      {
+        "nodeID": 19,
+        "personID": 1,
+        "start": 526,
+        "end": 615
+      },
+      {
+        "nodeID": 24,
+        "personID": 1,
+        "start": 617,
+        "end": 696
+      },
+      {
+        "nodeID": 26,
+        "personID": 1,
+        "start": 729,
+        "end": 768
+      },
+      {
+        "nodeID": 29,
+        "personID": 1,
+        "start": 774,
+        "end": 838
+      },
+      {
+        "nodeID": 32,
+        "personID": 1,
+        "start": 846,
+        "end": 898
+      },
+      {
+        "nodeID": 35,
+        "personID": 1,
+        "start": 900,
+        "end": 963
+      },
+      {
+        "nodeID": 38,
+        "personID": 1,
+        "start": 969,
+        "end": 1031
+      },
+      {
+        "nodeID": 42,
+        "personID": 1,
+        "start": 1033,
+        "end": 1138
+      }
+    ],
+    "participants": [
+      {
+        "participantID": 1,
+        "firstname": "Aristotle",
+        "surname": ""
+      }
+    ],
+    "schemefulfillments": [],
+    "descriptorfulfillments": []
+  },
+  "text": "Well, perhaps we shall find the best good if we first find the function of a human being. For just as the good, i.e., ‹doing› well, for a flautist, a sculptor, and every craftsman, and, in general, for whatever has a function and ‹characteristic› action, seems to depend on its function, the same seems to be true for a human being, if a human being has some function. Then do the carpenter and the leatherworker have their functions and actions, while a human being has none, and is by nature idle, without any function? Or, just as eye, hand, foot and, in general, every ‹bodily› part apparently has its functions, may we likewise ascribe to a human being some function apart from all of theirs? What, then, could this be? For living is apparently shared with plants, but what we are looking for is the special function of a human being; hence we should set aside the life of nutrition and growth. The life next in order is some sort of life of sense-perception; but this too is apparently shared, with horse, ox and every animal. The remaining possibility, then, is some sort of life of action of the ‹part of the soul› that has reason.\n",
+  "dialog": true
+}

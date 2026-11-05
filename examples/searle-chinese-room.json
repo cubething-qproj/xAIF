@@ -1,0 +1,923 @@
+{
+  "AIF": {
+    "nodes": [
+      {
+        "nodeID": 1,
+        "type": "L",
+        "text": "John Searle: the claims made by strong AI are that the programmed computer understands the stories and that the program in some sense explains human understanding"
+      },
+      {
+        "nodeID": 2,
+        "type": "L",
+        "text": "Strong AI: the programmed computer understands the stories"
+      },
+      {
+        "nodeID": 3,
+        "type": "L",
+        "text": "Strong AI: the program in some sense explains human understanding"
+      },
+      {
+        "nodeID": 4,
+        "type": "L",
+        "text": "John Searle: it seems to me quite obvious in the example that I do not understand a word of the Chinese stories"
+      },
+      {
+        "nodeID": 5,
+        "type": "L",
+        "text": "John Searle: I have inputs and outputs that are indistinguishable from those of the native Chinese speaker"
+      },
+      {
+        "nodeID": 6,
+        "type": "L",
+        "text": "John Searle: I can have any formal program you like"
+      },
+      {
+        "nodeID": 7,
+        "type": "L",
+        "text": "John Searle: I still understand nothing"
+      },
+      {
+        "nodeID": 8,
+        "type": "L",
+        "text": "John Searle: Schank's computer understands nothing of any stories, whether in Chinese, English, or whatever"
+      },
+      {
+        "nodeID": 9,
+        "type": "L",
+        "text": "John Searle: in the Chinese case the computer is me"
+      },
+      {
+        "nodeID": 10,
+        "type": "L",
+        "text": "John Searle: in cases where the computer is not me, the computer has nothing more than I have in the case where I understand nothing"
+      },
+      {
+        "nodeID": 11,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 12,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 13,
+        "type": "I",
+        "text": "Schank's computer understands the stories",
+        "pta": {
+          "subject": "Schank's computer",
+          "predicate": "understands the stories",
+          "kind": "F",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 14,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "same term"
+          ]
+        }
+      },
+      {
+        "nodeID": 15,
+        "type": "I",
+        "text": "The program in some sense explains human understanding",
+        "pta": {
+          "subject": "the program",
+          "predicate": "in some sense explains human understanding",
+          "kind": "F",
+          "scope": "s",
+          "note": "Strong AI's second claim; the passage examines only the first."
+        }
+      },
+      {
+        "nodeID": 16,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 17,
+        "type": "I",
+        "text": "Searle in the example does not understand the Chinese stories",
+        "pta": {
+          "subject": "Searle in the example",
+          "predicate": "does not understand the Chinese stories",
+          "kind": "F",
+          "scope": "s",
+          "note": "'it seems to me quite obvious' is an illocutive marker; 'As regards the first claim' a structure marker."
+        }
+      },
+      {
+        "nodeID": 18,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora"
+          ]
+        }
+      },
+      {
+        "nodeID": 19,
+        "type": "I",
+        "text": "Searle in the example has inputs and outputs indistinguishable from those of a native Chinese speaker",
+        "pta": {
+          "subject": "Searle in the example",
+          "predicate": "has inputs and outputs indistinguishable from those of a native Chinese speaker",
+          "kind": "F",
+          "scope": "s",
+          "note": "What makes Searle the computer in the allegory; supports the EQUAL lever statement."
+        }
+      },
+      {
+        "nodeID": 20,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora"
+          ]
+        }
+      },
+      {
+        "nodeID": 21,
+        "type": "I",
+        "text": "Searle in the example can have any formal program",
+        "pta": {
+          "subject": "Searle in the example",
+          "predicate": "can have any formal program",
+          "kind": "F",
+          "scope": "s",
+          "note": "What makes Searle the computer in the allegory; supports the EQUAL lever statement."
+        }
+      },
+      {
+        "nodeID": 22,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora"
+          ]
+        }
+      },
+      {
+        "nodeID": 23,
+        "type": "I",
+        "text": "Searle in the example understands nothing",
+        "pta": {
+          "subject": "Searle in the example",
+          "predicate": "understands nothing",
+          "kind": "F",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 24,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora"
+          ]
+        }
+      },
+      {
+        "nodeID": 25,
+        "type": "I",
+        "text": "Schank's computer understands nothing",
+        "pta": {
+          "subject": "Schank's computer",
+          "predicate": "understands nothing",
+          "kind": "F",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 26,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 27,
+        "type": "I",
+        "text": "Searle in the example is Schank's computer in the Chinese case",
+        "pta": {
+          "subject": "Searle in the example",
+          "predicate": "is Schank's computer in the Chinese case",
+          "kind": "V",
+          "scope": "s",
+          "note": "The allegory: V, because it applies strong AI's own standard of equivalence (same inputs, outputs and program)."
+        }
+      },
+      {
+        "nodeID": 28,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora"
+          ]
+        }
+      },
+      {
+        "nodeID": 29,
+        "type": "I",
+        "text": "Where Schank's computer is not Searle, it has nothing more than Searle in the example has",
+        "pta": {
+          "subject": "Schank's computer where it is not Searle",
+          "predicate": "has nothing more than Searle in the example has",
+          "kind": "F",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 30,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora"
+          ]
+        }
+      },
+      {
+        "nodeID": 31,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 32,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 33,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 34,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 35,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 36,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 37,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 38,
+        "type": "MA",
+        "text": "Default Rephrase"
+      },
+      {
+        "nodeID": 39,
+        "type": "YA",
+        "text": "Restating"
+      },
+      {
+        "nodeID": 40,
+        "type": "RA",
+        "text": "β ss Eq",
+        "pta": {
+          "lever": "EQUAL",
+          "concepts": [
+            "understanding",
+            "computer"
+          ]
+        }
+      },
+      {
+        "nodeID": 41,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 42,
+        "type": "RA",
+        "text": "β ss Ma",
+        "pta": {
+          "lever": "RANKS BELOW",
+          "concepts": [
+            "understanding",
+            "computer"
+          ]
+        }
+      },
+      {
+        "nodeID": 43,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 44,
+        "type": "CA",
+        "text": "Default Conflict"
+      },
+      {
+        "nodeID": 45,
+        "type": "YA",
+        "text": "Disagreeing"
+      },
+      {
+        "nodeID": 46,
+        "type": "RA",
+        "text": "α VF Cr",
+        "pta": {
+          "lever": "CRITERION",
+          "concepts": [
+            "understanding",
+            "computer",
+            "equivalence"
+          ]
+        }
+      },
+      {
+        "nodeID": 47,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 48,
+        "type": "RA",
+        "text": "α VF Cr",
+        "pta": {
+          "lever": "CRITERION",
+          "concepts": [
+            "understanding",
+            "computer",
+            "equivalence"
+          ]
+        }
+      },
+      {
+        "nodeID": 49,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 50,
+        "type": "I",
+        "text": "Schank's computer in the Chinese case understands nothing",
+        "pta": {
+          "subject": "Schank's computer in the Chinese case",
+          "predicate": "understands nothing",
+          "kind": "F",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 51,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "explication"
+          ]
+        }
+      },
+      {
+        "nodeID": 52,
+        "type": "RA",
+        "text": "β ss Cpo",
+        "pta": {
+          "lever": "COMPOSED",
+          "concepts": [
+            "understanding",
+            "computer"
+          ]
+        }
+      },
+      {
+        "nodeID": 53,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 54,
+        "type": "I",
+        "text": "Schank's computer where it is not Searle understands nothing",
+        "pta": {
+          "subject": "Schank's computer where it is not Searle",
+          "predicate": "understands nothing",
+          "kind": "F",
+          "scope": "s"
+        }
+      },
+      {
+        "nodeID": 55,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "explication"
+          ]
+        }
+      },
+      {
+        "nodeID": 56,
+        "type": "RA",
+        "text": "β ss Cpo",
+        "pta": {
+          "lever": "COMPOSED",
+          "concepts": [
+            "understanding",
+            "computer"
+          ]
+        }
+      },
+      {
+        "nodeID": 57,
+        "type": "YA",
+        "text": "Arguing"
+      }
+    ],
+    "edges": [
+      {
+        "edgeID": 1000,
+        "fromID": 1,
+        "toID": 11
+      },
+      {
+        "edgeID": 1001,
+        "fromID": 11,
+        "toID": 2
+      },
+      {
+        "edgeID": 1002,
+        "fromID": 1,
+        "toID": 12
+      },
+      {
+        "edgeID": 1003,
+        "fromID": 12,
+        "toID": 3
+      },
+      {
+        "edgeID": 1004,
+        "fromID": 2,
+        "toID": 14
+      },
+      {
+        "edgeID": 1005,
+        "fromID": 14,
+        "toID": 13
+      },
+      {
+        "edgeID": 1006,
+        "fromID": 3,
+        "toID": 16
+      },
+      {
+        "edgeID": 1007,
+        "fromID": 16,
+        "toID": 15
+      },
+      {
+        "edgeID": 1008,
+        "fromID": 4,
+        "toID": 18
+      },
+      {
+        "edgeID": 1009,
+        "fromID": 18,
+        "toID": 17
+      },
+      {
+        "edgeID": 1010,
+        "fromID": 5,
+        "toID": 20
+      },
+      {
+        "edgeID": 1011,
+        "fromID": 20,
+        "toID": 19
+      },
+      {
+        "edgeID": 1012,
+        "fromID": 6,
+        "toID": 22
+      },
+      {
+        "edgeID": 1013,
+        "fromID": 22,
+        "toID": 21
+      },
+      {
+        "edgeID": 1014,
+        "fromID": 7,
+        "toID": 24
+      },
+      {
+        "edgeID": 1015,
+        "fromID": 24,
+        "toID": 23
+      },
+      {
+        "edgeID": 1016,
+        "fromID": 8,
+        "toID": 26
+      },
+      {
+        "edgeID": 1017,
+        "fromID": 26,
+        "toID": 25
+      },
+      {
+        "edgeID": 1018,
+        "fromID": 9,
+        "toID": 28
+      },
+      {
+        "edgeID": 1019,
+        "fromID": 28,
+        "toID": 27
+      },
+      {
+        "edgeID": 1020,
+        "fromID": 10,
+        "toID": 30
+      },
+      {
+        "edgeID": 1021,
+        "fromID": 30,
+        "toID": 29
+      },
+      {
+        "edgeID": 1022,
+        "fromID": 1,
+        "toID": 31
+      },
+      {
+        "edgeID": 1023,
+        "fromID": 31,
+        "toID": 4
+      },
+      {
+        "edgeID": 1024,
+        "fromID": 4,
+        "toID": 32
+      },
+      {
+        "edgeID": 1025,
+        "fromID": 32,
+        "toID": 5
+      },
+      {
+        "edgeID": 1026,
+        "fromID": 5,
+        "toID": 33
+      },
+      {
+        "edgeID": 1027,
+        "fromID": 33,
+        "toID": 6
+      },
+      {
+        "edgeID": 1028,
+        "fromID": 6,
+        "toID": 34
+      },
+      {
+        "edgeID": 1029,
+        "fromID": 4,
+        "toID": 34
+      },
+      {
+        "edgeID": 1030,
+        "fromID": 34,
+        "toID": 7
+      },
+      {
+        "edgeID": 1031,
+        "fromID": 7,
+        "toID": 35
+      },
+      {
+        "edgeID": 1032,
+        "fromID": 1,
+        "toID": 35
+      },
+      {
+        "edgeID": 1033,
+        "fromID": 35,
+        "toID": 8
+      },
+      {
+        "edgeID": 1034,
+        "fromID": 8,
+        "toID": 36
+      },
+      {
+        "edgeID": 1035,
+        "fromID": 36,
+        "toID": 9
+      },
+      {
+        "edgeID": 1036,
+        "fromID": 9,
+        "toID": 37
+      },
+      {
+        "edgeID": 1037,
+        "fromID": 37,
+        "toID": 10
+      },
+      {
+        "edgeID": 1038,
+        "fromID": 17,
+        "toID": 38
+      },
+      {
+        "edgeID": 1039,
+        "fromID": 38,
+        "toID": 23
+      },
+      {
+        "edgeID": 1040,
+        "fromID": 34,
+        "toID": 39
+      },
+      {
+        "edgeID": 1041,
+        "fromID": 39,
+        "toID": 38
+      },
+      {
+        "edgeID": 1042,
+        "fromID": 23,
+        "toID": 40
+      },
+      {
+        "edgeID": 1043,
+        "fromID": 40,
+        "toID": 50
+      },
+      {
+        "edgeID": 1044,
+        "fromID": 27,
+        "toID": 40,
+        "role": "lever"
+      },
+      {
+        "edgeID": 1045,
+        "fromID": 35,
+        "toID": 41
+      },
+      {
+        "edgeID": 1046,
+        "fromID": 41,
+        "toID": 40
+      },
+      {
+        "edgeID": 1047,
+        "fromID": 23,
+        "toID": 42
+      },
+      {
+        "edgeID": 1048,
+        "fromID": 42,
+        "toID": 54
+      },
+      {
+        "edgeID": 1049,
+        "fromID": 29,
+        "toID": 42,
+        "role": "lever"
+      },
+      {
+        "edgeID": 1050,
+        "fromID": 35,
+        "toID": 43
+      },
+      {
+        "edgeID": 1051,
+        "fromID": 43,
+        "toID": 42
+      },
+      {
+        "edgeID": 1052,
+        "fromID": 25,
+        "toID": 44
+      },
+      {
+        "edgeID": 1053,
+        "fromID": 44,
+        "toID": 13
+      },
+      {
+        "edgeID": 1054,
+        "fromID": 35,
+        "toID": 45
+      },
+      {
+        "edgeID": 1055,
+        "fromID": 45,
+        "toID": 44
+      },
+      {
+        "edgeID": 1056,
+        "fromID": 5,
+        "toID": 36
+      },
+      {
+        "edgeID": 1057,
+        "fromID": 6,
+        "toID": 36
+      },
+      {
+        "edgeID": 1058,
+        "fromID": 19,
+        "toID": 46
+      },
+      {
+        "edgeID": 1059,
+        "fromID": 46,
+        "toID": 27
+      },
+      {
+        "edgeID": 1060,
+        "fromID": 36,
+        "toID": 47
+      },
+      {
+        "edgeID": 1061,
+        "fromID": 47,
+        "toID": 46
+      },
+      {
+        "edgeID": 1062,
+        "fromID": 21,
+        "toID": 48
+      },
+      {
+        "edgeID": 1063,
+        "fromID": 48,
+        "toID": 27
+      },
+      {
+        "edgeID": 1064,
+        "fromID": 36,
+        "toID": 49
+      },
+      {
+        "edgeID": 1065,
+        "fromID": 49,
+        "toID": 48
+      },
+      {
+        "edgeID": 1066,
+        "fromID": 8,
+        "toID": 51
+      },
+      {
+        "edgeID": 1067,
+        "fromID": 51,
+        "toID": 50
+      },
+      {
+        "edgeID": 1068,
+        "fromID": 50,
+        "toID": 52
+      },
+      {
+        "edgeID": 1069,
+        "fromID": 52,
+        "toID": 25
+      },
+      {
+        "edgeID": 1070,
+        "fromID": 8,
+        "toID": 53
+      },
+      {
+        "edgeID": 1071,
+        "fromID": 53,
+        "toID": 52
+      },
+      {
+        "edgeID": 1072,
+        "fromID": 8,
+        "toID": 55
+      },
+      {
+        "edgeID": 1073,
+        "fromID": 55,
+        "toID": 54
+      },
+      {
+        "edgeID": 1074,
+        "fromID": 54,
+        "toID": 56
+      },
+      {
+        "edgeID": 1075,
+        "fromID": 56,
+        "toID": 25
+      },
+      {
+        "edgeID": 1076,
+        "fromID": 8,
+        "toID": 57
+      },
+      {
+        "edgeID": 1077,
+        "fromID": 57,
+        "toID": 56
+      }
+    ],
+    "locutions": [
+      {
+        "nodeID": 1,
+        "personID": 1,
+        "start": 4,
+        "end": 153
+      },
+      {
+        "nodeID": 2,
+        "personID": 2,
+        "start": 42,
+        "end": 89
+      },
+      {
+        "nodeID": 3,
+        "personID": 2,
+        "start": 99,
+        "end": 153
+      },
+      {
+        "nodeID": 4,
+        "personID": 1,
+        "start": 275,
+        "end": 373
+      },
+      {
+        "nodeID": 5,
+        "personID": 1,
+        "start": 375,
+        "end": 468
+      },
+      {
+        "nodeID": 6,
+        "personID": 1,
+        "start": 474,
+        "end": 512
+      },
+      {
+        "nodeID": 7,
+        "personID": 1,
+        "start": 518,
+        "end": 544
+      },
+      {
+        "nodeID": 8,
+        "personID": 1,
+        "start": 568,
+        "end": 662
+      },
+      {
+        "nodeID": 9,
+        "personID": 1,
+        "start": 670,
+        "end": 708
+      },
+      {
+        "nodeID": 10,
+        "personID": 1,
+        "start": 714,
+        "end": 833
+      }
+    ],
+    "participants": [
+      {
+        "participantID": 1,
+        "firstname": "John",
+        "surname": "Searle"
+      },
+      {
+        "participantID": 2,
+        "firstname": "Strong AI",
+        "surname": ""
+      }
+    ],
+    "schemefulfillments": [],
+    "descriptorfulfillments": []
+  },
+  "text": "Now the claims made by strong AI are that the programmed computer understands the stories and that the program in some sense explains human understanding. But we are now in a position to examine these claims in light of our thought experiment. 1. As regards the first claim, it seems to me quite obvious in the example that I do not understand a word of the Chinese stories. I have inputs and outputs that are indistinguishable from those of the native Chinese speaker, and I can have any formal program you like, but I still understand nothing: For the same reasons, Schank's computer understands nothing of any stories, whether in Chinese, English, or whatever, since in the Chinese case the computer is me, and in cases where the computer is not me, the computer has nothing more than I have in the case where I understand nothing.",
+  "dialog": true
+}

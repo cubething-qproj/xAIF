@@ -1,0 +1,894 @@
+{
+  "AIF": {
+    "nodes": [
+      {
+        "nodeID": 1,
+        "type": "L",
+        "text": "Ada: Governance should replace reading agent-written code as the developer's main safeguard where acceptance criteria are clear"
+      },
+      {
+        "nodeID": 2,
+        "type": "L",
+        "text": "Ada: It keeps pace with agent velocity, because the environment enforces it on every agent run"
+      },
+      {
+        "nodeID": 3,
+        "type": "L",
+        "text": "Ada: It also pays off in every later session, because the rules persist in the repository"
+      },
+      {
+        "nodeID": 4,
+        "type": "L",
+        "text": "Skeptic: governance is just more agent-written code that nobody reviews and that grows without bound"
+      },
+      {
+        "nodeID": 5,
+        "type": "L",
+        "text": "Ada: It does not grow without bound, because it needs a person's interpretation of which recurring failures reveal missing rules"
+      },
+      {
+        "nodeID": 6,
+        "type": "L",
+        "text": "Ada: Davis et al. say agents cannot supply that interpretation"
+      },
+      {
+        "nodeID": 7,
+        "type": "L",
+        "text": "Davis et al.: Agents' current implementation capabilities do not supply the structural interpretation needed to convert recurring failures into durable governance"
+      },
+      {
+        "nodeID": 8,
+        "type": "L",
+        "text": "Ada: A domain with unclear acceptance criteria needs human review of agent output until its judgment calls are written down"
+      },
+      {
+        "nodeID": 9,
+        "type": "L",
+        "text": "Ada: The xAIF annotation lab needs exactly that: I review each annotation the agent makes, and each correction goes into judgement-calls.md"
+      },
+      {
+        "nodeID": 10,
+        "type": "I",
+        "text": "Governance should replace reading agent-written code as the developer's main safeguard where acceptance criteria are clear",
+        "pta": {
+          "subject": "governance",
+          "predicate": "should replace reading agent-written code as the developer's main safeguard where acceptance criteria are clear",
+          "kind": "P",
+          "scope": "u",
+          "note": "Scoped on purpose: the condition is part of what is asserted, so the claim does not overreach into unclear domains (see S)."
+        }
+      },
+      {
+        "nodeID": 11,
+        "type": "I",
+        "text": "Governance keeps pace with agent velocity",
+        "pta": {
+          "subject": "governance",
+          "predicate": "keeps pace with agent velocity",
+          "kind": "F",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 12,
+        "type": "I",
+        "text": "Governance is enforced by the environment on every agent run",
+        "pta": {
+          "subject": "governance",
+          "predicate": "is enforced by the environment on every agent run",
+          "kind": "F",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 13,
+        "type": "I",
+        "text": "Governance pays off in every later session",
+        "pta": {
+          "subject": "governance",
+          "predicate": "pays off in every later session",
+          "kind": "F",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 14,
+        "type": "I",
+        "text": "Governance persists in the repository",
+        "pta": {
+          "subject": "governance",
+          "predicate": "persists in the repository",
+          "kind": "F",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 15,
+        "type": "I",
+        "text": "Governance is more agent-written code that nobody reviews and that grows without bound",
+        "pta": {
+          "subject": "governance",
+          "predicate": "is more agent-written code that nobody reviews and that grows without bound",
+          "kind": "F",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 16,
+        "type": "I",
+        "text": "Governance does not grow without bound",
+        "pta": {
+          "subject": "governance",
+          "predicate": "does not grow without bound",
+          "kind": "F",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 17,
+        "type": "I",
+        "text": "Governance needs a person's interpretation of which recurring failures reveal missing rules",
+        "pta": {
+          "subject": "governance",
+          "predicate": "needs a person's interpretation of which recurring failures reveal missing rules",
+          "kind": "F",
+          "scope": "u",
+          "note": "Davis says agents do not supply this interpretation; that a person must is an unsaid step."
+        }
+      },
+      {
+        "nodeID": 18,
+        "type": "I",
+        "text": "A domain with unclear acceptance criteria needs human review of agent output until its judgment calls are written down",
+        "pta": {
+          "subject": "a domain with unclear acceptance criteria",
+          "predicate": "needs human review of agent output until its judgment calls are written down",
+          "kind": "P",
+          "scope": "u"
+        }
+      },
+      {
+        "nodeID": 19,
+        "type": "I",
+        "text": "The xAIF annotation lab needs human review of agent output until its judgment calls are written down",
+        "pta": {
+          "subject": "the xAIF annotation lab",
+          "predicate": "needs human review of agent output until its judgment calls are written down",
+          "kind": "P",
+          "scope": "s",
+          "note": "The second clause of the locution (what is actually done) is left unreconstructed; it is evidence for the need, not a separate step."
+        }
+      },
+      {
+        "nodeID": 20,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 21,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora"
+          ]
+        }
+      },
+      {
+        "nodeID": 22,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora",
+            "passivization"
+          ]
+        }
+      },
+      {
+        "nodeID": 23,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora"
+          ]
+        }
+      },
+      {
+        "nodeID": 24,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "same term"
+          ]
+        }
+      },
+      {
+        "nodeID": 25,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 26,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora"
+          ]
+        }
+      },
+      {
+        "nodeID": 27,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora"
+          ]
+        }
+      },
+      {
+        "nodeID": 28,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora"
+          ]
+        }
+      },
+      {
+        "nodeID": 29,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "explication",
+            "same term"
+          ]
+        }
+      },
+      {
+        "nodeID": 30,
+        "type": "YA",
+        "text": "Asserting"
+      },
+      {
+        "nodeID": 31,
+        "type": "YA",
+        "text": "Asserting",
+        "pta": {
+          "transformations": [
+            "anaphora"
+          ]
+        }
+      },
+      {
+        "nodeID": 32,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 33,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 34,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 35,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 36,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 37,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 38,
+        "type": "TA",
+        "text": "Default Transition"
+      },
+      {
+        "nodeID": 39,
+        "type": "RA",
+        "text": "α PF Pos",
+        "pta": {
+          "lever": "FEASIBILITY",
+          "concepts": [
+            "governance",
+            "review",
+            "velocity"
+          ]
+        }
+      },
+      {
+        "nodeID": 40,
+        "type": "RA",
+        "text": "α PF Pra",
+        "pta": {
+          "lever": "PRAGMATIC MOTIVATION",
+          "concepts": [
+            "governance",
+            "compounding"
+          ]
+        }
+      },
+      {
+        "nodeID": 41,
+        "type": "RA",
+        "text": "α FF Cau",
+        "pta": {
+          "lever": "CAUSE",
+          "concepts": [
+            "governance",
+            "enforcement"
+          ]
+        }
+      },
+      {
+        "nodeID": 42,
+        "type": "RA",
+        "text": "α FF Cau",
+        "pta": {
+          "lever": "CAUSE",
+          "concepts": [
+            "governance",
+            "persistence"
+          ]
+        }
+      },
+      {
+        "nodeID": 43,
+        "type": "RA",
+        "text": "α FF Cau",
+        "pta": {
+          "lever": "CAUSE",
+          "concepts": [
+            "governance",
+            "growth",
+            "judgment"
+          ]
+        }
+      },
+      {
+        "nodeID": 44,
+        "type": "RA",
+        "text": "δ III Exp",
+        "pta": {
+          "lever": "EPISTEMICALLY AUTHORITATIVE",
+          "concepts": [
+            "authority",
+            "expertise"
+          ]
+        }
+      },
+      {
+        "nodeID": 45,
+        "type": "RA",
+        "text": "β us Exa",
+        "pta": {
+          "lever": "EXAMPLE",
+          "concepts": [
+            "acceptance criteria",
+            "review"
+          ]
+        }
+      },
+      {
+        "nodeID": 46,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 47,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 48,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 49,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 50,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 51,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 52,
+        "type": "YA",
+        "text": "Arguing"
+      },
+      {
+        "nodeID": 53,
+        "type": "CA",
+        "text": "Default Conflict"
+      },
+      {
+        "nodeID": 54,
+        "type": "YA",
+        "text": "Disagreeing"
+      },
+      {
+        "nodeID": 55,
+        "type": "CA",
+        "text": "Default Conflict"
+      },
+      {
+        "nodeID": 56,
+        "type": "YA",
+        "text": "Disagreeing"
+      }
+    ],
+    "edges": [
+      {
+        "edgeID": 1001,
+        "fromID": 1,
+        "toID": 20
+      },
+      {
+        "edgeID": 1002,
+        "fromID": 20,
+        "toID": 10
+      },
+      {
+        "edgeID": 1003,
+        "fromID": 2,
+        "toID": 21
+      },
+      {
+        "edgeID": 1004,
+        "fromID": 21,
+        "toID": 11
+      },
+      {
+        "edgeID": 1005,
+        "fromID": 2,
+        "toID": 22
+      },
+      {
+        "edgeID": 1006,
+        "fromID": 22,
+        "toID": 12
+      },
+      {
+        "edgeID": 1007,
+        "fromID": 3,
+        "toID": 23
+      },
+      {
+        "edgeID": 1008,
+        "fromID": 23,
+        "toID": 13
+      },
+      {
+        "edgeID": 1009,
+        "fromID": 3,
+        "toID": 24
+      },
+      {
+        "edgeID": 1010,
+        "fromID": 24,
+        "toID": 14
+      },
+      {
+        "edgeID": 1011,
+        "fromID": 4,
+        "toID": 25
+      },
+      {
+        "edgeID": 1012,
+        "fromID": 25,
+        "toID": 15
+      },
+      {
+        "edgeID": 1013,
+        "fromID": 5,
+        "toID": 26
+      },
+      {
+        "edgeID": 1014,
+        "fromID": 26,
+        "toID": 16
+      },
+      {
+        "edgeID": 1015,
+        "fromID": 5,
+        "toID": 27
+      },
+      {
+        "edgeID": 1016,
+        "fromID": 27,
+        "toID": 17
+      },
+      {
+        "edgeID": 1017,
+        "fromID": 6,
+        "toID": 28
+      },
+      {
+        "edgeID": 1018,
+        "fromID": 28,
+        "toID": 7
+      },
+      {
+        "edgeID": 1019,
+        "fromID": 7,
+        "toID": 29
+      },
+      {
+        "edgeID": 1020,
+        "fromID": 29,
+        "toID": 17
+      },
+      {
+        "edgeID": 1021,
+        "fromID": 8,
+        "toID": 30
+      },
+      {
+        "edgeID": 1022,
+        "fromID": 30,
+        "toID": 18
+      },
+      {
+        "edgeID": 1023,
+        "fromID": 9,
+        "toID": 31
+      },
+      {
+        "edgeID": 1024,
+        "fromID": 31,
+        "toID": 19
+      },
+      {
+        "edgeID": 1025,
+        "fromID": 1,
+        "toID": 32
+      },
+      {
+        "edgeID": 1026,
+        "fromID": 32,
+        "toID": 2
+      },
+      {
+        "edgeID": 1027,
+        "fromID": 1,
+        "toID": 33
+      },
+      {
+        "edgeID": 1028,
+        "fromID": 33,
+        "toID": 3
+      },
+      {
+        "edgeID": 1029,
+        "fromID": 2,
+        "toID": 34
+      },
+      {
+        "edgeID": 1030,
+        "fromID": 34,
+        "toID": 4
+      },
+      {
+        "edgeID": 1031,
+        "fromID": 4,
+        "toID": 35
+      },
+      {
+        "edgeID": 1032,
+        "fromID": 35,
+        "toID": 5
+      },
+      {
+        "edgeID": 1033,
+        "fromID": 5,
+        "toID": 36
+      },
+      {
+        "edgeID": 1034,
+        "fromID": 36,
+        "toID": 6
+      },
+      {
+        "edgeID": 1035,
+        "fromID": 1,
+        "toID": 37
+      },
+      {
+        "edgeID": 1036,
+        "fromID": 37,
+        "toID": 8
+      },
+      {
+        "edgeID": 1037,
+        "fromID": 8,
+        "toID": 38
+      },
+      {
+        "edgeID": 1038,
+        "fromID": 38,
+        "toID": 9
+      },
+      {
+        "edgeID": 1039,
+        "fromID": 11,
+        "toID": 39
+      },
+      {
+        "edgeID": 1040,
+        "fromID": 39,
+        "toID": 10
+      },
+      {
+        "edgeID": 1041,
+        "fromID": 13,
+        "toID": 40
+      },
+      {
+        "edgeID": 1042,
+        "fromID": 40,
+        "toID": 10
+      },
+      {
+        "edgeID": 1043,
+        "fromID": 12,
+        "toID": 41
+      },
+      {
+        "edgeID": 1044,
+        "fromID": 41,
+        "toID": 11
+      },
+      {
+        "edgeID": 1045,
+        "fromID": 14,
+        "toID": 42
+      },
+      {
+        "edgeID": 1046,
+        "fromID": 42,
+        "toID": 13
+      },
+      {
+        "edgeID": 1047,
+        "fromID": 17,
+        "toID": 43
+      },
+      {
+        "edgeID": 1048,
+        "fromID": 43,
+        "toID": 16
+      },
+      {
+        "edgeID": 1049,
+        "fromID": 7,
+        "toID": 44
+      },
+      {
+        "edgeID": 1050,
+        "fromID": 44,
+        "toID": 17
+      },
+      {
+        "edgeID": 1051,
+        "fromID": 19,
+        "toID": 45
+      },
+      {
+        "edgeID": 1052,
+        "fromID": 45,
+        "toID": 18
+      },
+      {
+        "edgeID": 1053,
+        "fromID": 32,
+        "toID": 46
+      },
+      {
+        "edgeID": 1054,
+        "fromID": 46,
+        "toID": 39
+      },
+      {
+        "edgeID": 1055,
+        "fromID": 33,
+        "toID": 47
+      },
+      {
+        "edgeID": 1056,
+        "fromID": 47,
+        "toID": 40
+      },
+      {
+        "edgeID": 1057,
+        "fromID": 2,
+        "toID": 48
+      },
+      {
+        "edgeID": 1058,
+        "fromID": 48,
+        "toID": 41
+      },
+      {
+        "edgeID": 1059,
+        "fromID": 3,
+        "toID": 49
+      },
+      {
+        "edgeID": 1060,
+        "fromID": 49,
+        "toID": 42
+      },
+      {
+        "edgeID": 1061,
+        "fromID": 5,
+        "toID": 50
+      },
+      {
+        "edgeID": 1062,
+        "fromID": 50,
+        "toID": 43
+      },
+      {
+        "edgeID": 1063,
+        "fromID": 36,
+        "toID": 51
+      },
+      {
+        "edgeID": 1064,
+        "fromID": 51,
+        "toID": 44
+      },
+      {
+        "edgeID": 1065,
+        "fromID": 38,
+        "toID": 52
+      },
+      {
+        "edgeID": 1066,
+        "fromID": 52,
+        "toID": 45
+      },
+      {
+        "edgeID": 1067,
+        "fromID": 34,
+        "toID": 54
+      },
+      {
+        "edgeID": 1068,
+        "fromID": 54,
+        "toID": 53
+      },
+      {
+        "edgeID": 1069,
+        "fromID": 15,
+        "toID": 53
+      },
+      {
+        "edgeID": 1070,
+        "fromID": 53,
+        "toID": 39
+      },
+      {
+        "edgeID": 1071,
+        "fromID": 35,
+        "toID": 56
+      },
+      {
+        "edgeID": 1072,
+        "fromID": 56,
+        "toID": 55
+      },
+      {
+        "edgeID": 1073,
+        "fromID": 16,
+        "toID": 55
+      },
+      {
+        "edgeID": 1074,
+        "fromID": 55,
+        "toID": 15
+      }
+    ],
+    "locutions": [
+      {
+        "nodeID": 1,
+        "personID": 1,
+        "start": 5,
+        "end": 127
+      },
+      {
+        "nodeID": 2,
+        "personID": 1,
+        "start": 134,
+        "end": 223
+      },
+      {
+        "nodeID": 3,
+        "personID": 1,
+        "start": 230,
+        "end": 314
+      },
+      {
+        "nodeID": 4,
+        "personID": 2,
+        "start": 329,
+        "end": 420
+      },
+      {
+        "nodeID": 5,
+        "personID": 1,
+        "start": 427,
+        "end": 550
+      },
+      {
+        "nodeID": 6,
+        "personID": 1,
+        "start": 557,
+        "end": 614
+      },
+      {
+        "nodeID": 7,
+        "personID": 3
+      },
+      {
+        "nodeID": 8,
+        "personID": 1,
+        "start": 621,
+        "end": 739
+      },
+      {
+        "nodeID": 9,
+        "personID": 1,
+        "start": 746,
+        "end": 880
+      }
+    ],
+    "participants": [
+      {
+        "participantID": 1,
+        "firstname": "Ada",
+        "surname": ""
+      },
+      {
+        "participantID": 2,
+        "firstname": "Skeptic",
+        "surname": ""
+      },
+      {
+        "participantID": 3,
+        "firstname": "Davis et al.",
+        "surname": ""
+      }
+    ],
+    "schemefulfillments": [],
+    "descriptorfulfillments": []
+  },
+  "text": "Ada: Governance should replace reading agent-written code as the developer's main safeguard where acceptance criteria are clear.\nAda: It keeps pace with agent velocity, because the environment enforces it on every agent run.\nAda: It also pays off in every later session, because the rules persist in the repository.\nSkeptic: But governance is just more agent-written code that nobody reviews and that grows without bound.\nAda: It does not grow without bound, because it needs a person's interpretation of which recurring failures reveal missing rules.\nAda: Davis et al. say agents cannot supply that interpretation.\nAda: A domain with unclear acceptance criteria needs human review of agent output until its judgment calls are written down.\nAda: The xAIF annotation lab needs exactly that: I review each annotation the agent makes, and each correction goes into judgement-calls.md.",
+  "dialog": true
+}
